@@ -7,6 +7,8 @@
 
 #include <cstdlib>
 #include <iostream> 
+#include <fstream>
+#include <string>
 
 using namespace std;
 
@@ -24,7 +26,7 @@ public:
      */
     Permutace(int * permutation, int nodeCount, int ** edgeTable) {
         this->maxTLG = 0;
-        
+
         this->nodeCount = nodeCount;
         this->edgeTable = edgeTable;
         this->permutation = permutation;
@@ -98,40 +100,49 @@ public:
 
 int main(int argc, char** argv) {
 
+    // DEBUG nahrani tabulky ze souboru
+    // Nahrani souboru 
+    ifstream file;
+    string fileName = "vstup.txt";
+    file.open(fileName.c_str());
+    if (!file) {
+        cout << "Error in openening file";
+        return EXIT_FAILURE;
+    }
+
+    // Prvni radek je pocet uzlu 
+    string line;
+    getline(file, line);
+    int nodeCount = atoi(line.c_str());
+
+    // Zbytek souboru po radkach prevest do int[][] pole
+    int ** edgeTable = new int * [nodeCount];
+    for (int j = 0; j < nodeCount; j++){
+        getline(file, line); 
+        edgeTable[j] = new int [nodeCount];
+        for (int i = 0; i < nodeCount; i++) {
+            char ch = line.at(i);
+            // ulozeni hrany do pole
+            edgeTable[j][i] = atoi( &ch ); 
+        }
+    }
+    
+    for( int i = 0; i < nodeCount; i++){
+        
+        for (int j = 0; j < nodeCount; j++) {
+            cout << edgeTable[i][j] ;
+        }
+        
+        cout << endl;
+    }
+
     // DEBUG bude nahrazeno generovanim prohledavaciho stromu
-    int nodeCount = 4;
+    //int nodeCount = 4;
     int * permutation = new int [nodeCount];
     permutation[0] = 1;
     permutation[1] = 0;
     permutation[2] = 3;
     permutation[3] = 4;
-    
-    // DEBUG bude nahrazeno rozparsovanou tabulkou z generatoru
-    int ** edgeTable = new int * [nodeCount];
-    edgeTable[0] = new int [nodeCount];
-    edgeTable[1] = new int [nodeCount];
-    edgeTable[2] = new int [nodeCount];
-    edgeTable[3] = new int [nodeCount];
-
-    edgeTable[0][0] = 0;
-    edgeTable[0][1] = 1;
-    edgeTable[0][2] = 1;
-    edgeTable[0][3] = 0;
-
-    edgeTable[1][0] = 1;
-    edgeTable[1][1] = 0;
-    edgeTable[1][2] = 0;
-    edgeTable[1][3] = 1;
-
-    edgeTable[2][0] = 1;
-    edgeTable[2][1] = 0;
-    edgeTable[2][2] = 0;
-    edgeTable[2][3] = 0;
-
-    edgeTable[3][0] = 0;
-    edgeTable[3][1] = 1;
-    edgeTable[3][2] = 0;
-    edgeTable[3][3] = 0;
 
     Permutace * permutace = new Permutace(permutation, nodeCount, edgeTable);
 
