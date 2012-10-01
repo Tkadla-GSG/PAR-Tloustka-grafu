@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
-CND_ARTIFACT_NAME_Debug=par_tlg
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/par_tlg
+CND_ARTIFACT_NAME_Debug=codes
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/codes
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
-CND_PACKAGE_NAME_Debug=partlg.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/partlg.tar
+CND_PACKAGE_NAME_Debug=codes.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/codes.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
-CND_ARTIFACT_NAME_Release=par_tlg
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/par_tlg
+CND_ARTIFACT_NAME_Release=codes
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/codes
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
-CND_PACKAGE_NAME_Release=partlg.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/partlg.tar
+CND_PACKAGE_NAME_Release=codes.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/codes.tar
 #
 # include compiler specific variables
 #

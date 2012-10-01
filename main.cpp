@@ -128,7 +128,9 @@ public:
         if (!expandable) {
             return;
         }
-
+        cout << "Parent " ;
+        this->toString();
+        bool expand = true; 
         for (int i = level; i < nodeCount; i++) {
 
             // permutuj vsechny cisla po indexu
@@ -145,8 +147,19 @@ public:
                 newPermutation[i] = permutation[j];
                 newPermutation[j] = permutation[i];
 
-                Permutation * p = new Permutation(this, newPermutation, nodeCount, level + 1, edgeTable, false);
+                // stavy v listech jiz neni potreba expandovat
+                if( (level+1) == nodeCount ){
+                    expand = false; 
+                }
+                
+                Permutation * p = new Permutation(this, newPermutation, nodeCount, level + 1, edgeTable, expand);
 
+                // nove generovane stavy shodne s rodicem tohoto stavu muzeme zahodit
+                if( p->equals( this->parent ) ){
+                    delete p;
+                    continue; 
+                }
+                
                 mainStack.push(p);
 
                 //DEBUG
@@ -168,15 +181,14 @@ public:
     }
 
     //DEBUG
-
     void toString() {
         cout << " node  | ";
 
-        for (int i = 0; i < this->nodeCount; i++) {
-            cout << this->permutation[i] << " | ";
+        for (int i = 0; i < nodeCount; i++) {
+            cout << permutation[i] << " | ";
         }
-        cout << "level: " << this->level << " ";
-        cout << "tlg: " << this->getTLG();
+        cout << "level: " << level << " ";
+        cout << "tlg: " << getTLG();
         cout << endl;
     }
 };
@@ -227,9 +239,10 @@ int main(int argc, char** argv) {
     mainStack.push(permutace);
 
     int tlg;
+    Permutation * state;
     while (!mainStack.empty()) {
-
-        Permutation * state = mainStack.top();
+        cout << "stack size " << mainStack.size() << endl;  
+        state = mainStack.top();
         mainStack.pop();
 
         tlg = state->getTLG();
@@ -244,7 +257,7 @@ int main(int argc, char** argv) {
         }
 
         // expanze do hlavniho zasobniku
-        state->getChildren(mainStack);
+        state->getChildren( mainStack );
 
     }
 
