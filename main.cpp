@@ -123,43 +123,36 @@ public:
      * Generuje a vraci pole pointeru na deti teto permutace
      * @return 
      */
-    stack< Permutation * > getChildren() {
-
-        stack< Permutation * > stack;
+    void getChildren(stack < Permutation * > & mainStack) {
 
         if (!expandable) {
-            stack;
+            return;
         }
 
         for (int i = level; i < nodeCount; i++) {
 
-            int * newPermutation = new int[nodeCount];
-
-            // okopiruj vsechny cisla pred indexem
-            for (int j = 0; j < i; j++) {
-                newPermutation[j] = permutation[j];
-            }
-
             // permutuj vsechny cisla po indexu
-            for (int j = i; i < nodeCount; j++) {
+            for (int j = i + 1; j < nodeCount; j++) {
+
+                int * newPermutation = new int[nodeCount];
+
+                // okopiruj stavajici permutaci
+                for (int k = 0; k < nodeCount; k++) {
+                    newPermutation[k] = permutation[k];
+                }
+
+                // vytvor novou permutaci
                 newPermutation[i] = permutation[j];
                 newPermutation[j] = permutation[i];
 
                 Permutation * p = new Permutation(this, newPermutation, nodeCount, level + 1, edgeTable, false);
 
-                stack.push(p);
+                mainStack.push(p);
 
+                //DEBUG
                 p->toString();
             }
         }
-
-        return stack;
-    }
-
-    // Gettery
-
-    bool isExpandable() const {
-        return expandable;
     }
 
     int getNodeCount() const {
@@ -182,8 +175,8 @@ public:
         for (int i = 0; i < this->nodeCount; i++) {
             cout << this->permutation[i] << " | ";
         }
-        cout << "level: " << this->level;
-        cout << "ltg: " << this->getTLG();
+        cout << "level: " << this->level << " ";
+        cout << "tlg: " << this->getTLG();
         cout << endl;
     }
 };
@@ -220,9 +213,9 @@ int main(int argc, char** argv) {
     int minTLG = numeric_limits<int>::max();
     // Triviální spodní mez: polovina maximálního stupně grafu (zaokrouhlená nahoru).
     // TODO CHYBNY INIT PRO TESTOVANI
-    int threshold = numeric_limits<int>::max();
+    int threshold = 0;
     // Stavovy zasobnik
-    stack < Permutation * > stack;
+    stack < Permutation * > mainStack;
 
     // Inicializace pocatecniho stavu
     int * permutation = new int [nodeCount];
@@ -231,16 +224,13 @@ int main(int argc, char** argv) {
     }
 
     Permutation * permutace = new Permutation(NULL, permutation, nodeCount, 0, edgeTable, true);
-    stack.push(permutace);
+    mainStack.push(permutace);
 
-    //Main Loop
-    stack < Permutation * > children;
     int tlg;
-    int length;
-    while (!stack.empty()) {
+    while (!mainStack.empty()) {
 
-        Permutation * state = stack.top();
-        stack.pop();
+        Permutation * state = mainStack.top();
+        mainStack.pop();
 
         tlg = state->getTLG();
 
@@ -253,19 +243,9 @@ int main(int argc, char** argv) {
             break;
         }
 
-        /**
-         * EXPANZE STAVU
-         */
-        children = state->getChildren();
+        // expanze do hlavniho zasobniku
+        state->getChildren(mainStack);
 
-        // Nejsou-li potomci, neexpanduj
-        if (children.empty()) continue;
-
-        // ulozeni vsech stavu do zasobniku
-        length = sizeof ( children) / sizeof ( children[0]);
-        for (int i = 0; i < length; i++) {
-            stack.push(children[i]);
-        }
     }
 
     cout << " ============= " << endl;
