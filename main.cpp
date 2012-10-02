@@ -43,12 +43,6 @@ public:
     ~Permutation() {
         delete [] permutation;
         permutation = NULL;
-
-        for (int i = 0; i < nodeCount; i++) {
-            delete [] edgeTable[i];
-        }
-        delete [] edgeTable;
-        edgeTable = NULL;
     }
 
     Permutation * parent;
@@ -128,9 +122,9 @@ public:
         if (!expandable) {
             return;
         }
-        cout << "Parent " ;
+        cout << "Parent ";
         this->toString();
-        bool expand = true; 
+        bool expand = true;
         for (int i = level; i < nodeCount; i++) {
 
             // permutuj vsechny cisla po indexu
@@ -148,18 +142,18 @@ public:
                 newPermutation[j] = permutation[i];
 
                 // stavy v listech jiz neni potreba expandovat
-                if( (level+1) == nodeCount ){
-                    expand = false; 
+                if ((level + 1) == nodeCount) {
+                    expand = false;
                 }
-                
+
                 Permutation * p = new Permutation(this, newPermutation, nodeCount, level + 1, edgeTable, expand);
 
                 // nove generovane stavy shodne s rodicem tohoto stavu muzeme zahodit
-                if( p->equals( this->parent ) ){
+                if (p->equals(this->parent)) {
                     delete p;
-                    continue; 
+                    continue;
                 }
-                
+
                 mainStack.push(p);
 
                 //DEBUG
@@ -181,6 +175,7 @@ public:
     }
 
     //DEBUG
+
     void toString() {
         cout << " node  | ";
 
@@ -241,7 +236,7 @@ int main(int argc, char** argv) {
     int tlg;
     Permutation * state;
     while (!mainStack.empty()) {
-        cout << "stack size " << mainStack.size() << endl;  
+        cout << "stack size " << mainStack.size() << endl;
         state = mainStack.top();
         mainStack.pop();
 
@@ -257,12 +252,19 @@ int main(int argc, char** argv) {
         }
 
         // expanze do hlavniho zasobniku
-        state->getChildren( mainStack );
+        state->getChildren(mainStack);
 
     }
 
     cout << " ============= " << endl;
     cout << " min TLG: " << minTLG << endl;
+
+    // uklid
+    for (int i = 0; i < nodeCount; i++) {
+        delete [] edgeTable[i];
+    }
+    delete [] edgeTable;
+    edgeTable = NULL;
 
     return 0;
 }
