@@ -73,17 +73,15 @@ public:
      * @return int hodnota maximalni TLG
      */
     int getTLG() {
-        // pro vsechny diry
+        // pro vsechny diry      
         for (int i = 0; i < (nodeCount - 1); i++) {
             // pro vsechny uzly pred touto dirou
             int TLG = 0;
             for (int j = 0; j <= i; j++) {
                 // projdi vsechny uzly za dirou
                 for (int k = i + 1; k < nodeCount; k++) {
-                    // a existuje-li mezi nimi hrana spocitej je
-                    if (hasEdge(j, k)) {
-                        TLG++;
-                    }
+                    // a existuje-li mezi nimi hrana spocitej je   
+                    TLG += edgeTable[permutation[j]][permutation[k]];
                 }
             }
 
@@ -114,7 +112,7 @@ public:
     }
 
     /**
-     * Generuje a vraci pole pointeru na deti teto permutace
+     * Naplni hlavni stack potomky tohoto stavu
      * @return 
      */
     void getChildren(stack < Permutation * > & mainStack) {
@@ -122,8 +120,11 @@ public:
         if (!expandable) {
             return;
         }
+        
+        //DEBUG
         cout << "Parent ";
         this->toString();
+        
         bool expand = true;
         for (int i = level; i < nodeCount; i++) {
 
@@ -175,7 +176,6 @@ public:
     }
 
     //DEBUG
-
     void toString() {
         cout << " node  | ";
 
@@ -227,7 +227,7 @@ int main(int argc, char** argv) {
     // Inicializace pocatecniho stavu
     int * permutation = new int [nodeCount];
     for (int i = 0; i < nodeCount; i++) {
-        permutation[i] = i + 1;
+        permutation[i] = i;
     }
 
     Permutation * permutace = new Permutation(NULL, permutation, nodeCount, 0, edgeTable, true);
@@ -236,6 +236,8 @@ int main(int argc, char** argv) {
     int tlg;
     Permutation * state;
     while (!mainStack.empty()) {
+        
+        // DEBUG
         cout << "stack size " << mainStack.size() << endl;
         state = mainStack.top();
         mainStack.pop();
@@ -253,12 +255,13 @@ int main(int argc, char** argv) {
 
         // expanze do hlavniho zasobniku
         state->getChildren(mainStack);
-
     }
 
     cout << " ============= " << endl;
     cout << " min TLG: " << minTLG << endl;
 
+    // TODO chybi mazani stavu, neuvolnujeme pamet
+    
     // uklid
     for (int i = 0; i < nodeCount; i++) {
         delete [] edgeTable[i];
