@@ -10,6 +10,7 @@
 #include <fstream>
 #include <stack>
 #include <string>
+#include <math.h>
 
 using namespace std;
 
@@ -29,10 +30,9 @@ public:
      * @param edgeTable - int[][] 2d tabulka prechodu z uzlu do uzlu
      * @param expanable - bool ma-li stav generovat dalsi potomky
      */
-    Permutation(Permutation * parent, int * permutation, int nodeCount, int level, int ** edgeTable, bool expandable) {
+    Permutation(int * permutation, int nodeCount, int level, int ** edgeTable, bool expandable) {
         this->maxTLG = 0;
         this->expandable = expandable;
-        this->parent = parent;
         this->nodeCount = nodeCount;
         this->level = level;
         this->edgeTable = edgeTable;
@@ -46,8 +46,6 @@ public:
         delete [] permutation;
         permutation = NULL;
     }
-
-    Permutation * parent;
 
 private:
 
@@ -95,25 +93,6 @@ public:
     }
 
     /**
-     * Provede srovnani tohoto a dalsiho uzlu. 
-     * Vraci true, pokud jsou uzly shodne. Vraci false, pokud nejsou stejne.
-     * @param that Permutation * - ukazatel na srovnavany uzel
-     * @return 
-     */
-    bool equals(Permutation * that) {
-        if (that == NULL) return false;
-
-        if (nodeCount != that->getNodeCount()) return false;
-
-        int * thatPermutation = that->getPermutation();
-        for (int i = 0; i < nodeCount; i++) {
-            if (permutation[i] != thatPermutation[i]) return false;
-        }
-
-        return true;
-    }
-
-    /**
      * Naplni hlavni stack potomky tohoto stavu
      * @return 
      */
@@ -121,11 +100,6 @@ public:
 
         if (!expandable) {
             return;
-        }
-
-        if (DEBUG) {
-            cout << "Parent ";
-            this->toString();
         }
 
         bool expand = true;
@@ -150,13 +124,7 @@ public:
                     expand = false;
                 }
 
-                Permutation * p = new Permutation(this, newPermutation, nodeCount, level + 1, edgeTable, expand);
-
-                // nove generovane stavy shodne s rodicem tohoto stavu muzeme zahodit
-                if (p->equals(this->parent)) {
-                    delete p;
-                    continue;
-                }
+                Permutation * p = new Permutation(newPermutation, nodeCount, level + 1, edgeTable, expand);
 
                 mainStack.push(p);
 
@@ -165,18 +133,6 @@ public:
                 }
             }
         }
-    }
-
-    int getNodeCount() const {
-        return nodeCount;
-    }
-
-    int * getPermutation() const {
-        return permutation;
-    }
-
-    int getLevel() const {
-        return level;
     }
 
     //DEBUG
@@ -209,23 +165,35 @@ int main(int argc, char** argv) {
     getline(file, line);
     int nodeCount = atoi(line.c_str());
 
+    double degree = 0; 
+
     // Zbytek souboru po radkach prevest do int[][] pole
     int ** edgeTable = new int * [nodeCount];
+    int edge = 0; 
     for (int j = 0; j < nodeCount; j++) {
+        
+        int nodeDegree = 0; 
         getline(file, line);
         edgeTable[j] = new int [nodeCount];
         for (int i = 0; i < nodeCount; i++) {
             char ch = line.at(i);
-            // ulozeni hrany do pole
-            edgeTable[j][i] = atoi(&ch);
+            
+            edge = atoi(&ch);
+            nodeDegree += edge; 
+             // ulozeni hrany do pole
+            edgeTable[j][i] = edge;
+        }
+        
+        if( nodeDegree > degree ){
+            degree = nodeDegree; 
         }
     }
+    
+    // Triviální spodní mez: polovina maximálního stupně grafu (zaokrouhlená nahoru).
+    double threshold = ceil( ( degree/2 ) );
 
     // Vysledek ( nekonecno, nebo nejblizsi nejvetsi vec )
     int minTLG = numeric_limits<int>::max();
-    // Triviální spodní mez: polovina maximálního stupně grafu (zaokrouhlená nahoru).
-    // TODO CHYBNY INIT PRO TESTOVANI
-    int threshold = 0;
     // Stavovy zasobnik
     stack < Permutation * > mainStack;
 
@@ -235,7 +203,7 @@ int main(int argc, char** argv) {
         permutation[i] = i;
     }
 
-    Permutation * permutace = new Permutation(NULL, permutation, nodeCount, 0, edgeTable, true);
+    Permutation * permutace = new Permutation(permutation, nodeCount, 0, edgeTable, true);
     mainStack.push(permutace);
 
     int tlg;
@@ -261,6 +229,9 @@ int main(int argc, char** argv) {
 
         // expanze do hlavniho zasobniku
         state->getChildren(mainStack);
+
+        //stav uz neni a nebude potreba 
+        delete state;
     }
 
     if (DEBUG) {
@@ -268,7 +239,13 @@ int main(int argc, char** argv) {
         cout << " min TLG: " << minTLG << endl;
     }
 
-    // TODO chybi mazani stavu, neuvolnujeme pamet
+    // odstran ze zasobniku stavy, ktere tam potencialne zustali
+    Permutation * toDelete; 
+    while(!mainStack.empty()){
+        toDelete = mainStack.top();
+        mainStack.pop();
+        delete toDelete; 
+    }
 
     // uklid
     for (int i = 0; i < nodeCount; i++) {
