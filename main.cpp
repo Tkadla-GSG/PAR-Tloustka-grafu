@@ -13,6 +13,8 @@
 
 using namespace std;
 
+#define DEBUG 1
+
 /**
  * Trida fakticky predstavujici uzel vyhledavaciho stromu
  */
@@ -120,11 +122,12 @@ public:
         if (!expandable) {
             return;
         }
-        
-        //DEBUG
-        cout << "Parent ";
-        this->toString();
-        
+
+        if (DEBUG) {
+            cout << "Parent ";
+            this->toString();
+        }
+
         bool expand = true;
         for (int i = level; i < nodeCount; i++) {
 
@@ -157,8 +160,9 @@ public:
 
                 mainStack.push(p);
 
-                //DEBUG
-                p->toString();
+                if (DEBUG) {
+                    p->toString();
+                }
             }
         }
     }
@@ -176,6 +180,7 @@ public:
     }
 
     //DEBUG
+
     void toString() {
         cout << " node  | ";
 
@@ -236,9 +241,10 @@ int main(int argc, char** argv) {
     int tlg;
     Permutation * state;
     while (!mainStack.empty()) {
-        
-        // DEBUG
-        cout << "stack size " << mainStack.size() << endl;
+
+        if (DEBUG) {
+            cout << "stack size " << mainStack.size() << endl;
+        }
         state = mainStack.top();
         mainStack.pop();
 
@@ -257,11 +263,13 @@ int main(int argc, char** argv) {
         state->getChildren(mainStack);
     }
 
-    cout << " ============= " << endl;
-    cout << " min TLG: " << minTLG << endl;
+    if (DEBUG) {
+        cout << " ============= " << endl;
+        cout << " min TLG: " << minTLG << endl;
+    }
 
     // TODO chybi mazani stavu, neuvolnujeme pamet
-    
+
     // uklid
     for (int i = 0; i < nodeCount; i++) {
         delete [] edgeTable[i];
