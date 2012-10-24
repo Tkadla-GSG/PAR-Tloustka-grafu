@@ -4,7 +4,7 @@
  *
  * Created on 19. září 2012, 13:36
  */
-
+#include "mpi.h"
 #include <cstdlib>
 #include <iostream> 
 #include <fstream>
@@ -117,8 +117,8 @@ public:
                 if ((level + 1) == length) {
                     expand = false;
                 }
-//              TODO comment a implementovat
-//              if(leve+pocetCyklu == length){ expand = false}  
+                //              TODO comment a implementovat
+                //              if(leve+pocetCyklu == length){ expand = false}  
 
                 Permutation * p = new Permutation(newPermutation, length, level + 1, edgeTable, expand);
 
@@ -161,87 +161,108 @@ int main(int argc, char** argv) {
     getline(file, line);
     int length = atoi(line.c_str());
 
-    double degree = 0; 
+    double degree = 0;
 
     // Zbytek souboru po radkach prevest do int[][] pole
     int ** edgeTable = new int * [length];
-    int edge = 0; 
+    int edge = 0;
     for (int j = 0; j < length; j++) {
-        
-        int nodeDegree = 0; 
+
+        int nodeDegree = 0;
         getline(file, line);
         edgeTable[j] = new int [length];
         for (int i = 0; i < length; i++) {
             char ch = line.at(i);
-            
+
             edge = atoi(&ch);
-            nodeDegree += edge; 
-             // ulozeni hrany do pole
+            nodeDegree += edge;
+            // ulozeni hrany do pole
             edgeTable[j][i] = edge;
         }
-        
-        if( nodeDegree > degree ){
-            degree = nodeDegree; 
+
+        if (nodeDegree > degree) {
+            degree = nodeDegree;
         }
     }
-    
-//    Prekontrolovat
+
     // Triviální spodní mez: polovina maximálního stupně grafu (zaokrouhlená nahoru).
-    double threshold = ceil( ( degree/2 ) );
+    double threshold = ceil((degree / 2));
 
     // Vysledek ( nekonecno, nebo nejblizsi nejvetsi vec )
     int minTLG = numeric_limits<int>::max();
+
     // Stavovy zasobnik
     stack < Permutation * > mainStack;
 
-    // Inicializace pocatecniho stavu
-    int * permutation = new int [length];
-    for (int i = 0; i < length; i++) {
-        permutation[i] = i;
-    }
+    //init MPI
+    MPI_Init(&argc, &argv);
+    int rank;
+    int p;
 
-    Permutation * permutace = new Permutation(permutation, length, 0, edgeTable, true);
-    mainStack.push(permutace);
+    //rank beziciho procesu
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 
-    int tlg;
-    Permutation * state;
-    while (!mainStack.empty()) {
+    //pocet procesoru 
+    MPI_Comm_size(MPI_COMM_WORLD, &p);
+
+    if (rank == 0) {
+        //MASTER
+
+        // Inicializace pocatecniho stavu
+        int * permutation = new int [length];
+        for (int i = 0; i < length; i++) {
+            permutation[i] = i;
+        }
+
+        Permutation * permutace = new Permutation(permutation, length, 0, edgeTable, true);
+        mainStack.push(permutace);
+
+        int tlg;
+        Permutation * state;
+        while (!mainStack.empty()) {
+
+            if (DEBUG) {
+                cout << "stack size " << mainStack.size() << endl;
+            }
+            state = mainStack.top();
+            mainStack.pop();
+
+            tlg = state->getTLG();
+
+            if (tlg < minTLG) {
+                minTLG = tlg;
+            }
+
+            // Dosazena spodni mez, konec algoritmu. Vysledek je jiz ulozen v minTLG.
+            if (minTLG <= threshold) {
+                break;
+            }
+
+            // expanze do hlavniho zasobniku
+            state->getChildren(mainStack);
+
+            //stav uz neni a nebude potreba 
+            delete state;
+        }
 
         if (DEBUG) {
-            cout << "stack size " << mainStack.size() << endl;
-        }
-        state = mainStack.top();
-        mainStack.pop();
-
-        tlg = state->getTLG();
-
-        if (tlg < minTLG) {
-            minTLG = tlg;
+            cout << " ============= " << endl;
+            cout << " min TLG: " << minTLG << endl;
         }
 
-        // Dosazena spodni mez, konec algoritmu. Vysledek je jiz ulozen v minTLG.
-        if (minTLG <= threshold) {
-            break;
-        }
-
-        // expanze do hlavniho zasobniku
-        state->getChildren(mainStack);
-
-        //stav uz neni a nebude potreba 
-        delete state;
+    } else {
+        //SLAVE
     }
 
-    if (DEBUG) {
-        cout << " ============= " << endl;
-        cout << " min TLG: " << minTLG << endl;
-    }
+    //MPI end
+    MPI_Finalize();
 
     // odstran ze zasobniku stavy, ktere tam potencialne zustali
-    Permutation * toDelete; 
-    while(!mainStack.empty()){
+    Permutation * toDelete;
+    while (!mainStack.empty()) {
         toDelete = mainStack.top();
         mainStack.pop();
-        delete toDelete; 
+        delete toDelete;
     }
 
     // uklid
