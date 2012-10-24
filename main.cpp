@@ -11,6 +11,7 @@
 #include <stack>
 #include <string>
 #include <math.h>
+#include <limits>
 
 using namespace std;
 
@@ -24,16 +25,15 @@ public:
 
     /**
      * Konstructor
-     * @param parent - Permutation * ukazatel na rodice uzlu
      * @param permutation - int [] pole s permutaci cisel uzlu
-     * @param nodeCount - int pocet uzlu 
+     * @param length - int delka pole permutace
      * @param edgeTable - int[][] 2d tabulka prechodu z uzlu do uzlu
      * @param expanable - bool ma-li stav generovat dalsi potomky
      */
-    Permutation(int * permutation, int nodeCount, int level, int ** edgeTable, bool expandable) {
+    Permutation(int * permutation, int length, int level, int ** edgeTable, bool expandable) {
         this->maxTLG = 0;
         this->expandable = expandable;
-        this->nodeCount = nodeCount;
+        this->length = length;
         this->level = level;
         this->edgeTable = edgeTable;
         this->permutation = permutation;
@@ -52,19 +52,9 @@ private:
     int * permutation;
     int ** edgeTable;
     int maxTLG;
-    int nodeCount;
+    int length;
     int level;
     bool expandable;
-
-    /**
-     * Vraci bool hodnotu zda existuje hrana (prechod) mezi uzly
-     * @param node1 - int cislo uzlu 1
-     * @param node2 - int cislo uzlu 2
-     * @return bool 
-     */
-    bool hasEdge(int node1, int node2) {
-        return edgeTable[node1][node2];
-    }
 
 public:
 
@@ -74,12 +64,12 @@ public:
      */
     int getTLG() {
         // pro vsechny diry      
-        for (int i = 0; i < (nodeCount - 1); i++) {
+        for (int i = 0; i < (length - 1); i++) {
             // pro vsechny uzly pred touto dirou
             int TLG = 0;
             for (int j = 0; j <= i; j++) {
                 // projdi vsechny uzly za dirou
-                for (int k = i + 1; k < nodeCount; k++) {
+                for (int k = i + 1; k < length; k++) {
                     // a existuje-li mezi nimi hrana spocitej je   
                     TLG += edgeTable[permutation[j]][permutation[k]];
                 }
@@ -103,28 +93,34 @@ public:
         }
 
         bool expand = true;
-        for (int i = level; i < nodeCount; i++) {
+        for (int i = level; i < length; i++) {
 
             // permutuj vsechny cisla po indexu
-            for (int j = i + 1; j < nodeCount; j++) {
+            for (int j = i + 1; j < length; j++) {
 
-                int * newPermutation = new int[nodeCount];
+                int * newPermutation = new int[length];
 
-                // okopiruj stavajici permutaci
-                for (int k = 0; k < nodeCount; k++) {
+                // okopiruj stavajici permutaci do nove
+                for (int k = 0; k < length; k++) {
                     newPermutation[k] = permutation[k];
                 }
 
-                // vytvor novou permutaci
+                /* vytvor novou permutaci
+                 * urcita cast permutace je fixni (proto i = level)
+                 * pak se prohazuje postupne kazdy prvek za fixni
+                 * casti se zbytkem permutace
+                 */
                 newPermutation[i] = permutation[j];
                 newPermutation[j] = permutation[i];
 
                 // stavy v listech jiz neni potreba expandovat
-                if ((level + 1) == nodeCount) {
+                if ((level + 1) == length) {
                     expand = false;
                 }
+//              TODO comment a implementovat
+//              if(leve+pocetCyklu == length){ expand = false}  
 
-                Permutation * p = new Permutation(newPermutation, nodeCount, level + 1, edgeTable, expand);
+                Permutation * p = new Permutation(newPermutation, length, level + 1, edgeTable, expand);
 
                 mainStack.push(p);
 
@@ -140,7 +136,7 @@ public:
     void toString() {
         cout << " node  | ";
 
-        for (int i = 0; i < nodeCount; i++) {
+        for (int i = 0; i < length; i++) {
             cout << permutation[i] << " | ";
         }
         cout << "level: " << level << " ";
@@ -163,19 +159,19 @@ int main(int argc, char** argv) {
     // Prvni radek je pocet uzlu 
     string line;
     getline(file, line);
-    int nodeCount = atoi(line.c_str());
+    int length = atoi(line.c_str());
 
     double degree = 0; 
 
     // Zbytek souboru po radkach prevest do int[][] pole
-    int ** edgeTable = new int * [nodeCount];
+    int ** edgeTable = new int * [length];
     int edge = 0; 
-    for (int j = 0; j < nodeCount; j++) {
+    for (int j = 0; j < length; j++) {
         
         int nodeDegree = 0; 
         getline(file, line);
-        edgeTable[j] = new int [nodeCount];
-        for (int i = 0; i < nodeCount; i++) {
+        edgeTable[j] = new int [length];
+        for (int i = 0; i < length; i++) {
             char ch = line.at(i);
             
             edge = atoi(&ch);
@@ -189,6 +185,7 @@ int main(int argc, char** argv) {
         }
     }
     
+//    Prekontrolovat
     // Triviální spodní mez: polovina maximálního stupně grafu (zaokrouhlená nahoru).
     double threshold = ceil( ( degree/2 ) );
 
@@ -198,12 +195,12 @@ int main(int argc, char** argv) {
     stack < Permutation * > mainStack;
 
     // Inicializace pocatecniho stavu
-    int * permutation = new int [nodeCount];
-    for (int i = 0; i < nodeCount; i++) {
+    int * permutation = new int [length];
+    for (int i = 0; i < length; i++) {
         permutation[i] = i;
     }
 
-    Permutation * permutace = new Permutation(permutation, nodeCount, 0, edgeTable, true);
+    Permutation * permutace = new Permutation(permutation, length, 0, edgeTable, true);
     mainStack.push(permutace);
 
     int tlg;
@@ -248,7 +245,7 @@ int main(int argc, char** argv) {
     }
 
     // uklid
-    for (int i = 0; i < nodeCount; i++) {
+    for (int i = 0; i < length; i++) {
         delete [] edgeTable[i];
     }
     delete [] edgeTable;
