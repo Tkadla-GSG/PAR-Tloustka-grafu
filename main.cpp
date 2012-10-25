@@ -6,16 +6,26 @@
  */
 #include "mpi.h"
 #include <cstdlib>
+#include <cstring> 
 #include <iostream> 
 #include <fstream>
 #include <stack>
 #include <string>
 #include <math.h>
 #include <limits>
+#include <stdio.h>
 
 using namespace std;
 
 #define DEBUG 1
+
+#define JOB_REQUEST     0
+#define HAS_JOB         1
+#define NO_JOB          2
+#define TOKEN           3
+#define FINISH          4
+
+double threshold = 0;
 
 /**
  * Trida fakticky predstavujici uzel vyhledavaciho stromu
@@ -82,6 +92,14 @@ public:
         return maxTLG;
     }
 
+    int * getPermutation() {
+        return permutation;
+    }
+
+    int getLevel() {
+        return level;
+    }
+
     /**
      * Naplni hlavni stack potomky tohoto stavu
      * @return 
@@ -145,6 +163,47 @@ public:
     }
 };
 
+/**
+ * Zpracovava obsah zasobniku
+ * Vypocitava a expanduje stavy
+ * @param minTLG
+ * @param edgeTable
+ * @param mainStack
+ * @return 
+ */
+int doWork(int minTLG, int ** edgeTable, stack < Permutation * > & mainStack) {
+
+    int tlg;
+    Permutation * state;
+    while (!mainStack.empty()) {
+
+        if (DEBUG) {
+            cout << "stack size " << mainStack.size() << endl;
+        }
+        state = mainStack.top();
+        mainStack.pop();
+
+        tlg = state->getTLG();
+
+        if (tlg < minTLG) {
+            minTLG = tlg;
+        }
+
+        // Dosazena spodni mez, konec algoritmu. Vysledek je jiz ulozen v minTLG.
+        if (minTLG <= threshold) {
+            break;
+        }
+
+        // expanze do hlavniho zasobniku
+        state->getChildren(mainStack);
+
+        //stav uz neni a nebude potreba 
+        delete state;
+    }
+
+    return minTLG;
+}
+
 int main(int argc, char** argv) {
 
     // Nahrani souboru 
@@ -186,18 +245,21 @@ int main(int argc, char** argv) {
     }
 
     // Triviální spodní mez: polovina maximálního stupně grafu (zaokrouhlená nahoru).
-    double threshold = ceil((degree / 2));
+    threshold = ceil((degree / 2));
 
     // Vysledek ( nekonecno, nebo nejblizsi nejvetsi vec )
-    int minTLG = numeric_limits<int>::max();
+    double minTLG = numeric_limits<int>::max();
 
     // Stavovy zasobnik
     stack < Permutation * > mainStack;
 
     //init MPI
     MPI_Init(&argc, &argv);
-    int rank;
-    int p;
+    int rank = 0;
+    int p = 0;
+    int tag = 1;
+    MPI_Status status;
+    char message[100];
 
     //rank beziciho procesu
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
@@ -217,33 +279,41 @@ int main(int argc, char** argv) {
         Permutation * permutace = new Permutation(permutation, length, 0, edgeTable, true);
         mainStack.push(permutace);
 
-        int tlg;
-        Permutation * state;
-        while (!mainStack.empty()) {
+        //nageneruj potomky, ktere budou rozeslany slave procesum
+        Permutation * parent = NULL;
+        while (mainStack.size() < p) {
+            int size = mainStack.size();
+            parent = mainStack.top();
+            parent->getChildren(mainStack);
 
-            if (DEBUG) {
-                cout << "stack size " << mainStack.size() << endl;
-            }
-            state = mainStack.top();
-            mainStack.pop();
-
-            tlg = state->getTLG();
-
-            if (tlg < minTLG) {
-                minTLG = tlg;
-            }
-
-            // Dosazena spodni mez, konec algoritmu. Vysledek je jiz ulozen v minTLG.
-            if (minTLG <= threshold) {
+            if (size == mainStack.size()) {
+                //stav nenageneroval zadne potomky, pravdepodobne doslo k chybe, nebo je zadany problem smesne maly (tj. nepodarilo se nagenerovat ani tolik stavu jako procesoru)
                 break;
             }
-
-            // expanze do hlavniho zasobniku
-            state->getChildren(mainStack);
-
-            //stav uz neni a nebude potreba 
-            delete state;
         }
+
+        //mohlo by se stat, ze ve stacku je mene stavu, nez procesoru k dispozici
+        int min = mainStack.size();
+        if (p < min) {
+            min = p;
+
+            //TODO vsem ostatnim procesorum odesli no_work nebo token signal, presneji odesli cokoliv krome HAS_JOB
+        }
+
+        //odesli slave procesum jejich uvodni stavy
+        Permutation * toSend = NULL;
+        for (int target = 1; target < min; target++) {
+            toSend = mainStack.top();
+            mainStack.pop();
+            
+            int level = toSend->getLevel(); 
+            MPI_Send(toSend->getPermutation(), length, MPI_INT, target, HAS_JOB, MPI_COMM_WORLD);
+            MPI_Send(&level, 1, MPI_INT, target, HAS_JOB, MPI_COMM_WORLD);
+
+            delete toSend;
+        }
+
+        minTLG = doWork(minTLG, edgeTable, mainStack);
 
         if (DEBUG) {
             cout << " ============= " << endl;
@@ -252,6 +322,30 @@ int main(int argc, char** argv) {
 
     } else {
         //SLAVE
+
+        int * receivedPerm = new int[length];
+        int receivedLevel = 0;
+        Permutation * first = NULL;
+        MPI_Recv(receivedPerm, length, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
+
+        switch (status.MPI_TAG) {
+            case HAS_JOB:
+
+                MPI_Recv(&receivedLevel, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
+
+                first = new Permutation(receivedPerm, length, receivedLevel, edgeTable, true);
+                mainStack.push(first);
+
+                minTLG = doWork(minTLG, edgeTable, mainStack);
+
+                break;
+                
+            default:
+                //vsechny ostatni TAGy jsou nepripustne a zpusobuji ukonceni procesu     
+                break;
+        }
+
+        cout << " process " << rank << " computed " << minTLG << endl;
     }
 
     //MPI end
@@ -274,5 +368,4 @@ int main(int argc, char** argv) {
 
     return 0;
 }
-
 
