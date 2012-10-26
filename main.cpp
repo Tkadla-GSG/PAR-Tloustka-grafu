@@ -25,6 +25,8 @@ using namespace std;
 #define TOKEN           3
 #define FINISH          4
 
+#define CHECK_MSG        100
+
 double threshold = 0;
 
 /**
@@ -165,21 +167,138 @@ public:
 
 /**
  * Zpracovava obsah zasobniku
- * Vypocitava a expanduje stavy
+ * Vypocitava a expanduje stavy 
+ * @param p
  * @param minTLG
  * @param edgeTable
  * @param mainStack
  * @return 
  */
-int doWork(int minTLG, int ** edgeTable, stack < Permutation * > & mainStack) {
+int doWork(int p, int length, int minTLG, int ** edgeTable, stack < Permutation * > & mainStack) {
+
+    int * receivedPerm = new int[length];
+    int receivedLevel = 0;
+    MPI_Status status;
 
     int tlg;
+    int flag;
+    int citac = 0;
+    int process_to_ask = 0; // cislo procesu, ktereho se budu ptat na potencialni praci
+    int asked_for_job = 0; // kolikrat uz jsem pozadal o praci v jednom kuse
     Permutation * state;
-    while (!mainStack.empty()) {
+    while (true) {
+        citac++;
 
+        if (mainStack.empty()) {
+            //trigger message check
+            // zeptej se vsech procesu na praci a pockej si na jejich odpoved
+            for (int i = 0; i < p; i++) {
+                cout << "proces si vyzadal novou praci" << endl;
+                int * void_pointer = NULL; 
+                MPI_Send(NULL, 1, MPI_BYTE, process_to_ask, JOB_REQUEST, MPI_COMM_WORLD);
+                process_to_ask = process_to_ask++ % p;
+            }
+
+            for (int i = 0; i < p; i++) {
+                MPI_Iprobe(MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &flag, &status);
+                if (flag) {
+
+                    switch (status.MPI_TAG) {
+                        case HAS_JOB:
+                            MPI_Recv(receivedPerm, length, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
+                            MPI_Recv(&receivedLevel, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
+
+                            state = new Permutation(receivedPerm, length, receivedLevel, edgeTable, true);
+                            mainStack.push(state);
+                            break;
+                        default:
+                            // zadny dalsi TAG me nezajima
+                            // TODO no neni pravda
+                            continue;
+                    }
+                }
+            }
+        }
+
+        if ((citac % CHECK_MSG) == 0) {
+            MPI_Iprobe(MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &flag, &status);
+            if (flag) {
+
+                switch (status.MPI_TAG) {
+                    case HAS_JOB:
+                        // prisel rozdeleny zasobnik, prijmout
+                        // deserializovat a spustit vypocet
+                        cout << "process prijal novou praci" << endl;
+                        asked_for_job = 0; // reset poctu dotazovani na novou praci, protoze jsem ji nakonec obdrzel
+
+                        MPI_Recv(receivedPerm, length, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
+                        MPI_Recv(&receivedLevel, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
+
+                        state = new Permutation(receivedPerm, length, receivedLevel, edgeTable, true);
+                        mainStack.push(state);
+
+                        break;
+                    case NO_JOB:
+                        // odmitnuti zadosti o praci
+                        // zkusit jiny proces
+                        // a nebo se prepnout do pasivniho stavu a cekat na token
+                        cout << "process odesilat NO_JOB" << endl;
+                        MPI_Send(NULL, length, MPI_INT, process_to_ask, JOB_REQUEST, MPI_COMM_WORLD);
+                        process_to_ask = process_to_ask++ % p;
+                        asked_for_job++;
+
+                        if (asked_for_job == p) {
+                            //uz jsem se zeptal vsech procesu a praci jsem nedostal
+
+                            //TODO todo 
+                        }
+
+                        break;
+                    case JOB_REQUEST:
+                        // zadost o praci, prijmout a dopovedet
+                        // zaslat rozdeleny zasobnik a nebo odmitnuti MSG_WORK_NOWORK
+
+                        if (mainStack.size() > 1) { //mam dost prace pro dokonceni cyklu a zaroven 
+                            //TODO tohle je trochu vachrlate, protoze ten 1 stav se potencialne muze expandovat do vice stavu
+                            cout << "process odesilat JOB" << endl;
+                            Permutation * toSend = mainStack.top();
+                            mainStack.pop();
+
+                            int level = toSend->getLevel();
+                            MPI_Send(toSend->getPermutation(), length, MPI_INT, status.MPI_SOURCE, HAS_JOB, MPI_COMM_WORLD);
+                            MPI_Send(&level, 1, MPI_INT, status.MPI_SOURCE, HAS_JOB, MPI_COMM_WORLD);
+
+                            delete toSend;
+                        } else {
+                            //Zprava sice neposila zadana data, ale mela by byt spravne dlouha (length)
+                            cout << "process odesilat NO_JOB 2" << endl;
+                            MPI_Send(NULL, length, MPI_INT, status.MPI_SOURCE, NO_JOB, MPI_COMM_WORLD);
+                        }
+
+                        break;
+                    case TOKEN:
+                        //ukoncovaci token, prijmout a nasledne preposlat
+                        // - bily nebo cerny v zavislosti na stavu procesu
+                        break;
+                    case FINISH:
+                        //konec vypoctu - proces 0 pomoci tokenu zjistil, ze jiz nikdo nema praci
+                        //a rozeslal zpravu ukoncujici vypocet
+                        //mam-li reseni, odeslu procesu 0
+                        //nasledne ukoncim spoji cinnost
+                        //jestlize se meri cas, nezapomen zavolat koncovou barieru MPI_Barrier (MPI_COMM_WORLD)
+                        break;
+                }
+            }
+        }
         if (DEBUG) {
             cout << "stack size " << mainStack.size() << endl;
         }
+
+        // zasobnik je prazdny, ani dotaz na dalsi praci neprinesl nic do stacku
+        if (mainStack.empty()) {
+            break;
+        }
+
         state = mainStack.top();
         mainStack.pop();
 
@@ -257,9 +376,6 @@ int main(int argc, char** argv) {
     MPI_Init(&argc, &argv);
     int rank = 0;
     int p = 0;
-    int tag = 1;
-    MPI_Status status;
-    char message[100];
 
     //rank beziciho procesu
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
@@ -305,15 +421,17 @@ int main(int argc, char** argv) {
         for (int target = 1; target < min; target++) {
             toSend = mainStack.top();
             mainStack.pop();
-            
-            int level = toSend->getLevel(); 
+
+            int level = toSend->getLevel();
             MPI_Send(toSend->getPermutation(), length, MPI_INT, target, HAS_JOB, MPI_COMM_WORLD);
             MPI_Send(&level, 1, MPI_INT, target, HAS_JOB, MPI_COMM_WORLD);
 
             delete toSend;
         }
 
-        minTLG = doWork(minTLG, edgeTable, mainStack);
+        minTLG = doWork(p, length, minTLG, edgeTable, mainStack);
+
+        //TODO prijmout vysledky vsech ostatnich procesu
 
         if (DEBUG) {
             cout << " ============= " << endl;
@@ -323,28 +441,21 @@ int main(int argc, char** argv) {
     } else {
         //SLAVE
 
+        //prvni zacatecni dotaz na job musi by blokujici, jinak by process nemel na cem pracovat 
+        //TODO tohle by mohlo byt odstraneno, pokud se vyladi system zpetneho dotazovani na volnou praci 
         int * receivedPerm = new int[length];
         int receivedLevel = 0;
-        Permutation * first = NULL;
+        MPI_Status status;
+
         MPI_Recv(receivedPerm, length, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
+        MPI_Recv(&receivedLevel, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
 
-        switch (status.MPI_TAG) {
-            case HAS_JOB:
+        Permutation * state = new Permutation(receivedPerm, length, receivedLevel, edgeTable, true);
+        mainStack.push(state);
 
-                MPI_Recv(&receivedLevel, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
+        minTLG = doWork(p, length, minTLG, edgeTable, mainStack);
 
-                first = new Permutation(receivedPerm, length, receivedLevel, edgeTable, true);
-                mainStack.push(first);
-
-                minTLG = doWork(minTLG, edgeTable, mainStack);
-
-                break;
-                
-            default:
-                //vsechny ostatni TAGy jsou nepripustne a zpusobuji ukonceni procesu     
-                break;
-        }
-
+        // TODO odesli vysledek
         cout << " process " << rank << " computed " << minTLG << endl;
     }
 
