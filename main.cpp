@@ -183,7 +183,7 @@ int doWork(int p, int length, int minTLG, int ** edgeTable, stack < Permutation 
     int tlg;
     int flag;
     int citac = 0;
-    int process_to_ask = 0; // cislo procesu, ktereho se budu ptat na potencialni praci
+    int process_to_ask = 2; // cislo procesu, ktereho se budu ptat na potencialni praci
     int asked_for_job = 0; // kolikrat uz jsem pozadal o praci v jednom kuse
     Permutation * state;
     while (true) {
@@ -194,9 +194,11 @@ int doWork(int p, int length, int minTLG, int ** edgeTable, stack < Permutation 
             // zeptej se vsech procesu na praci a pockej si na jejich odpoved
             for (int i = 0; i < p; i++) {
                 cout << "proces si vyzadal novou praci" << endl;
-                int * void_pointer = NULL; 
-                MPI_Send(NULL, 1, MPI_BYTE, process_to_ask, JOB_REQUEST, MPI_COMM_WORLD);
-                process_to_ask = process_to_ask++ % p;
+                Permutation * toSend = new Permutation(new int[length], length, 0, edgeTable, false);
+                 MPI_Send(toSend->getPermutation(), length, MPI_INT, process_to_ask, HAS_JOB, MPI_COMM_WORLD);
+                //MPI_Send(&toSend, length, MPI_INT, process_to_ask, JOB_REQUEST, MPI_COMM_WORLD);
+                cout  << "sended" << endl;
+                //process_to_ask = process_to_ask++ % p;
             }
 
             for (int i = 0; i < p; i++) {
@@ -403,6 +405,7 @@ int main(int argc, char** argv) {
             parent->getChildren(mainStack);
 
             if (size == mainStack.size()) {
+                //TODO mizerne misto, ve stacku mohou byt jinne expandovatelne stavy
                 //stav nenageneroval zadne potomky, pravdepodobne doslo k chybe, nebo je zadany problem smesne maly (tj. nepodarilo se nagenerovat ani tolik stavu jako procesoru)
                 break;
             }
