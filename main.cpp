@@ -192,6 +192,8 @@ int doWork(int p, int length, int minTLG, int ** edgeTable, stack < Permutation 
         if (mainStack.empty()) {
             //trigger message check
             // zeptej se vsech procesu na praci a pockej si na jejich odpoved
+//            Kdyz dostanu vic kusu prace, zbyle kusy zahodim
+//            Zeptat jen jednoho
             for (int i = 0; i < p; i++) {
                 cout << "proces si vyzadal novou praci" << endl;
                 Permutation * toSend = new Permutation(new int[length], length, 0, edgeTable, false);
@@ -201,7 +203,11 @@ int doWork(int p, int length, int minTLG, int ** edgeTable, stack < Permutation 
                 //process_to_ask = process_to_ask++ % p;
             }
 
+//            Tady by to chtelo uspavat, aby to nezatezovalo?
+//            Zbytecny SMAZAT
             for (int i = 0; i < p; i++) {
+//                Zde muze prijit i jina zprava nez poslana prace
+//                Tudiz soucasne musim kontrolovat, jestli prisla jina yprava
                 MPI_Iprobe(MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &flag, &status);
                 if (flag) {
 
@@ -227,6 +233,7 @@ int doWork(int p, int length, int minTLG, int ** edgeTable, stack < Permutation 
             if (flag) {
 
                 switch (status.MPI_TAG) {
+//                    TENTO STAV UZ BY NASTAT NEMEL
                     case HAS_JOB:
                         // prisel rozdeleny zasobnik, prijmout
                         // deserializovat a spustit vypocet
@@ -240,6 +247,7 @@ int doWork(int p, int length, int minTLG, int ** edgeTable, stack < Permutation 
                         mainStack.push(state);
 
                         break;
+//                        TAKY BYCH NEMEL DOSTAT
                     case NO_JOB:
                         // odmitnuti zadosti o praci
                         // zkusit jiny proces
@@ -256,6 +264,8 @@ int doWork(int p, int length, int minTLG, int ** edgeTable, stack < Permutation 
                         }
 
                         break;
+//                        ZDE BY BYLO DOBRE UMET ODHADNOUT KOLIK JESTE MAM STAVOVEHO PROSTORU
+//                        ABYCHOM MOHLI ODMITAT
                     case JOB_REQUEST:
                         // zadost o praci, prijmout a dopovedet
                         // zaslat rozdeleny zasobnik a nebo odmitnuti MSG_WORK_NOWORK
@@ -278,10 +288,14 @@ int doWork(int p, int length, int minTLG, int ** edgeTable, stack < Permutation 
                         }
 
                         break;
+//                        JAKMILE JDE PRACE PRO PROCESOR PROTI CYKLU PROCESORU
+//                        MUSIM SPUSTIT NOVOU TOKENOVOU SEKVENCI
                     case TOKEN:
                         //ukoncovaci token, prijmout a nasledne preposlat
                         // - bily nebo cerny v zavislosti na stavu procesu
                         break;
+//                        MUSIM JAKO SLAVE POSLAT MASTRU VYSLEDEK HLEDALNI MINIMALNI TLOUSTKY
+//                        POKUD SE UKONCUJE
                     case FINISH:
                         //konec vypoctu - proces 0 pomoci tokenu zjistil, ze jiz nikdo nema praci
                         //a rozeslal zpravu ukoncujici vypocet
@@ -404,6 +418,7 @@ int main(int argc, char** argv) {
             parent = mainStack.top();
             parent->getChildren(mainStack);
 
+//            Mezitim si nageneruju childy?
             if (size == mainStack.size()) {
                 //TODO mizerne misto, ve stacku mohou byt jinne expandovatelne stavy
                 //stav nenageneroval zadne potomky, pravdepodobne doslo k chybe, nebo je zadany problem smesne maly (tj. nepodarilo se nagenerovat ani tolik stavu jako procesoru)
@@ -411,17 +426,9 @@ int main(int argc, char** argv) {
             }
         }
 
-        //mohlo by se stat, ze ve stacku je mene stavu, nez procesoru k dispozici
-        int min = mainStack.size();
-        if (p < min) {
-            min = p;
-
-            //TODO vsem ostatnim procesorum odesli no_work nebo token signal, presneji odesli cokoliv krome HAS_JOB
-        }
-
         //odesli slave procesum jejich uvodni stavy
         Permutation * toSend = NULL;
-        for (int target = 1; target < min; target++) {
+        for (int target = 1; target < mainStack.size(); target++) {
             toSend = mainStack.top();
             mainStack.pop();
 
@@ -450,6 +457,7 @@ int main(int argc, char** argv) {
         int receivedLevel = 0;
         MPI_Status status;
 
+//        POZOR zpravy se mohou prohodit = lepsi by bylo poslat oboje najednou
         MPI_Recv(receivedPerm, length, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
         MPI_Recv(&receivedLevel, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
 
