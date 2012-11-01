@@ -5,6 +5,7 @@
  * Created on 19. září 2012, 13:36
  */
 #include "mpi.h"
+#include <windows.h>
 #include <cstdlib>
 #include <cstring> 
 #include <iostream> 
@@ -19,13 +20,16 @@ using namespace std;
 
 #define DEBUG 1
 
-#define JOB_REQUEST     0
-#define HAS_JOB         1
-#define NO_JOB          2
-#define TOKEN           3
-#define FINISH          4
+#define JOB_REQUEST     1000
+#define HAS_JOB         1001
+#define NO_JOB          1002
+#define TOKEN           1003
+#define FINISH          1004
 
-#define CHECK_MSG        100
+#define CHECK_MSG       100
+#define SLEEP           100
+
+#define JOB_THRESHOLD   3
 
 double threshold = 0;
 
@@ -183,6 +187,21 @@ int * modifyArray(int * source, int s_length, int d_length) {
 }
 
 /**
+ * Helper pro odesilani prace
+ * @param toSend - pointer na odesilanou permutaci
+ * @param length - delka pole permutace
+ * @param target - cislo ciloveho procesu 
+ */
+void sendJob(Permutation * toSend, int length, int target) {
+    cout << "sending job to " << target << endl;
+    int * data = modifyArray(toSend->getPermutation(), length, length + 1);
+    data[length] = toSend->getLevel();
+    MPI_Send(data, length + 1, MPI_INT, target, HAS_JOB, MPI_COMM_WORLD);
+
+    delete toSend;
+}
+
+/**
  * Zpracovava obsah zasobniku
  * Vypocitava a expanduje stavy 
  * @param p
@@ -199,26 +218,60 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
     int tlg;
     int flag;
     int citac = 0;
+    bool suspended = false;
     int process_to_ask = 2; // cislo procesu, ktereho se budu ptat na potencialni praci
     int asked_for_job = 0; // kolikrat uz jsem pozadal o praci v jednom kuse
     Permutation * state;
     while (true) {
         citac++;
 
-        if (mainStack.empty()) {
-            // trigger message check
-            // zeptej se vna praci a pockej si na odpoved
-            cout << "procesu " << rank << " dosla prace " << endl;
-            do {
-                process_to_ask = process_to_ask++ % p;
-            } while (process_to_ask != rank);
+        if (!suspended) {
+            if (mainStack.empty()) {
+                // zeptej se na praci
+                cout << "procesu " << rank << " dosla prace " << endl;
+                do {
+                    process_to_ask = (process_to_ask + 1) % p;
+                } while (process_to_ask == rank);
 
-            cout << "proces si vyzadal novou praci od " << process_to_ask << endl;
-            MPI_Send(new int[1], 1, MPI_INT, process_to_ask, HAS_JOB, MPI_COMM_WORLD);
-            cout << "sended" << endl;
+                cout << "proces si vyzadal novou praci od " << process_to_ask << endl;
+                MPI_Send(new int[1], 1, MPI_INT, process_to_ask, JOB_REQUEST, MPI_COMM_WORLD);
+                suspended = true;
 
-            // Tady by to chtelo uspavat, aby to nezatezovalo?
+            } else {
 
+                //ve stacku opravdu neco je a muzu provadet vypocty
+                if (DEBUG) {
+                    cout << "stack size procesu " << rank << " | " << mainStack.size() << endl;
+                }
+
+                state = mainStack.top();
+                mainStack.pop();
+
+                tlg = state->getTLG();
+
+                if (tlg < minTLG) {
+                    minTLG = tlg;
+                }
+
+                // Dosazena spodni mez, konec algoritmu. Vysledek je jiz ulozen v minTLG.
+                if (minTLG <= threshold) {
+                    break;
+                }
+
+                // expanze do hlavniho zasobniku
+                state->getChildren(mainStack);
+
+                //stav uz neni a nebude potreba 
+                delete state;
+
+            }
+        } else {
+            //stack empty, sleep thread for a while to conserve system resources
+            cout << "suspending process " << rank << " for " << SLEEP << endl;
+            Sleep(SLEEP);
+
+            //check messages after suspention
+            citac = CHECK_MSG;
         }
 
         if ((citac % CHECK_MSG) == 0) {
@@ -238,20 +291,26 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
                         state = new Permutation(modifyArray(data, length + 1, length), length, data[length], edgeTable, true);
                         mainStack.push(state);
 
+                        suspended = false;
+
                         break;
                         //                        TAKY BYCH NEMEL DOSTAT
                     case NO_JOB:
                         // odmitnuti zadosti o praci
                         // zkusit jiny proces
                         // a nebo se prepnout do pasivniho stavu a cekat na token
-                        cout << "process odesilat NO_JOB" << endl;
+                        cout << "process " << rank << " obdrzel NO_JOB" << endl;
+
+                        do {
+                            process_to_ask = (process_to_ask + 1) % p;
+                        } while (process_to_ask == rank);
+
                         MPI_Send(new int[1], 1, MPI_INT, process_to_ask, JOB_REQUEST, MPI_COMM_WORLD);
-                        process_to_ask = process_to_ask++ % p;
                         asked_for_job++;
 
                         if (asked_for_job == p) {
                             //uz jsem se zeptal vsech procesu a praci jsem nedostal
-
+                            suspended = true; 
                         }
 
                         break;
@@ -260,22 +319,40 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
                     case JOB_REQUEST:
                         // zadost o praci, prijmout a dopovedet
                         // zaslat rozdeleny zasobnik a nebo odmitnuti MSG_WORK_NOWORK
+                        cout << "process " << rank << " prijal JOB_REQUEST" << endl;
+                        if (mainStack.size() > 1) { //mam dost prace pro dokonceni cyklu a zaroven odeslani nejake casti dat 
 
-                        if (mainStack.size() > 1) { //mam dost prace pro dokonceni cyklu a zaroven 
-                            //TODO tohle je trochu vachrlate, protoze ten 1 stav se potencialne muze expandovat do vice stavu
-                            cout << "process odesilat JOB" << endl;
                             Permutation * toSend = mainStack.top();
-                            mainStack.pop();
 
-                            int level = toSend->getLevel();
-                            MPI_Send(toSend->getPermutation(), length, MPI_INT, status.MPI_SOURCE, HAS_JOB, MPI_COMM_WORLD);
-                            MPI_Send(&level, 1, MPI_INT, status.MPI_SOURCE, HAS_JOB, MPI_COMM_WORLD);
+                            //TODO vyladit pomer mezi 10 a JOB_THRESHOLD
+                            if (mainStack.size() < 10) {
+                                //prace v zasobniku je malo a nevyplati se ji preposilat
 
-                            delete toSend;
+                                if (length - toSend->getLevel() > JOB_THRESHOLD) {
+                                    // praci je jeste mozne expandovat
+                                    toSend->getChildren(mainStack);
+
+                                    //v zasobniku je nyni dost prace na jeji prerozdeleni
+                                    mainStack.pop();
+                                    cout << "process " << rank << " rozdelil zasobnik " << endl;
+                                    sendJob(toSend, length, status.MPI_SOURCE);
+
+                                } else {
+                                    // prace v zasobniku se uz nevyplati expandovat
+                                    cout << "process " << rank << " nema uz skoro praci a vraci NO_JOB procesu " << status.MPI_SOURCE << endl;
+                                    MPI_Send(new int[1], 1, MPI_INT, status.MPI_SOURCE, NO_JOB, MPI_COMM_WORLD);
+                                }
+
+                            } else {
+                                //v zasobniku je dost prace na jeji prerozdeleni 
+                                mainStack.pop();
+                                sendJob(toSend, length, status.MPI_SOURCE);
+
+                            }
+
                         } else {
-                            //Zprava sice neposila zadana data, ale mela by byt spravne dlouha (length)
-                            cout << "process odesilat NO_JOB 2" << endl;
-                            MPI_Send(NULL, length, MPI_INT, status.MPI_SOURCE, NO_JOB, MPI_COMM_WORLD);
+                            cout << "process " << rank << " nema uz zadnou praci a vraci NO_JOB procesu " << status.MPI_SOURCE << endl;
+                            MPI_Send(new int[1], 1, MPI_INT, status.MPI_SOURCE, NO_JOB, MPI_COMM_WORLD);
                         }
 
                         break;
@@ -285,8 +362,8 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
                         //ukoncovaci token, prijmout a nasledne preposlat
                         // - bily nebo cerny v zavislosti na stavu procesu
                         break;
-                        //                        MUSIM JAKO SLAVE POSLAT MASTRU VYSLEDEK HLEDALNI MINIMALNI TLOUSTKY
-                        //                        POKUD SE UKONCUJE
+                        //MUSIM JAKO SLAVE POSLAT MASTRU VYSLEDEK HLEDALNI MINIMALNI TLOUSTKY
+                        //POKUD SE UKONCUJE
                     case FINISH:
                         //konec vypoctu - proces 0 pomoci tokenu zjistil, ze jiz nikdo nema praci
                         //a rozeslal zpravu ukoncujici vypocet
@@ -297,29 +374,6 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
                 }
             }
         }
-        if (DEBUG) {
-            cout << "stack size procesu " << rank << " | " << mainStack.size() << endl;
-        }
-
-        state = mainStack.top();
-        mainStack.pop();
-
-        tlg = state->getTLG();
-
-        if (tlg < minTLG) {
-            minTLG = tlg;
-        }
-
-        // Dosazena spodni mez, konec algoritmu. Vysledek je jiz ulozen v minTLG.
-        if (minTLG <= threshold) {
-            break;
-        }
-
-        // expanze do hlavniho zasobniku
-        state->getChildren(mainStack);
-
-        //stav uz neni a nebude potreba 
-        delete state;
     }
 
     return minTLG;
@@ -419,11 +473,8 @@ int main(int argc, char** argv) {
             toSend = mainStack.top();
             mainStack.pop();
 
-            int * data = modifyArray(toSend->getPermutation(), length, length + 1);
-            data[length] = toSend->getLevel();
-            MPI_Send(data, length + 1, MPI_INT, target, HAS_JOB, MPI_COMM_WORLD);
+            sendJob(toSend, length, target);
 
-            delete toSend;
         }
 
         minTLG = doWork(rank, p, length, minTLG, edgeTable, mainStack);
@@ -432,10 +483,10 @@ int main(int argc, char** argv) {
 
         cout << "waiting for other process to send me their results" << endl;
 
-        int result = 0;
+       /* int result = 0;
         for (int i = 0; i < p; i++) {
             MPI_Recv(&result, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
-        }
+        }*/
 
         if (DEBUG) {
             cout << " ============= " << endl;
