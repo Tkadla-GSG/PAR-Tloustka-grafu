@@ -15,6 +15,7 @@
 #include <math.h>
 #include <limits>
 #include <stdio.h>
+#include <sstream>
 
 using namespace std;
 
@@ -32,6 +33,8 @@ using namespace std;
 #define JOB_THRESHOLD   3
 
 double threshold = 0;
+ofstream logfile;
+
 
 /**
  * Trida fakticky predstavujici uzel vyhledavaciho stromu
@@ -439,6 +442,24 @@ int main(int argc, char** argv) {
 
     //pocet procesoru 
     MPI_Comm_size(MPI_COMM_WORLD, &p);
+
+    //    Sestaveni nazvu LOG souboru pro jednotlive procesory
+    stringstream logName;
+    logName << ".\\logs\\procesor" << rank << ".log";
+
+    /* Nechapu plne "jemne" finesy C++ ale logfile.open(logName.str().c_str())
+     * proste nefunguje. Zrejme to bude z duvodu pointeru.
+     */
+    string logFileName = logName.str();
+
+    /* PRETYPOVANI: Pro otevreni souboru je nutny format const char *
+     * ios_base::app je zde proto, aby se novy log pridal na konec souboru
+     * a neprepsal stavajici logy
+     */
+    logfile.open(logFileName.c_str(), ios_base::app);
+    logfile << "\n\n------------NEW SESSION------------\n\n";
+
+    logfile.close();
 
     if (rank == 0) {
         //MASTER
