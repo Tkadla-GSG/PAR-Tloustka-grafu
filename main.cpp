@@ -16,6 +16,7 @@
 #include <limits>
 #include <stdio.h>
 #include <sstream>
+#include <ctime>
 
 using namespace std;
 
@@ -33,8 +34,7 @@ using namespace std;
 #define JOB_THRESHOLD   3
 
 double threshold = 0;
-ofstream logfile;
-
+ofstream logFile;
 
 /**
  * Trida fakticky predstavujici uzel vyhledavaciho stromu
@@ -161,15 +161,65 @@ public:
     //DEBUG
 
     void toString() {
-        cout << " node  | ";
+        stringstream elements;
+        //        cout << " node  | ";
+        elements << " node  | ";
 
         for (int i = 0; i < length; i++) {
-            cout << permutation[i] << " | ";
+            //            cout << permutation[i] << " | ";
+            elements << permutation[i] << " | ";
         }
-        cout << "level: " << level << " ";
-        cout << "tlg: " << getTLG();
-        cout << endl;
+
+        logString(elements.str());
+        //        cout << "level: " << level << " ";
+        //        cout << "tlg: " << getTLG();
+        //        cout << endl;
+        stringstream summary;
+        summary << "level: " << level << " " << "tlg: " << getTLG();
+        logString(summary.str());
     }
+
+    /* Kopie metody z predka. Bohuzel se nemuzu na predka odkazat
+     * jako je tomu mozne v Jave
+     */
+    void logString(string stringToLog) {
+        // Current date/time based on current system
+        time_t now = time(0);
+        // Convert now to tm struct for local timezone
+        tm* localtm = localtime(&now);
+        /*    get actual time and save it to the
+         * variable (returns string with \n at the end)
+         */
+        string timestamp = asctime(localtm);
+        //    remove last "new line" char
+        timestamp.erase(timestamp.length() - 1);
+        //    Log to the file first timestamp (plus some space) and then string
+        logFile << timestamp << "\t" << stringToLog << endl;
+    };
+};
+
+/**
+ * Using global variable logFile, enables to log any string
+ * into the file, additionaly enriched by timestamp (for easier search)
+ * 
+ * AVAILABLE MODIFY:    Want flexible method to work for your output? Simple!
+ *                      Just exchange variable logFile. For example for cout
+ * 
+ * @param stringToLog   represents string, that will be logged into the file
+ */
+void logString(string stringToLog) {
+    // Current date/time based on current system
+    time_t now = time(0);
+    // Convert now to tm struct for local timezone
+    tm* localtm = localtime(&now);
+    /*    get actual time and save it to the
+     * variable (returns string with \n at the end)
+     */
+    string timestamp = asctime(localtm);
+    //    remove last "new line" char
+    timestamp.erase(timestamp.length() - 1);
+    //    Log to the file first timestamp (plus some space) and then string
+    logFile << timestamp << "\t" << stringToLog << endl;
 };
 
 /**
@@ -196,7 +246,11 @@ int * modifyArray(int * source, int s_length, int d_length) {
  * @param target - cislo ciloveho procesu 
  */
 void sendJob(Permutation * toSend, int length, int target) {
-    cout << "sending job to " << target << endl;
+    //    cout << "sending job to " << target << endl;
+    stringstream temp;
+    temp << "sending job to " << target;
+    logString(temp.str());
+
     int * data = modifyArray(toSend->getPermutation(), length, length + 1);
     data[length] = toSend->getLevel();
     MPI_Send(data, length + 1, MPI_INT, target, HAS_JOB, MPI_COMM_WORLD);
@@ -231,12 +285,22 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
         if (!suspended) {
             if (mainStack.empty()) {
                 // zeptej se na praci
-                cout << "procesu " << rank << " dosla prace " << endl;
+                //                cout << "procesu " << rank << " dosla prace " << endl;
+
+                stringstream temp;
+                temp << "procesu " << rank << " dosla prace ";
+                logString(temp.str());
+
                 do {
                     process_to_ask = (process_to_ask + 1) % p;
                 } while (process_to_ask == rank);
 
-                cout << "proces si vyzadal novou praci od " << process_to_ask << endl;
+                //                cout << "proces si vyzadal novou praci od " << process_to_ask << endl;
+
+                stringstream temp2;
+                temp2 << "proces si vyzadal novou praci od " << process_to_ask;
+                logString(temp2.str());
+
                 MPI_Send(new int[1], 1, MPI_INT, process_to_ask, JOB_REQUEST, MPI_COMM_WORLD);
                 suspended = true;
 
@@ -244,7 +308,11 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
 
                 //ve stacku opravdu neco je a muzu provadet vypocty
                 if (DEBUG) {
-                    cout << "stack size procesu " << rank << " | " << mainStack.size() << endl;
+                    //                    cout << "stack size procesu " << rank << " | " << mainStack.size() << endl;
+
+                    stringstream temp;
+                    temp << "stack size procesu " << rank << " | " << mainStack.size();
+                    logString(temp.str());
                 }
 
                 state = mainStack.top();
@@ -270,7 +338,12 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
             }
         } else {
             //stack empty, sleep thread for a while to conserve system resources
-            cout << "suspending process " << rank << " for " << SLEEP << endl;
+            //            cout << "suspending process " << rank << " for " << SLEEP << endl;
+
+            stringstream temp;
+            temp << "suspending process " << rank << " for " << SLEEP;
+            logString(temp.str());
+
             Sleep(SLEEP);
 
             //check messages after suspention
@@ -281,12 +354,17 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
             MPI_Iprobe(MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &flag, &status);
             if (flag) {
 
+//                has to be initialised before switch. Used in logging.
+                stringstream temp6;
+                stringstream temp7;
+                
                 switch (status.MPI_TAG) {
                         //                    TENTO STAV UZ BY NASTAT NEMEL
                     case HAS_JOB:
                         // prisel rozdeleny zasobnik, prijmout
                         // deserializovat a spustit vypocet
-                        cout << "process prijal novou praci" << endl;
+                        //                        cout << "process prijal novou praci" << endl;
+                        logString("process prijal novou praci");
                         asked_for_job = 0; // reset poctu dotazovani na novou praci, protoze jsem ji nakonec obdrzel
 
                         MPI_Recv(data, length + 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
@@ -302,7 +380,10 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
                         // odmitnuti zadosti o praci
                         // zkusit jiny proces
                         // a nebo se prepnout do pasivniho stavu a cekat na token
-                        cout << "process " << rank << " obdrzel NO_JOB" << endl;
+                        //                        cout << "process " << rank << " obdrzel NO_JOB" << endl;
+
+                        temp6 << "process " << rank << " obdrzel NO_JOB";
+                        logString(temp6.str());
 
                         do {
                             process_to_ask = (process_to_ask + 1) % p;
@@ -313,7 +394,7 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
 
                         if (asked_for_job == p) {
                             //uz jsem se zeptal vsech procesu a praci jsem nedostal
-                            suspended = true; 
+                            suspended = true;
                         }
 
                         break;
@@ -322,7 +403,11 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
                     case JOB_REQUEST:
                         // zadost o praci, prijmout a dopovedet
                         // zaslat rozdeleny zasobnik a nebo odmitnuti MSG_WORK_NOWORK
-                        cout << "process " << rank << " prijal JOB_REQUEST" << endl;
+                        //                        cout << "process " << rank << " prijal JOB_REQUEST" << endl;
+
+                        temp7 << "process " << rank << " prijal JOB_REQUEST";
+                        logString(temp7.str());
+
                         if (mainStack.size() > 1) { //mam dost prace pro dokonceni cyklu a zaroven odeslani nejake casti dat 
 
                             Permutation * toSend = mainStack.top();
@@ -337,12 +422,22 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
 
                                     //v zasobniku je nyni dost prace na jeji prerozdeleni
                                     mainStack.pop();
-                                    cout << "process " << rank << " rozdelil zasobnik " << endl;
+                                    //                                    cout << "process " << rank << " rozdelil zasobnik " << endl;
+
+                                    stringstream temp3;
+                                    temp3 << "process " << rank << " rozdelil zasobnik ";
+                                    logString(temp3.str());
+
                                     sendJob(toSend, length, status.MPI_SOURCE);
 
                                 } else {
                                     // prace v zasobniku se uz nevyplati expandovat
                                     cout << "process " << rank << " nema uz skoro praci a vraci NO_JOB procesu " << status.MPI_SOURCE << endl;
+
+                                    stringstream temp4;
+                                    temp4 << "process " << rank << " nema uz skoro praci a vraci NO_JOB procesu " << status.MPI_SOURCE;
+                                    logString(temp4.str());
+
                                     MPI_Send(new int[1], 1, MPI_INT, status.MPI_SOURCE, NO_JOB, MPI_COMM_WORLD);
                                 }
 
@@ -355,6 +450,11 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
 
                         } else {
                             cout << "process " << rank << " nema uz zadnou praci a vraci NO_JOB procesu " << status.MPI_SOURCE << endl;
+
+                            stringstream temp5;
+                            temp5 << "process " << rank << " nema uz zadnou praci a vraci NO_JOB procesu " << status.MPI_SOURCE;
+                            logString(temp5.str());
+
                             MPI_Send(new int[1], 1, MPI_INT, status.MPI_SOURCE, NO_JOB, MPI_COMM_WORLD);
                         }
 
@@ -443,6 +543,7 @@ int main(int argc, char** argv) {
     //pocet procesoru 
     MPI_Comm_size(MPI_COMM_WORLD, &p);
 
+    /*---------------INICIALIZACE LOGOVANI-----------------*/
     //    Sestaveni nazvu LOG souboru pro jednotlive procesory
     stringstream logName;
     logName << ".\\logs\\procesor" << rank << ".log";
@@ -456,10 +557,26 @@ int main(int argc, char** argv) {
      * ios_base::app je zde proto, aby se novy log pridal na konec souboru
      * a neprepsal stavajici logy
      */
-    logfile.open(logFileName.c_str(), ios_base::app);
-    logfile << "\n\n------------NEW SESSION------------\n\n";
+    logFile.open(logFileName.c_str(), ios_base::app);
+    logFile << "\n\n------------NEW SESSION------------\n\n";
 
-    logfile.close();
+    /*---------------INICIALIZACE LOGOVANI-----------------*/
+
+
+    //    -------------------WILL BE REMOVED-------------
+//    logFile.close();
+//    //MPI end
+//    MPI_Finalize();
+//
+//    // uklid
+//    for (int i = 0; i < length; i++) {
+//        delete [] edgeTable[i];
+//    }
+//    delete [] edgeTable;
+//    edgeTable = NULL;
+//
+//    return 0;
+    //    -------------------WILL BE REMOVED-------------
 
     if (rank == 0) {
         //MASTER
@@ -502,16 +619,20 @@ int main(int argc, char** argv) {
 
         //TODO prijmout vysledky vsech ostatnich procesu
 
-        cout << "waiting for other process to send me their results" << endl;
+        //        cout << "waiting for other process to send me their results" << endl;
+        logString("waiting for other process to send me their results");
 
-       /* int result = 0;
-        for (int i = 0; i < p; i++) {
-            MPI_Recv(&result, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
-        }*/
+        /* int result = 0;
+         for (int i = 0; i < p; i++) {
+             MPI_Recv(&result, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
+         }*/
 
         if (DEBUG) {
-            cout << " ============= " << endl;
-            cout << " min TLG: " << minTLG << endl;
+            //            cout << " ============= " << endl;
+            //            cout << " min TLG: " << minTLG << endl;
+
+            logString(" ============= ");
+            logString(" min TLG: ");
         }
 
     } else {
@@ -522,7 +643,10 @@ int main(int argc, char** argv) {
 
         MPI_Recv(data, length + 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
 
-        cout << " process " << rank << " obdrzel praci " << endl;
+        //        cout << " process " << rank << " obdrzel praci " << endl;
+        stringstream temp;
+        temp << " process " << rank << " obdrzel praci ";
+        logString(temp.str());
 
         Permutation * state = new Permutation(modifyArray(data, length, length), length, data[length], edgeTable, true);
         mainStack.push(state);
@@ -530,7 +654,10 @@ int main(int argc, char** argv) {
         minTLG = doWork(rank, p, length, minTLG, edgeTable, mainStack);
 
         // TODO odesli vysledek
-        cout << " process " << rank << " computed " << minTLG << endl;
+        //        cout << " process " << rank << " computed " << minTLG << endl;
+        stringstream temp2;
+        temp2 << " process " << rank << " computed " << minTLG;
+        logString(temp2.str());
     }
 
     //MPI end
