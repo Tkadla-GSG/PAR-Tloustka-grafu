@@ -27,14 +27,31 @@ using namespace std;
 #define NO_JOB          1002
 #define TOKEN           1003
 #define FINISH          1004
+#define RETURN_RESULT   1005
 
 #define CHECK_MSG       100
 #define SLEEP           100
 
 #define JOB_THRESHOLD   3
 
-double threshold = 0;
+// file logger
 ofstream logFile;
+
+double threshold = 0;
+// minimal TLG between results from all processors
+double minimal;
+// takzvany pesek v modifikovanem Dijkstrove algoritmu
+bool whiteToken = true;
+// procesor posila token jen a pouze, kdyz je necinny
+bool shouldSendToken = false;
+// toto je promenna vyhradne pro prvni procesor, aby neustale nevysilal ostatnim procesorum tokeny
+bool waitingForToken = false;
+// pokud ma procesor ukoncit vypocetni sekvenci, nastav na true
+bool exitCycle = false;
+// prvni procesor potrebuje minimalne dve uspesne sekvence bileho peska, aby uzavrel vypocet
+int tokenCycle = 0;
+// vypocet muze uzavrit i procesor, ktery narazi na hranu driv, nez prvni. Musi byt schopny taky schopny uzavrit vypocet
+bool collectResults = false;
 
 /**
  * Trida fakticky predstavujici uzel vyhledavaciho stromu
@@ -270,38 +287,78 @@ void sendJob(Permutation * toSend, int length, int target) {
 int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Permutation * > & mainStack) {
 
     int * data = new int[length + 1];
+    //    pouzivano pro ziskani tokenu. Jednicka jako hodnota znamena bily, nula cerny
+    int * isTokenWhite = new int[1];
     MPI_Status status;
 
     int tlg;
     int flag;
     int citac = 0;
     bool suspended = false;
-    int process_to_ask = 2; // cislo procesu, ktereho se budu ptat na potencialni praci
-    int asked_for_job = 0; // kolikrat uz jsem pozadal o praci v jednom kuse
+    int process_to_ask; // cislo procesu, ktereho se budu ptat na potencialni praci
     Permutation * state;
     while (true) {
         citac++;
 
         if (!suspended) {
+
             if (mainStack.empty()) {
+                if (rank == 0 && !waitingForToken) {
+                    shouldSendToken = true;
+                }
+
+                if (shouldSendToken == true) {
+                    //                    mel na ne pozdeji pouzit delete?
+                    int whtToken [1] = {1};
+                    int blcToken [1] = {0};
+                    stringstream temp9;
+
+                    if (rank == 0) {
+                        logString("procesor 0 je necinny, posilam bileho peska procesoru 1");
+                        MPI_Send(whtToken, 1, MPI_INT, 1, TOKEN, MPI_COMM_WORLD);
+                        waitingForToken = true;
+                    } else {
+                        int tokenTarget = (rank + 1) % p;
+
+                        if (whiteToken == true) {
+                            temp9 << "tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru " << tokenTarget;
+                            logString(temp9.str());
+                            MPI_Send(whtToken, 1, MPI_INT, tokenTarget, TOKEN, MPI_COMM_WORLD);
+                        } else {
+                            logString("tento procesor posilal praci nizsim procesorum, nebo prijal cerneho peska. Posila cerneho peska");
+                            MPI_Send(blcToken, 1, MPI_INT, tokenTarget, TOKEN, MPI_COMM_WORLD);
+                        }
+                        logString("nastavuji peska pro procesor na bilo");
+                        whiteToken = true;
+                    }
+                    shouldSendToken == false;
+                }
+
                 // zeptej se na praci
                 //                cout << "procesu " << rank << " dosla prace " << endl;
 
                 stringstream temp;
-                temp << "procesu " << rank << " dosla prace ";
+                temp << "proces " << rank << " nema praci ";
                 logString(temp.str());
 
-                do {
-                    process_to_ask = (process_to_ask + 1) % p;
-                } while (process_to_ask == rank);
+                //                Tady je neco spatne, vsechny procesory se ptaji na praci prvniho procesoru
 
-                //                cout << "proces si vyzadal novou praci od " << process_to_ask << endl;
+                if (!shouldSendToken) {
 
-                stringstream temp2;
-                temp2 << "proces si vyzadal novou praci od " << process_to_ask;
-                logString(temp2.str());
+                    /* initialize random seed: */
+                    srand(time(NULL));
+                    do {
+                        process_to_ask = rand() % p;
+                    } while (process_to_ask == rank);
 
-                MPI_Send(new int[1], 1, MPI_INT, process_to_ask, JOB_REQUEST, MPI_COMM_WORLD);
+                    //                cout << "proces si vyzadal novou praci od " << process_to_ask << endl;
+
+                    stringstream temp2;
+                    temp2 << "proces si vyzadal novou praci od " << process_to_ask;
+                    logString(temp2.str());
+                    MPI_Send(new int[1], 1, MPI_INT, process_to_ask, JOB_REQUEST, MPI_COMM_WORLD);
+                }
+
                 suspended = true;
 
             } else {
@@ -324,9 +381,11 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
                     minTLG = tlg;
                 }
 
-                // Dosazena spodni mez, konec algoritmu. Vysledek je jiz ulozen v minTLG.
+                //                Dosazena spodni mez, konec algoritmu. Vysledek je jiz ulozen v minTLG.
                 if (minTLG <= threshold) {
-                    break;
+                    logString("NALEZENA SPODNI MEZ!");
+                    exitCycle = true;
+                    collectResults = true;
                 }
 
                 // expanze do hlavniho zasobniku
@@ -354,10 +413,13 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
             MPI_Iprobe(MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &flag, &status);
             if (flag) {
 
-//                has to be initialised before switch. Used in logging.
+                //                has to be initialised before switch. Used in logging.
                 stringstream temp6;
                 stringstream temp7;
-                
+                stringstream temp8;
+                stringstream temp10;
+                stringstream temp11;
+
                 switch (status.MPI_TAG) {
                         //                    TENTO STAV UZ BY NASTAT NEMEL
                     case HAS_JOB:
@@ -365,7 +427,6 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
                         // deserializovat a spustit vypocet
                         //                        cout << "process prijal novou praci" << endl;
                         logString("process prijal novou praci");
-                        asked_for_job = 0; // reset poctu dotazovani na novou praci, protoze jsem ji nakonec obdrzel
 
                         MPI_Recv(data, length + 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
 
@@ -382,20 +443,23 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
                         // a nebo se prepnout do pasivniho stavu a cekat na token
                         //                        cout << "process " << rank << " obdrzel NO_JOB" << endl;
 
-                        temp6 << "process " << rank << " obdrzel NO_JOB";
+                        temp6 << "process " << rank << " obdrzel NO_JOB od " << status.MPI_SOURCE;
                         logString(temp6.str());
 
+                        MPI_Recv(new int[1], 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
+
+                        /* initialize random seed: */
+                        srand(time(NULL));
                         do {
-                            process_to_ask = (process_to_ask + 1) % p;
+                            process_to_ask = rand() % p;
                         } while (process_to_ask == rank);
 
-                        MPI_Send(new int[1], 1, MPI_INT, process_to_ask, JOB_REQUEST, MPI_COMM_WORLD);
-                        asked_for_job++;
+                        temp10 << "proces si vyzadal novou praci od " << process_to_ask;
+                        logString(temp10.str());
 
-                        if (asked_for_job == p) {
-                            //uz jsem se zeptal vsech procesu a praci jsem nedostal
-                            suspended = true;
-                        }
+                        MPI_Send(new int[1], 1, MPI_INT, process_to_ask, JOB_REQUEST, MPI_COMM_WORLD);
+
+                        suspended = true;
 
                         break;
                         //                        ZDE BY BYLO DOBRE UMET ODHADNOUT KOLIK JESTE MAM STAVOVEHO PROSTORU
@@ -407,6 +471,8 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
 
                         temp7 << "process " << rank << " prijal JOB_REQUEST";
                         logString(temp7.str());
+
+                        MPI_Recv(new int[1], 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
 
                         if (mainStack.size() > 1) { //mam dost prace pro dokonceni cyklu a zaroven odeslani nejake casti dat 
 
@@ -430,9 +496,15 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
 
                                     sendJob(toSend, length, status.MPI_SOURCE);
 
+                                    //                                    obarveni peska
+                                    if (status.MPI_SOURCE < rank) {
+                                        logString("tento procesor poslal praci nizsimu procesoru, v budoucnu posle cerneho peska");
+                                        whiteToken = false;
+                                    }
+
                                 } else {
                                     // prace v zasobniku se uz nevyplati expandovat
-                                    cout << "process " << rank << " nema uz skoro praci a vraci NO_JOB procesu " << status.MPI_SOURCE << endl;
+                                    //                                    cout << "process " << rank << " nema uz skoro praci a vraci NO_JOB procesu " << status.MPI_SOURCE << endl;
 
                                     stringstream temp4;
                                     temp4 << "process " << rank << " nema uz skoro praci a vraci NO_JOB procesu " << status.MPI_SOURCE;
@@ -449,7 +521,7 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
                             }
 
                         } else {
-                            cout << "process " << rank << " nema uz zadnou praci a vraci NO_JOB procesu " << status.MPI_SOURCE << endl;
+                            //                            cout << "process " << rank << " nema uz zadnou praci a vraci NO_JOB procesu " << status.MPI_SOURCE << endl;
 
                             stringstream temp5;
                             temp5 << "process " << rank << " nema uz zadnou praci a vraci NO_JOB procesu " << status.MPI_SOURCE;
@@ -464,6 +536,38 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
                     case TOKEN:
                         //ukoncovaci token, prijmout a nasledne preposlat
                         // - bily nebo cerny v zavislosti na stavu procesu
+                        //                        TODO: Uz mam nejake promenne reprezentujici tokeny, musim dodelat sekvence podle slajdu
+
+                        temp8 << "process " << rank << " obdrzel TOKEN";
+                        logString(temp8.str());
+
+                        MPI_Recv(isTokenWhite, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
+
+                        if (isTokenWhite[0] == 1) {
+                            logString("tento procesor prijal bileho peska");
+                        } else {
+                            logString("tento procesor prijal cerneho peska, dal se bude posilat jen cerny pesek");
+                            whiteToken = false;
+                        }
+
+                        if (rank == 0) {
+                            if (isTokenWhite[0] == 1) {
+                                logString("prisel mi bily pesek skrze celou sekvenci.");
+                                tokenCycle++;
+                                if (tokenCycle >= 2) {
+                                    logString("Uz podruhe mi prisel bily pesek. Ukoncuji");
+                                    exitCycle = true;
+                                    collectResults = true;
+                                }
+                            } else {
+                                logString("Prisel mi cerny pesek. Resetuji counter na pesky.");
+                                tokenCycle = 0;
+                            }
+                        }
+
+                        shouldSendToken = true;
+                        suspended = false;
+
                         break;
                         //MUSIM JAKO SLAVE POSLAT MASTRU VYSLEDEK HLEDALNI MINIMALNI TLOUSTKY
                         //POKUD SE UKONCUJE
@@ -473,7 +577,24 @@ int doWork(int rank, int p, int length, int minTLG, int ** edgeTable, stack < Pe
                         //mam-li reseni, odeslu procesu 0
                         //nasledne ukoncim spoji cinnost
                         //jestlize se meri cas, nezapomen zavolat koncovou barieru MPI_Barrier (MPI_COMM_WORLD)
+                        temp11 << "process " << rank << " prijal FINISH";
+                        logString(temp11.str());
+
+                        MPI_Recv(new int[1], 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
+
+                        exitCycle = true;
+                        int * sendResult = new int[1];
+                        sendResult[0] = minTLG;
+
+                        MPI_Send(sendResult, 1, MPI_INT, status.MPI_SOURCE, RETURN_RESULT, MPI_COMM_WORLD);
+
                         break;
+                }
+
+
+                if (exitCycle) {
+                    logString("Nyni ukoncuji vypocetni cyklus.");
+                    break;
                 }
             }
         }
@@ -562,22 +683,6 @@ int main(int argc, char** argv) {
 
     /*---------------INICIALIZACE LOGOVANI-----------------*/
 
-
-    //    -------------------WILL BE REMOVED-------------
-//    logFile.close();
-//    //MPI end
-//    MPI_Finalize();
-//
-//    // uklid
-//    for (int i = 0; i < length; i++) {
-//        delete [] edgeTable[i];
-//    }
-//    delete [] edgeTable;
-//    edgeTable = NULL;
-//
-//    return 0;
-    //    -------------------WILL BE REMOVED-------------
-
     if (rank == 0) {
         //MASTER
 
@@ -617,22 +722,10 @@ int main(int argc, char** argv) {
 
         minTLG = doWork(rank, p, length, minTLG, edgeTable, mainStack);
 
-        //TODO prijmout vysledky vsech ostatnich procesu
-
-        //        cout << "waiting for other process to send me their results" << endl;
-        logString("waiting for other process to send me their results");
-
-        /* int result = 0;
-         for (int i = 0; i < p; i++) {
-             MPI_Recv(&result, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
-         }*/
-
         if (DEBUG) {
-            //            cout << " ============= " << endl;
-            //            cout << " min TLG: " << minTLG << endl;
+            cout << " ============= " << endl;
+            cout << " min TLG: " << minTLG << endl;
 
-            logString(" ============= ");
-            logString(" min TLG: ");
         }
 
     } else {
@@ -645,7 +738,7 @@ int main(int argc, char** argv) {
 
         //        cout << " process " << rank << " obdrzel praci " << endl;
         stringstream temp;
-        temp << " process " << rank << " obdrzel praci ";
+        temp << "process " << rank << " obdrzel praci ";
         logString(temp.str());
 
         Permutation * state = new Permutation(modifyArray(data, length, length), length, data[length], edgeTable, true);
@@ -656,9 +749,64 @@ int main(int argc, char** argv) {
         // TODO odesli vysledek
         //        cout << " process " << rank << " computed " << minTLG << endl;
         stringstream temp2;
-        temp2 << " process " << rank << " computed " << minTLG;
+        temp2 << "process " << rank << " computed " << minTLG;
         logString(temp2.str());
     }
+
+    if (collectResults) {
+
+        stringstream temp3;
+        temp3 << " process " << rank << " ukoncil vypocet a zahajuje finishing sekvenci";
+        logString(temp3.str());
+
+        double * results = new double [p];
+        results[0] = minTLG;
+        int pointer = 1;
+        //    Call finalize na vsechny ostatni procesory
+        for (int target = 0; target < p; target++) {
+            if (target == rank) {
+                continue;
+            }
+            int * currResult = new int[1];
+
+            stringstream temp4;
+            temp4 << "posilam FINISH procesoru " << target;
+            logString(temp4.str());
+
+            MPI_Send(new int[1], 1, MPI_INT, target, FINISH, MPI_COMM_WORLD);
+
+            do {
+                MPI_Recv(currResult, 1, MPI_INT, MPI_ANY_SOURCE, RETURN_RESULT, MPI_COMM_WORLD, &status);
+            } while (status.MPI_SOURCE != target);
+
+            stringstream temp5;
+            temp5 << "prislo mi TLG od procesoru " << target << " s hodnotou " << currResult[0];
+            logString(temp5.str());
+
+            results[pointer] = currResult[0];
+            pointer++;
+        }
+
+        minimal = minTLG;
+
+        stringstream temp6;
+        temp6 << "Pole vysledku je: ";
+
+        for (int i = 0; i < p; i++) {
+            if (results[i] < minimal) {
+                minimal = results[i];
+            }
+            temp6 << results[i] << " ";
+        }
+
+        logString(temp6.str());
+
+        stringstream temp7;
+        temp7 << "Minimalni tloustka grafu je: " << minimal;
+        logString(temp7.str());
+    }
+
+
 
     //MPI end
     MPI_Finalize();

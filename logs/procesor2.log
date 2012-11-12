@@ -1,0 +1,2887 @@
+
+
+------------NEW SESSION------------
+
+Mon Nov 12 15:11:26 2012	process 2 obdrzel praci 
+Mon Nov 12 15:11:26 2012	stack size procesu 2 | 1
+Mon Nov 12 15:11:26 2012	 node  | 0 | 2 | 3 | 1 | 
+Mon Nov 12 15:11:26 2012	level: 2 tlg: 3
+Mon Nov 12 15:11:26 2012	 node  | 0 | 1 | 2 | 3 | 
+Mon Nov 12 15:11:26 2012	level: 2 tlg: 3
+Mon Nov 12 15:11:26 2012	 node  | 0 | 3 | 1 | 2 | 
+Mon Nov 12 15:11:26 2012	level: 2 tlg: 3
+Mon Nov 12 15:11:26 2012	stack size procesu 2 | 3
+Mon Nov 12 15:11:26 2012	 node  | 0 | 3 | 2 | 1 | 
+Mon Nov 12 15:11:26 2012	level: 3 tlg: 3
+Mon Nov 12 15:11:26 2012	stack size procesu 2 | 3
+Mon Nov 12 15:11:26 2012	stack size procesu 2 | 2
+Mon Nov 12 15:11:26 2012	 node  | 0 | 1 | 3 | 2 | 
+Mon Nov 12 15:11:26 2012	level: 3 tlg: 3
+Mon Nov 12 15:11:26 2012	stack size procesu 2 | 2
+Mon Nov 12 15:11:26 2012	stack size procesu 2 | 1
+Mon Nov 12 15:11:26 2012	 node  | 0 | 2 | 1 | 3 | 
+Mon Nov 12 15:11:26 2012	level: 3 tlg: 3
+Mon Nov 12 15:11:26 2012	stack size procesu 2 | 1
+Mon Nov 12 15:11:26 2012	proces 2 nema praci 
+Mon Nov 12 15:11:26 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:11:26 2012	suspending process 2 for 100
+
+
+------------NEW SESSION------------
+
+Mon Nov 12 15:12:34 2012	process 2 obdrzel praci 
+Mon Nov 12 15:12:34 2012	stack size procesu 2 | 1
+Mon Nov 12 15:12:34 2012	 node  | 0 | 2 | 3 | 1 | 
+Mon Nov 12 15:12:34 2012	level: 2 tlg: 3
+Mon Nov 12 15:12:34 2012	 node  | 0 | 1 | 2 | 3 | 
+Mon Nov 12 15:12:34 2012	level: 2 tlg: 3
+Mon Nov 12 15:12:34 2012	 node  | 0 | 3 | 1 | 2 | 
+Mon Nov 12 15:12:34 2012	level: 2 tlg: 3
+Mon Nov 12 15:12:34 2012	stack size procesu 2 | 3
+Mon Nov 12 15:12:34 2012	 node  | 0 | 3 | 2 | 1 | 
+Mon Nov 12 15:12:34 2012	level: 3 tlg: 3
+Mon Nov 12 15:12:34 2012	stack size procesu 2 | 3
+Mon Nov 12 15:12:34 2012	stack size procesu 2 | 2
+Mon Nov 12 15:12:34 2012	 node  | 0 | 1 | 3 | 2 | 
+Mon Nov 12 15:12:34 2012	level: 3 tlg: 3
+Mon Nov 12 15:12:34 2012	stack size procesu 2 | 2
+Mon Nov 12 15:12:34 2012	stack size procesu 2 | 1
+Mon Nov 12 15:12:34 2012	 node  | 0 | 2 | 1 | 3 | 
+Mon Nov 12 15:12:34 2012	level: 3 tlg: 3
+Mon Nov 12 15:12:34 2012	stack size procesu 2 | 1
+Mon Nov 12 15:12:34 2012	proces 2 nema praci 
+Mon Nov 12 15:12:34 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 15:12:34 2012	suspending process 2 for 100
+
+
+------------NEW SESSION------------
+
+Mon Nov 12 15:30:05 2012	process 2 obdrzel praci 
+Mon Nov 12 15:30:05 2012	stack size procesu 2 | 1
+Mon Nov 12 15:30:05 2012	 node  | 0 | 2 | 3 | 1 | 
+Mon Nov 12 15:30:05 2012	level: 2 tlg: 3
+Mon Nov 12 15:30:05 2012	 node  | 0 | 1 | 2 | 3 | 
+Mon Nov 12 15:30:05 2012	level: 2 tlg: 3
+Mon Nov 12 15:30:05 2012	 node  | 0 | 3 | 1 | 2 | 
+Mon Nov 12 15:30:05 2012	level: 2 tlg: 3
+Mon Nov 12 15:30:05 2012	stack size procesu 2 | 3
+Mon Nov 12 15:30:05 2012	 node  | 0 | 3 | 2 | 1 | 
+Mon Nov 12 15:30:05 2012	level: 3 tlg: 3
+Mon Nov 12 15:30:05 2012	stack size procesu 2 | 3
+Mon Nov 12 15:30:05 2012	stack size procesu 2 | 2
+Mon Nov 12 15:30:05 2012	 node  | 0 | 1 | 3 | 2 | 
+Mon Nov 12 15:30:05 2012	level: 3 tlg: 3
+Mon Nov 12 15:30:05 2012	stack size procesu 2 | 2
+Mon Nov 12 15:30:05 2012	stack size procesu 2 | 1
+Mon Nov 12 15:30:05 2012	 node  | 0 | 2 | 1 | 3 | 
+Mon Nov 12 15:30:05 2012	level: 3 tlg: 3
+Mon Nov 12 15:30:05 2012	stack size procesu 2 | 1
+Mon Nov 12 15:30:05 2012	proces 2 nema praci 
+Mon Nov 12 15:30:05 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 15:30:05 2012	suspending process 2 for 100
+Mon Nov 12 15:30:06 2012	process 2 obdrzel TOKEN
+Mon Nov 12 15:30:06 2012	tento procesor prijal bileho peska
+Mon Nov 12 15:30:06 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 15:30:06 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 15:30:06 2012	proces 2 nema praci 
+Mon Nov 12 15:30:06 2012	suspending process 2 for 100
+Mon Nov 12 15:30:06 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 15:30:06 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:30:06 2012	suspending process 2 for 100
+Mon Nov 12 15:30:06 2012	suspending process 2 for 100
+Mon Nov 12 15:30:06 2012	suspending process 2 for 100
+Mon Nov 12 15:30:06 2012	suspending process 2 for 100
+Mon Nov 12 15:30:06 2012	suspending process 2 for 100
+Mon Nov 12 15:30:06 2012	suspending process 2 for 100
+Mon Nov 12 15:30:06 2012	suspending process 2 for 100
+Mon Nov 12 15:30:06 2012	suspending process 2 for 100
+Mon Nov 12 15:30:06 2012	suspending process 2 for 100
+Mon Nov 12 15:30:07 2012	suspending process 2 for 100
+Mon Nov 12 15:30:07 2012	suspending process 2 for 100
+Mon Nov 12 15:30:07 2012	suspending process 2 for 100
+Mon Nov 12 15:30:07 2012	suspending process 2 for 100
+Mon Nov 12 15:30:07 2012	suspending process 2 for 100
+Mon Nov 12 15:30:07 2012	suspending process 2 for 100
+Mon Nov 12 15:30:07 2012	suspending process 2 for 100
+Mon Nov 12 15:30:07 2012	suspending process 2 for 100
+Mon Nov 12 15:30:07 2012	suspending process 2 for 100
+Mon Nov 12 15:30:07 2012	suspending process 2 for 100
+Mon Nov 12 15:30:08 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:30:08 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 15:30:08 2012	suspending process 2 for 100
+Mon Nov 12 15:30:08 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:30:08 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:30:08 2012	suspending process 2 for 100
+Mon Nov 12 15:30:08 2012	suspending process 2 for 100
+Mon Nov 12 15:30:08 2012	suspending process 2 for 100
+Mon Nov 12 15:30:08 2012	suspending process 2 for 100
+Mon Nov 12 15:30:08 2012	suspending process 2 for 100
+Mon Nov 12 15:30:08 2012	suspending process 2 for 100
+Mon Nov 12 15:30:08 2012	suspending process 2 for 100
+Mon Nov 12 15:30:08 2012	suspending process 2 for 100
+Mon Nov 12 15:30:08 2012	suspending process 2 for 100
+Mon Nov 12 15:30:09 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:30:09 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 15:30:09 2012	suspending process 2 for 100
+Mon Nov 12 15:30:09 2012	process 2 obdrzel TOKEN
+Mon Nov 12 15:30:09 2012	tento procesor prijal bileho peska
+Mon Nov 12 15:30:09 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 15:30:09 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 15:30:09 2012	proces 2 nema praci 
+Mon Nov 12 15:30:09 2012	suspending process 2 for 100
+Mon Nov 12 15:30:09 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:30:09 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 15:30:09 2012	suspending process 2 for 100
+Mon Nov 12 15:30:09 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:30:09 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 15:30:09 2012	suspending process 2 for 100
+Mon Nov 12 15:30:09 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:30:09 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 15:30:09 2012	suspending process 2 for 100
+Mon Nov 12 15:30:09 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:30:09 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 15:30:09 2012	suspending process 2 for 100
+Mon Nov 12 15:30:09 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:30:09 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 15:30:09 2012	suspending process 2 for 100
+Mon Nov 12 15:30:09 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:30:09 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 15:30:09 2012	suspending process 2 for 100
+Mon Nov 12 15:30:09 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:30:09 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 15:30:09 2012	suspending process 2 for 100
+Mon Nov 12 15:30:09 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:30:09 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 15:30:09 2012	suspending process 2 for 100
+Mon Nov 12 15:30:10 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:30:10 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 15:30:10 2012	suspending process 2 for 100
+Mon Nov 12 15:30:10 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:30:10 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 15:30:10 2012	suspending process 2 for 100
+Mon Nov 12 15:30:10 2012	suspending process 2 for 100
+Mon Nov 12 15:30:10 2012	suspending process 2 for 100
+Mon Nov 12 15:30:10 2012	suspending process 2 for 100
+Mon Nov 12 15:30:10 2012	suspending process 2 for 100
+Mon Nov 12 15:30:10 2012	suspending process 2 for 100
+Mon Nov 12 15:30:10 2012	suspending process 2 for 100
+Mon Nov 12 15:30:10 2012	suspending process 2 for 100
+Mon Nov 12 15:30:10 2012	suspending process 2 for 100
+Mon Nov 12 15:30:11 2012	suspending process 2 for 100
+Mon Nov 12 15:30:11 2012	suspending process 2 for 100
+Mon Nov 12 15:30:11 2012	suspending process 2 for 100
+Mon Nov 12 15:30:11 2012	suspending process 2 for 100
+Mon Nov 12 15:30:11 2012	suspending process 2 for 100
+Mon Nov 12 15:30:11 2012	suspending process 2 for 100
+Mon Nov 12 15:30:11 2012	suspending process 2 for 100
+Mon Nov 12 15:30:11 2012	suspending process 2 for 100
+Mon Nov 12 15:30:11 2012	suspending process 2 for 100
+Mon Nov 12 15:30:11 2012	suspending process 2 for 100
+Mon Nov 12 15:30:12 2012	suspending process 2 for 100
+Mon Nov 12 15:30:12 2012	process 2 prijal FINISH
+Mon Nov 12 15:30:12 2012	Nyni ukoncuji vypocetni cyklus.
+Mon Nov 12 15:30:12 2012	process 2 computed 3
+
+
+------------NEW SESSION------------
+
+Mon Nov 12 15:31:22 2012	process 2 obdrzel praci 
+Mon Nov 12 15:31:22 2012	stack size procesu 2 | 1
+Mon Nov 12 15:31:22 2012	 node  | 0 | 2 | 3 | 1 | 
+Mon Nov 12 15:31:22 2012	level: 2 tlg: 3
+Mon Nov 12 15:31:22 2012	 node  | 0 | 1 | 2 | 3 | 
+Mon Nov 12 15:31:22 2012	level: 2 tlg: 3
+Mon Nov 12 15:31:22 2012	 node  | 0 | 3 | 1 | 2 | 
+Mon Nov 12 15:31:22 2012	level: 2 tlg: 3
+Mon Nov 12 15:31:22 2012	stack size procesu 2 | 3
+Mon Nov 12 15:31:22 2012	 node  | 0 | 3 | 2 | 1 | 
+Mon Nov 12 15:31:22 2012	level: 3 tlg: 3
+Mon Nov 12 15:31:22 2012	stack size procesu 2 | 3
+Mon Nov 12 15:31:22 2012	stack size procesu 2 | 2
+Mon Nov 12 15:31:22 2012	 node  | 0 | 1 | 3 | 2 | 
+Mon Nov 12 15:31:22 2012	level: 3 tlg: 3
+Mon Nov 12 15:31:22 2012	stack size procesu 2 | 2
+Mon Nov 12 15:31:22 2012	stack size procesu 2 | 1
+Mon Nov 12 15:31:22 2012	 node  | 0 | 2 | 1 | 3 | 
+Mon Nov 12 15:31:22 2012	level: 3 tlg: 3
+Mon Nov 12 15:31:22 2012	stack size procesu 2 | 1
+Mon Nov 12 15:31:22 2012	proces 2 nema praci 
+Mon Nov 12 15:31:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:31:22 2012	suspending process 2 for 100
+Mon Nov 12 15:31:22 2012	process 2 obdrzel TOKEN
+Mon Nov 12 15:31:22 2012	tento procesor prijal bileho peska
+Mon Nov 12 15:31:22 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 15:31:22 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 15:31:22 2012	proces 2 nema praci 
+Mon Nov 12 15:31:22 2012	suspending process 2 for 100
+Mon Nov 12 15:31:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:31:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:31:22 2012	suspending process 2 for 100
+Mon Nov 12 15:31:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:31:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:31:22 2012	suspending process 2 for 100
+Mon Nov 12 15:31:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:31:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:31:22 2012	suspending process 2 for 100
+Mon Nov 12 15:31:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:31:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:31:22 2012	suspending process 2 for 100
+Mon Nov 12 15:31:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:31:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:31:22 2012	suspending process 2 for 100
+Mon Nov 12 15:31:23 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:31:23 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:31:23 2012	suspending process 2 for 100
+Mon Nov 12 15:31:23 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:31:23 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:31:23 2012	suspending process 2 for 100
+Mon Nov 12 15:31:23 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:31:23 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:31:23 2012	suspending process 2 for 100
+Mon Nov 12 15:31:23 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:31:23 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:31:23 2012	suspending process 2 for 100
+Mon Nov 12 15:31:23 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:31:23 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:31:23 2012	suspending process 2 for 100
+Mon Nov 12 15:31:23 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:31:23 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:31:23 2012	suspending process 2 for 100
+Mon Nov 12 15:31:23 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:31:23 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:31:23 2012	suspending process 2 for 100
+Mon Nov 12 15:31:23 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:31:23 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:31:23 2012	suspending process 2 for 100
+Mon Nov 12 15:31:23 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:31:23 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:31:23 2012	suspending process 2 for 100
+Mon Nov 12 15:31:23 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:31:23 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:31:23 2012	suspending process 2 for 100
+Mon Nov 12 15:31:24 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:31:24 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:31:24 2012	suspending process 2 for 100
+Mon Nov 12 15:31:24 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:31:24 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:31:24 2012	suspending process 2 for 100
+Mon Nov 12 15:31:24 2012	suspending process 2 for 100
+Mon Nov 12 15:31:24 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:31:24 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:31:24 2012	suspending process 2 for 100
+Mon Nov 12 15:31:24 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:31:24 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:31:24 2012	suspending process 2 for 100
+Mon Nov 12 15:31:24 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:31:24 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:31:24 2012	suspending process 2 for 100
+Mon Nov 12 15:31:24 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:31:24 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:31:24 2012	suspending process 2 for 100
+Mon Nov 12 15:31:24 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:31:24 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:31:24 2012	suspending process 2 for 100
+Mon Nov 12 15:31:24 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:31:24 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:31:24 2012	suspending process 2 for 100
+Mon Nov 12 15:31:24 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:31:24 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:31:24 2012	suspending process 2 for 100
+Mon Nov 12 15:31:25 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:31:25 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 15:31:25 2012	suspending process 2 for 100
+Mon Nov 12 15:31:25 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:31:25 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 15:31:25 2012	suspending process 2 for 100
+Mon Nov 12 15:31:25 2012	process 2 obdrzel TOKEN
+Mon Nov 12 15:31:25 2012	tento procesor prijal bileho peska
+Mon Nov 12 15:31:25 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 15:31:25 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 15:31:25 2012	proces 2 nema praci 
+Mon Nov 12 15:31:25 2012	suspending process 2 for 100
+Mon Nov 12 15:31:25 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 15:31:25 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 15:31:25 2012	suspending process 2 for 100
+Mon Nov 12 15:31:25 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:31:25 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 15:31:25 2012	suspending process 2 for 100
+Mon Nov 12 15:31:25 2012	suspending process 2 for 100
+Mon Nov 12 15:31:25 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:31:25 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 15:31:25 2012	suspending process 2 for 100
+Mon Nov 12 15:31:25 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:31:25 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 15:31:25 2012	suspending process 2 for 100
+Mon Nov 12 15:31:25 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:31:25 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 15:31:25 2012	suspending process 2 for 100
+Mon Nov 12 15:31:25 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:31:25 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 15:31:25 2012	suspending process 2 for 100
+Mon Nov 12 15:31:26 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:31:26 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 15:31:26 2012	suspending process 2 for 100
+Mon Nov 12 15:31:26 2012	process 2 prijal FINISH
+Mon Nov 12 15:31:26 2012	Nyni ukoncuji vypocetni cyklus.
+Mon Nov 12 15:31:26 2012	process 2 computed 3
+
+
+------------NEW SESSION------------
+
+Mon Nov 12 15:32:22 2012	process 2 obdrzel praci 
+Mon Nov 12 15:32:22 2012	stack size procesu 2 | 1
+Mon Nov 12 15:32:22 2012	 node  | 0 | 2 | 3 | 1 | 
+Mon Nov 12 15:32:22 2012	level: 2 tlg: 3
+Mon Nov 12 15:32:22 2012	 node  | 0 | 1 | 2 | 3 | 
+Mon Nov 12 15:32:22 2012	level: 2 tlg: 3
+Mon Nov 12 15:32:22 2012	 node  | 0 | 3 | 1 | 2 | 
+Mon Nov 12 15:32:22 2012	level: 2 tlg: 3
+Mon Nov 12 15:32:22 2012	stack size procesu 2 | 3
+Mon Nov 12 15:32:22 2012	 node  | 0 | 3 | 2 | 1 | 
+Mon Nov 12 15:32:22 2012	level: 3 tlg: 3
+Mon Nov 12 15:32:22 2012	stack size procesu 2 | 3
+Mon Nov 12 15:32:22 2012	stack size procesu 2 | 2
+Mon Nov 12 15:32:22 2012	 node  | 0 | 1 | 3 | 2 | 
+Mon Nov 12 15:32:22 2012	level: 3 tlg: 3
+Mon Nov 12 15:32:22 2012	stack size procesu 2 | 2
+Mon Nov 12 15:32:22 2012	stack size procesu 2 | 1
+Mon Nov 12 15:32:22 2012	 node  | 0 | 2 | 1 | 3 | 
+Mon Nov 12 15:32:22 2012	level: 3 tlg: 3
+Mon Nov 12 15:32:22 2012	stack size procesu 2 | 1
+Mon Nov 12 15:32:22 2012	proces 2 nema praci 
+Mon Nov 12 15:32:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:32:22 2012	suspending process 2 for 100
+Mon Nov 12 15:32:22 2012	process 2 obdrzel TOKEN
+Mon Nov 12 15:32:22 2012	tento procesor prijal bileho peska
+Mon Nov 12 15:32:22 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 15:32:22 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 15:32:22 2012	proces 2 nema praci 
+Mon Nov 12 15:32:22 2012	suspending process 2 for 100
+Mon Nov 12 15:32:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:32:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:32:22 2012	suspending process 2 for 100
+Mon Nov 12 15:32:22 2012	suspending process 2 for 100
+Mon Nov 12 15:32:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:32:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:32:22 2012	suspending process 2 for 100
+Mon Nov 12 15:32:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:32:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:32:22 2012	suspending process 2 for 100
+Mon Nov 12 15:32:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:32:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:32:22 2012	suspending process 2 for 100
+Mon Nov 12 15:32:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:32:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:32:22 2012	suspending process 2 for 100
+Mon Nov 12 15:32:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:32:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:32:22 2012	suspending process 2 for 100
+Mon Nov 12 15:32:22 2012	suspending process 2 for 100
+Mon Nov 12 15:32:23 2012	process 2 obdrzel TOKEN
+Mon Nov 12 15:32:23 2012	tento procesor prijal bileho peska
+Mon Nov 12 15:32:23 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 15:32:23 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 15:32:23 2012	proces 2 nema praci 
+Mon Nov 12 15:32:23 2012	suspending process 2 for 100
+Mon Nov 12 15:32:23 2012	suspending process 2 for 100
+Mon Nov 12 15:32:23 2012	suspending process 2 for 100
+Mon Nov 12 15:32:23 2012	process 2 prijal FINISH
+Mon Nov 12 15:32:23 2012	Nyni ukoncuji vypocetni cyklus.
+Mon Nov 12 15:32:23 2012	process 2 computed 3
+
+
+------------NEW SESSION------------
+
+Mon Nov 12 15:34:37 2012	process 2 obdrzel praci 
+Mon Nov 12 15:34:37 2012	stack size procesu 2 | 1
+Mon Nov 12 15:34:37 2012	 node  | 0 | 2 | 3 | 1 | 
+Mon Nov 12 15:34:37 2012	level: 2 tlg: 3
+Mon Nov 12 15:34:37 2012	 node  | 0 | 1 | 2 | 3 | 
+Mon Nov 12 15:34:37 2012	level: 2 tlg: 3
+Mon Nov 12 15:34:37 2012	 node  | 0 | 3 | 1 | 2 | 
+Mon Nov 12 15:34:37 2012	level: 2 tlg: 3
+Mon Nov 12 15:34:37 2012	stack size procesu 2 | 3
+Mon Nov 12 15:34:37 2012	 node  | 0 | 3 | 2 | 1 | 
+Mon Nov 12 15:34:37 2012	level: 3 tlg: 3
+Mon Nov 12 15:34:37 2012	stack size procesu 2 | 3
+Mon Nov 12 15:34:37 2012	stack size procesu 2 | 2
+Mon Nov 12 15:34:37 2012	 node  | 0 | 1 | 3 | 2 | 
+Mon Nov 12 15:34:37 2012	level: 3 tlg: 3
+Mon Nov 12 15:34:37 2012	stack size procesu 2 | 2
+Mon Nov 12 15:34:37 2012	stack size procesu 2 | 1
+Mon Nov 12 15:34:37 2012	 node  | 0 | 2 | 1 | 3 | 
+Mon Nov 12 15:34:37 2012	level: 3 tlg: 3
+Mon Nov 12 15:34:37 2012	stack size procesu 2 | 1
+Mon Nov 12 15:34:37 2012	proces 2 nema praci 
+Mon Nov 12 15:34:37 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 15:34:37 2012	suspending process 2 for 100
+
+
+------------NEW SESSION------------
+
+Mon Nov 12 15:34:54 2012	process 2 obdrzel praci 
+Mon Nov 12 15:34:54 2012	stack size procesu 2 | 1
+Mon Nov 12 15:34:54 2012	 node  | 0 | 2 | 3 | 1 | 
+Mon Nov 12 15:34:54 2012	level: 2 tlg: 3
+Mon Nov 12 15:34:54 2012	 node  | 0 | 1 | 2 | 3 | 
+Mon Nov 12 15:34:54 2012	level: 2 tlg: 3
+Mon Nov 12 15:34:54 2012	 node  | 0 | 3 | 1 | 2 | 
+Mon Nov 12 15:34:54 2012	level: 2 tlg: 3
+Mon Nov 12 15:34:54 2012	stack size procesu 2 | 3
+Mon Nov 12 15:34:54 2012	 node  | 0 | 3 | 2 | 1 | 
+Mon Nov 12 15:34:54 2012	level: 3 tlg: 3
+Mon Nov 12 15:34:54 2012	stack size procesu 2 | 3
+Mon Nov 12 15:34:54 2012	stack size procesu 2 | 2
+Mon Nov 12 15:34:54 2012	 node  | 0 | 1 | 3 | 2 | 
+Mon Nov 12 15:34:54 2012	level: 3 tlg: 3
+Mon Nov 12 15:34:54 2012	stack size procesu 2 | 2
+Mon Nov 12 15:34:54 2012	stack size procesu 2 | 1
+Mon Nov 12 15:34:54 2012	 node  | 0 | 2 | 1 | 3 | 
+Mon Nov 12 15:34:54 2012	level: 3 tlg: 3
+Mon Nov 12 15:34:54 2012	stack size procesu 2 | 1
+Mon Nov 12 15:34:54 2012	proces 2 nema praci 
+Mon Nov 12 15:34:54 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 15:34:54 2012	suspending process 2 for 100
+Mon Nov 12 15:34:54 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:34:54 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 15:34:54 2012	suspending process 2 for 100
+Mon Nov 12 15:34:55 2012	process 2 obdrzel TOKEN
+Mon Nov 12 15:34:55 2012	tento procesor prijal bileho peska
+Mon Nov 12 15:34:55 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 15:34:55 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 15:34:55 2012	proces 2 nema praci 
+Mon Nov 12 15:34:55 2012	suspending process 2 for 100
+Mon Nov 12 15:34:55 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 15:34:55 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:34:55 2012	suspending process 2 for 100
+Mon Nov 12 15:34:55 2012	suspending process 2 for 100
+Mon Nov 12 15:34:55 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:34:55 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:34:55 2012	suspending process 2 for 100
+Mon Nov 12 15:34:55 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:34:55 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:34:55 2012	suspending process 2 for 100
+Mon Nov 12 15:34:55 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:34:55 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:34:55 2012	suspending process 2 for 100
+Mon Nov 12 15:34:55 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:34:55 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:34:55 2012	suspending process 2 for 100
+Mon Nov 12 15:34:55 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:34:55 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:34:55 2012	suspending process 2 for 100
+Mon Nov 12 15:34:55 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:34:55 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:34:55 2012	suspending process 2 for 100
+Mon Nov 12 15:34:55 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:34:55 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:34:55 2012	suspending process 2 for 100
+Mon Nov 12 15:34:56 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:34:56 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:34:56 2012	suspending process 2 for 100
+Mon Nov 12 15:34:56 2012	process 2 obdrzel TOKEN
+Mon Nov 12 15:34:56 2012	tento procesor prijal bileho peska
+Mon Nov 12 15:34:56 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 15:34:56 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 15:34:56 2012	proces 2 nema praci 
+Mon Nov 12 15:34:56 2012	suspending process 2 for 100
+Mon Nov 12 15:34:56 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:34:56 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:34:56 2012	suspending process 2 for 100
+Mon Nov 12 15:34:56 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:34:56 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:34:56 2012	suspending process 2 for 100
+Mon Nov 12 15:34:56 2012	process 2 prijal FINISH
+Mon Nov 12 15:34:56 2012	Nyni ukoncuji vypocetni cyklus.
+Mon Nov 12 15:34:56 2012	process 2 computed 3
+
+
+------------NEW SESSION------------
+
+Mon Nov 12 15:35:57 2012	process 2 obdrzel praci 
+Mon Nov 12 15:35:57 2012	stack size procesu 2 | 1
+Mon Nov 12 15:35:57 2012	 node  | 0 | 2 | 3 | 1 | 
+Mon Nov 12 15:35:57 2012	level: 2 tlg: 3
+Mon Nov 12 15:35:57 2012	 node  | 0 | 1 | 2 | 3 | 
+Mon Nov 12 15:35:57 2012	level: 2 tlg: 3
+Mon Nov 12 15:35:57 2012	 node  | 0 | 3 | 1 | 2 | 
+Mon Nov 12 15:35:57 2012	level: 2 tlg: 3
+Mon Nov 12 15:35:57 2012	stack size procesu 2 | 3
+Mon Nov 12 15:35:57 2012	 node  | 0 | 3 | 2 | 1 | 
+Mon Nov 12 15:35:57 2012	level: 3 tlg: 3
+Mon Nov 12 15:35:57 2012	stack size procesu 2 | 3
+Mon Nov 12 15:35:57 2012	stack size procesu 2 | 2
+Mon Nov 12 15:35:57 2012	 node  | 0 | 1 | 3 | 2 | 
+Mon Nov 12 15:35:57 2012	level: 3 tlg: 3
+Mon Nov 12 15:35:57 2012	stack size procesu 2 | 2
+Mon Nov 12 15:35:57 2012	stack size procesu 2 | 1
+Mon Nov 12 15:35:57 2012	 node  | 0 | 2 | 1 | 3 | 
+Mon Nov 12 15:35:57 2012	level: 3 tlg: 3
+Mon Nov 12 15:35:57 2012	stack size procesu 2 | 1
+Mon Nov 12 15:35:57 2012	proces 2 nema praci 
+Mon Nov 12 15:35:57 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:35:57 2012	suspending process 2 for 100
+Mon Nov 12 15:35:57 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:35:57 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:35:57 2012	suspending process 2 for 100
+Mon Nov 12 15:35:57 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:35:57 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:35:57 2012	suspending process 2 for 100
+Mon Nov 12 15:35:57 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:35:57 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:35:57 2012	suspending process 2 for 100
+Mon Nov 12 15:35:57 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:35:57 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:35:57 2012	suspending process 2 for 100
+Mon Nov 12 15:35:57 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:35:57 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:35:57 2012	suspending process 2 for 100
+Mon Nov 12 15:35:57 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:35:57 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:35:57 2012	suspending process 2 for 100
+Mon Nov 12 15:35:58 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:35:58 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:35:58 2012	suspending process 2 for 100
+Mon Nov 12 15:35:58 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:35:58 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:35:58 2012	suspending process 2 for 100
+Mon Nov 12 15:35:58 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:35:58 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:35:58 2012	suspending process 2 for 100
+Mon Nov 12 15:35:58 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:35:58 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:35:58 2012	suspending process 2 for 100
+Mon Nov 12 15:35:58 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:35:58 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:35:58 2012	suspending process 2 for 100
+Mon Nov 12 15:35:58 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:35:58 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:35:58 2012	suspending process 2 for 100
+Mon Nov 12 15:35:58 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:35:58 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:35:58 2012	suspending process 2 for 100
+Mon Nov 12 15:35:58 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:35:58 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:35:58 2012	suspending process 2 for 100
+Mon Nov 12 15:35:58 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:35:58 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:35:58 2012	suspending process 2 for 100
+Mon Nov 12 15:35:58 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:35:58 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:35:58 2012	suspending process 2 for 100
+Mon Nov 12 15:35:59 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:35:59 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 15:35:59 2012	suspending process 2 for 100
+Mon Nov 12 15:35:59 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:35:59 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 15:35:59 2012	suspending process 2 for 100
+Mon Nov 12 15:35:59 2012	process 2 obdrzel TOKEN
+Mon Nov 12 15:35:59 2012	tento procesor prijal bileho peska
+Mon Nov 12 15:35:59 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 15:35:59 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 15:35:59 2012	proces 2 nema praci 
+Mon Nov 12 15:35:59 2012	suspending process 2 for 100
+Mon Nov 12 15:35:59 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 15:35:59 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 15:35:59 2012	suspending process 2 for 100
+Mon Nov 12 15:35:59 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 15:35:59 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 15:35:59 2012	suspending process 2 for 100
+Mon Nov 12 15:35:59 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 15:35:59 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 15:35:59 2012	suspending process 2 for 100
+Mon Nov 12 15:35:59 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 15:35:59 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 15:35:59 2012	suspending process 2 for 100
+Mon Nov 12 15:35:59 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 15:35:59 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 15:35:59 2012	suspending process 2 for 100
+Mon Nov 12 15:35:59 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 15:35:59 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 15:35:59 2012	suspending process 2 for 100
+Mon Nov 12 15:35:59 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 15:35:59 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 15:35:59 2012	suspending process 2 for 100
+Mon Nov 12 15:36:00 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 15:36:00 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:36:00 2012	suspending process 2 for 100
+Mon Nov 12 15:36:00 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:36:00 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 15:36:00 2012	suspending process 2 for 100
+Mon Nov 12 15:36:00 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:36:00 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:36:00 2012	suspending process 2 for 100
+Mon Nov 12 15:36:00 2012	process 2 obdrzel TOKEN
+Mon Nov 12 15:36:00 2012	tento procesor prijal bileho peska
+Mon Nov 12 15:36:00 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 15:36:00 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 15:36:00 2012	proces 2 nema praci 
+Mon Nov 12 15:36:00 2012	suspending process 2 for 100
+Mon Nov 12 15:36:00 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:36:00 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:36:00 2012	suspending process 2 for 100
+Mon Nov 12 15:36:00 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:36:00 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:36:00 2012	suspending process 2 for 100
+Mon Nov 12 15:36:00 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:36:00 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:36:00 2012	suspending process 2 for 100
+Mon Nov 12 15:36:00 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:36:00 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:36:00 2012	suspending process 2 for 100
+Mon Nov 12 15:36:00 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:36:00 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:36:00 2012	suspending process 2 for 100
+Mon Nov 12 15:36:00 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:36:00 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:36:00 2012	suspending process 2 for 100
+Mon Nov 12 15:36:01 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:36:01 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:36:01 2012	suspending process 2 for 100
+Mon Nov 12 15:36:01 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:36:01 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:36:01 2012	suspending process 2 for 100
+Mon Nov 12 15:36:01 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:36:01 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:36:01 2012	suspending process 2 for 100
+Mon Nov 12 15:36:01 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:36:01 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:36:01 2012	suspending process 2 for 100
+Mon Nov 12 15:36:01 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:36:01 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:36:01 2012	suspending process 2 for 100
+Mon Nov 12 15:36:01 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:36:01 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:36:01 2012	suspending process 2 for 100
+Mon Nov 12 15:36:01 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:36:01 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:36:01 2012	suspending process 2 for 100
+Mon Nov 12 15:36:01 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:36:01 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:36:01 2012	suspending process 2 for 100
+Mon Nov 12 15:36:01 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:36:01 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:36:01 2012	suspending process 2 for 100
+Mon Nov 12 15:36:01 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:36:01 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:36:01 2012	suspending process 2 for 100
+Mon Nov 12 15:36:02 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:36:02 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:36:02 2012	suspending process 2 for 100
+Mon Nov 12 15:36:02 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:36:02 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:36:02 2012	suspending process 2 for 100
+Mon Nov 12 15:36:02 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:36:02 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:36:02 2012	suspending process 2 for 100
+Mon Nov 12 15:36:02 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:36:02 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:36:02 2012	suspending process 2 for 100
+Mon Nov 12 15:36:02 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:36:02 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:36:02 2012	suspending process 2 for 100
+Mon Nov 12 15:36:02 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:36:02 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:36:02 2012	suspending process 2 for 100
+Mon Nov 12 15:36:02 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:36:02 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:36:02 2012	suspending process 2 for 100
+Mon Nov 12 15:36:02 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:36:02 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:36:02 2012	suspending process 2 for 100
+Mon Nov 12 15:36:02 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:36:02 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:36:02 2012	suspending process 2 for 100
+Mon Nov 12 15:36:02 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:36:02 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:36:02 2012	suspending process 2 for 100
+Mon Nov 12 15:36:03 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 15:36:03 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:36:03 2012	suspending process 2 for 100
+Mon Nov 12 15:36:03 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:36:03 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 15:36:03 2012	suspending process 2 for 100
+Mon Nov 12 15:36:03 2012	process 2 prijal FINISH
+Mon Nov 12 15:36:03 2012	Nyni ukoncuji vypocetni cyklus.
+Mon Nov 12 15:36:03 2012	process 2 computed 3
+
+
+------------NEW SESSION------------
+
+Mon Nov 12 15:38:21 2012	process 2 obdrzel praci 
+Mon Nov 12 15:38:21 2012	stack size procesu 2 | 1
+Mon Nov 12 15:38:21 2012	 node  | 0 | 2 | 3 | 1 | 
+Mon Nov 12 15:38:21 2012	level: 2 tlg: 3
+Mon Nov 12 15:38:21 2012	 node  | 0 | 1 | 2 | 3 | 
+Mon Nov 12 15:38:21 2012	level: 2 tlg: 3
+Mon Nov 12 15:38:21 2012	 node  | 0 | 3 | 1 | 2 | 
+Mon Nov 12 15:38:21 2012	level: 2 tlg: 3
+Mon Nov 12 15:38:21 2012	stack size procesu 2 | 3
+Mon Nov 12 15:38:21 2012	 node  | 0 | 3 | 2 | 1 | 
+Mon Nov 12 15:38:21 2012	level: 3 tlg: 3
+Mon Nov 12 15:38:21 2012	stack size procesu 2 | 3
+Mon Nov 12 15:38:21 2012	stack size procesu 2 | 2
+Mon Nov 12 15:38:21 2012	 node  | 0 | 1 | 3 | 2 | 
+Mon Nov 12 15:38:21 2012	level: 3 tlg: 3
+Mon Nov 12 15:38:21 2012	stack size procesu 2 | 2
+Mon Nov 12 15:38:21 2012	stack size procesu 2 | 1
+Mon Nov 12 15:38:21 2012	 node  | 0 | 2 | 1 | 3 | 
+Mon Nov 12 15:38:21 2012	level: 3 tlg: 3
+Mon Nov 12 15:38:21 2012	stack size procesu 2 | 1
+Mon Nov 12 15:38:21 2012	proces 2 nema praci 
+Mon Nov 12 15:38:21 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 15:38:21 2012	suspending process 2 for 100
+Mon Nov 12 15:38:22 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 15:38:22 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 15:38:22 2012	suspending process 2 for 100
+Mon Nov 12 15:38:22 2012	process 2 obdrzel TOKEN
+Mon Nov 12 15:38:22 2012	tento procesor prijal bileho peska
+Mon Nov 12 15:38:22 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 15:38:22 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 15:38:22 2012	proces 2 nema praci 
+Mon Nov 12 15:38:22 2012	suspending process 2 for 100
+Mon Nov 12 15:38:22 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 15:38:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:38:22 2012	suspending process 2 for 100
+Mon Nov 12 15:38:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:38:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:38:22 2012	suspending process 2 for 100
+Mon Nov 12 15:38:22 2012	suspending process 2 for 100
+Mon Nov 12 15:38:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:38:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 15:38:22 2012	suspending process 2 for 100
+Mon Nov 12 15:38:22 2012	process 2 obdrzel TOKEN
+Mon Nov 12 15:38:22 2012	tento procesor prijal bileho peska
+Mon Nov 12 15:38:22 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 15:38:22 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 15:38:22 2012	proces 2 nema praci 
+Mon Nov 12 15:38:22 2012	suspending process 2 for 100
+Mon Nov 12 15:38:22 2012	suspending process 2 for 100
+Mon Nov 12 15:38:22 2012	suspending process 2 for 100
+Mon Nov 12 15:38:22 2012	suspending process 2 for 100
+Mon Nov 12 15:38:23 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 15:38:23 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 15:38:23 2012	suspending process 2 for 100
+Mon Nov 12 15:38:23 2012	suspending process 2 for 100
+Mon Nov 12 15:38:23 2012	suspending process 2 for 100
+Mon Nov 12 15:38:23 2012	suspending process 2 for 100
+Mon Nov 12 15:38:23 2012	process 2 prijal FINISH
+Mon Nov 12 15:38:23 2012	Nyni ukoncuji vypocetni cyklus.
+Mon Nov 12 15:38:23 2012	process 2 computed 3
+
+
+------------NEW SESSION------------
+
+Mon Nov 12 16:08:18 2012	process 2 obdrzel praci 
+Mon Nov 12 16:08:18 2012	stack size procesu 2 | 1
+Mon Nov 12 16:08:18 2012	 node  | 0 | 2 | 3 | 1 | 
+Mon Nov 12 16:08:18 2012	level: 2 tlg: 3
+Mon Nov 12 16:08:18 2012	 node  | 0 | 1 | 2 | 3 | 
+Mon Nov 12 16:08:18 2012	level: 2 tlg: 3
+Mon Nov 12 16:08:18 2012	 node  | 0 | 3 | 1 | 2 | 
+Mon Nov 12 16:08:18 2012	level: 2 tlg: 3
+Mon Nov 12 16:08:18 2012	stack size procesu 2 | 3
+Mon Nov 12 16:08:18 2012	 node  | 0 | 3 | 2 | 1 | 
+Mon Nov 12 16:08:18 2012	level: 3 tlg: 3
+Mon Nov 12 16:08:18 2012	stack size procesu 2 | 3
+Mon Nov 12 16:08:18 2012	stack size procesu 2 | 2
+Mon Nov 12 16:08:18 2012	 node  | 0 | 1 | 3 | 2 | 
+Mon Nov 12 16:08:18 2012	level: 3 tlg: 3
+Mon Nov 12 16:08:18 2012	stack size procesu 2 | 2
+Mon Nov 12 16:08:18 2012	stack size procesu 2 | 1
+Mon Nov 12 16:08:18 2012	 node  | 0 | 2 | 1 | 3 | 
+Mon Nov 12 16:08:18 2012	level: 3 tlg: 3
+Mon Nov 12 16:08:18 2012	stack size procesu 2 | 1
+Mon Nov 12 16:08:18 2012	proces 2 nema praci 
+Mon Nov 12 16:08:18 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:08:18 2012	suspending process 2 for 100
+Mon Nov 12 16:08:18 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:08:18 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:08:18 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:08:18 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:08:18 2012	proces 2 nema praci 
+Mon Nov 12 16:08:18 2012	suspending process 2 for 100
+Mon Nov 12 16:08:18 2012	suspending process 2 for 100
+Mon Nov 12 16:08:19 2012	suspending process 2 for 100
+Mon Nov 12 16:08:19 2012	suspending process 2 for 100
+Mon Nov 12 16:08:19 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:08:19 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:08:19 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:08:19 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:08:19 2012	proces 2 nema praci 
+Mon Nov 12 16:08:19 2012	suspending process 2 for 100
+Mon Nov 12 16:08:19 2012	suspending process 2 for 100
+Mon Nov 12 16:08:19 2012	suspending process 2 for 100
+Mon Nov 12 16:08:19 2012	suspending process 2 for 100
+Mon Nov 12 16:08:19 2012	suspending process 2 for 100
+Mon Nov 12 16:08:19 2012	process 2 prijal FINISH
+Mon Nov 12 16:08:19 2012	Nyni ukoncuji vypocetni cyklus.
+Mon Nov 12 16:08:19 2012	process 2 computed 3
+
+
+------------NEW SESSION------------
+
+Mon Nov 12 16:17:35 2012	process 2 obdrzel praci 
+Mon Nov 12 16:17:35 2012	stack size procesu 2 | 1
+Mon Nov 12 16:17:35 2012	 node  | 0 | 2 | 3 | 1 | 
+Mon Nov 12 16:17:35 2012	level: 2 tlg: 3
+Mon Nov 12 16:17:35 2012	 node  | 0 | 1 | 2 | 3 | 
+Mon Nov 12 16:17:35 2012	level: 2 tlg: 3
+Mon Nov 12 16:17:35 2012	 node  | 0 | 3 | 1 | 2 | 
+Mon Nov 12 16:17:35 2012	level: 2 tlg: 3
+Mon Nov 12 16:17:35 2012	stack size procesu 2 | 3
+Mon Nov 12 16:17:35 2012	 node  | 0 | 3 | 2 | 1 | 
+Mon Nov 12 16:17:35 2012	level: 3 tlg: 3
+Mon Nov 12 16:17:35 2012	stack size procesu 2 | 3
+Mon Nov 12 16:17:35 2012	stack size procesu 2 | 2
+Mon Nov 12 16:17:35 2012	 node  | 0 | 1 | 3 | 2 | 
+Mon Nov 12 16:17:35 2012	level: 3 tlg: 3
+Mon Nov 12 16:17:35 2012	stack size procesu 2 | 2
+Mon Nov 12 16:17:35 2012	stack size procesu 2 | 1
+Mon Nov 12 16:17:35 2012	 node  | 0 | 2 | 1 | 3 | 
+Mon Nov 12 16:17:35 2012	level: 3 tlg: 3
+Mon Nov 12 16:17:35 2012	stack size procesu 2 | 1
+Mon Nov 12 16:17:35 2012	proces 2 nema praci 
+Mon Nov 12 16:17:35 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:17:35 2012	suspending process 2 for 100
+Mon Nov 12 16:17:35 2012	suspending process 2 for 100
+Mon Nov 12 16:17:35 2012	suspending process 2 for 100
+Mon Nov 12 16:17:35 2012	suspending process 2 for 100
+Mon Nov 12 16:17:35 2012	suspending process 2 for 100
+Mon Nov 12 16:17:36 2012	suspending process 2 for 100
+Mon Nov 12 16:17:36 2012	suspending process 2 for 100
+Mon Nov 12 16:17:36 2012	suspending process 2 for 100
+Mon Nov 12 16:17:36 2012	suspending process 2 for 100
+Mon Nov 12 16:17:36 2012	suspending process 2 for 100
+Mon Nov 12 16:17:36 2012	suspending process 2 for 100
+Mon Nov 12 16:17:36 2012	suspending process 2 for 100
+Mon Nov 12 16:17:36 2012	suspending process 2 for 100
+Mon Nov 12 16:17:36 2012	suspending process 2 for 100
+Mon Nov 12 16:17:37 2012	suspending process 2 for 100
+Mon Nov 12 16:17:37 2012	suspending process 2 for 100
+Mon Nov 12 16:17:37 2012	suspending process 2 for 100
+Mon Nov 12 16:17:37 2012	suspending process 2 for 100
+Mon Nov 12 16:17:37 2012	suspending process 2 for 100
+Mon Nov 12 16:17:37 2012	suspending process 2 for 100
+Mon Nov 12 16:17:37 2012	suspending process 2 for 100
+Mon Nov 12 16:17:37 2012	suspending process 2 for 100
+Mon Nov 12 16:17:37 2012	suspending process 2 for 100
+Mon Nov 12 16:17:37 2012	suspending process 2 for 100
+Mon Nov 12 16:17:38 2012	suspending process 2 for 100
+Mon Nov 12 16:17:38 2012	suspending process 2 for 100
+Mon Nov 12 16:17:38 2012	suspending process 2 for 100
+Mon Nov 12 16:17:38 2012	suspending process 2 for 100
+Mon Nov 12 16:17:38 2012	suspending process 2 for 100
+Mon Nov 12 16:17:38 2012	suspending process 2 for 100
+Mon Nov 12 16:17:38 2012	suspending process 2 for 100
+Mon Nov 12 16:17:38 2012	suspending process 2 for 100
+Mon Nov 12 16:17:38 2012	suspending process 2 for 100
+Mon Nov 12 16:17:39 2012	suspending process 2 for 100
+Mon Nov 12 16:17:39 2012	suspending process 2 for 100
+Mon Nov 12 16:17:39 2012	suspending process 2 for 100
+Mon Nov 12 16:17:39 2012	suspending process 2 for 100
+Mon Nov 12 16:17:39 2012	suspending process 2 for 100
+Mon Nov 12 16:17:39 2012	suspending process 2 for 100
+Mon Nov 12 16:17:39 2012	suspending process 2 for 100
+Mon Nov 12 16:17:39 2012	suspending process 2 for 100
+Mon Nov 12 16:17:39 2012	suspending process 2 for 100
+Mon Nov 12 16:17:40 2012	suspending process 2 for 100
+Mon Nov 12 16:17:40 2012	suspending process 2 for 100
+Mon Nov 12 16:17:40 2012	suspending process 2 for 100
+Mon Nov 12 16:17:40 2012	suspending process 2 for 100
+Mon Nov 12 16:17:40 2012	suspending process 2 for 100
+Mon Nov 12 16:17:40 2012	suspending process 2 for 100
+Mon Nov 12 16:17:40 2012	suspending process 2 for 100
+Mon Nov 12 16:17:40 2012	suspending process 2 for 100
+Mon Nov 12 16:17:40 2012	suspending process 2 for 100
+Mon Nov 12 16:17:41 2012	suspending process 2 for 100
+Mon Nov 12 16:17:41 2012	suspending process 2 for 100
+Mon Nov 12 16:17:41 2012	suspending process 2 for 100
+Mon Nov 12 16:17:41 2012	suspending process 2 for 100
+Mon Nov 12 16:17:41 2012	suspending process 2 for 100
+Mon Nov 12 16:17:41 2012	suspending process 2 for 100
+Mon Nov 12 16:17:41 2012	suspending process 2 for 100
+Mon Nov 12 16:17:41 2012	suspending process 2 for 100
+Mon Nov 12 16:17:41 2012	suspending process 2 for 100
+Mon Nov 12 16:17:42 2012	suspending process 2 for 100
+Mon Nov 12 16:17:42 2012	suspending process 2 for 100
+Mon Nov 12 16:17:42 2012	suspending process 2 for 100
+Mon Nov 12 16:17:42 2012	suspending process 2 for 100
+Mon Nov 12 16:17:42 2012	suspending process 2 for 100
+Mon Nov 12 16:17:42 2012	suspending process 2 for 100
+Mon Nov 12 16:17:42 2012	suspending process 2 for 100
+Mon Nov 12 16:17:42 2012	suspending process 2 for 100
+Mon Nov 12 16:17:42 2012	suspending process 2 for 100
+Mon Nov 12 16:17:43 2012	suspending process 2 for 100
+Mon Nov 12 16:17:43 2012	suspending process 2 for 100
+Mon Nov 12 16:17:43 2012	suspending process 2 for 100
+Mon Nov 12 16:17:43 2012	suspending process 2 for 100
+Mon Nov 12 16:17:43 2012	suspending process 2 for 100
+Mon Nov 12 16:17:43 2012	suspending process 2 for 100
+Mon Nov 12 16:17:43 2012	suspending process 2 for 100
+Mon Nov 12 16:17:43 2012	suspending process 2 for 100
+Mon Nov 12 16:17:43 2012	suspending process 2 for 100
+Mon Nov 12 16:17:43 2012	suspending process 2 for 100
+Mon Nov 12 16:17:44 2012	suspending process 2 for 100
+Mon Nov 12 16:17:44 2012	suspending process 2 for 100
+Mon Nov 12 16:17:44 2012	suspending process 2 for 100
+Mon Nov 12 16:17:44 2012	suspending process 2 for 100
+Mon Nov 12 16:17:44 2012	suspending process 2 for 100
+Mon Nov 12 16:17:44 2012	suspending process 2 for 100
+Mon Nov 12 16:17:44 2012	suspending process 2 for 100
+Mon Nov 12 16:17:44 2012	suspending process 2 for 100
+Mon Nov 12 16:17:44 2012	suspending process 2 for 100
+Mon Nov 12 16:17:44 2012	suspending process 2 for 100
+Mon Nov 12 16:17:45 2012	suspending process 2 for 100
+Mon Nov 12 16:17:45 2012	suspending process 2 for 100
+Mon Nov 12 16:17:45 2012	suspending process 2 for 100
+Mon Nov 12 16:17:45 2012	suspending process 2 for 100
+Mon Nov 12 16:17:45 2012	suspending process 2 for 100
+Mon Nov 12 16:17:45 2012	suspending process 2 for 100
+Mon Nov 12 16:17:45 2012	suspending process 2 for 100
+Mon Nov 12 16:17:45 2012	suspending process 2 for 100
+Mon Nov 12 16:17:45 2012	suspending process 2 for 100
+Mon Nov 12 16:17:46 2012	suspending process 2 for 100
+Mon Nov 12 16:17:46 2012	suspending process 2 for 100
+Mon Nov 12 16:17:46 2012	suspending process 2 for 100
+Mon Nov 12 16:17:46 2012	suspending process 2 for 100
+Mon Nov 12 16:17:46 2012	suspending process 2 for 100
+Mon Nov 12 16:17:46 2012	suspending process 2 for 100
+Mon Nov 12 16:17:46 2012	suspending process 2 for 100
+Mon Nov 12 16:17:46 2012	suspending process 2 for 100
+Mon Nov 12 16:17:46 2012	suspending process 2 for 100
+Mon Nov 12 16:17:47 2012	suspending process 2 for 100
+Mon Nov 12 16:17:47 2012	suspending process 2 for 100
+Mon Nov 12 16:17:47 2012	suspending process 2 for 100
+Mon Nov 12 16:17:47 2012	suspending process 2 for 100
+Mon Nov 12 16:17:47 2012	suspending process 2 for 100
+Mon Nov 12 16:17:47 2012	suspending process 2 for 100
+Mon Nov 12 16:17:47 2012	suspending process 2 for 100
+Mon Nov 12 16:17:47 2012	suspending process 2 for 100
+Mon Nov 12 16:17:47 2012	suspending process 2 for 100
+Mon Nov 12 16:17:48 2012	suspending process 2 for 100
+Mon Nov 12 16:17:48 2012	suspending process 2 for 100
+Mon Nov 12 16:17:48 2012	suspending process 2 for 100
+Mon Nov 12 16:17:48 2012	suspending process 2 for 100
+Mon Nov 12 16:17:48 2012	suspending process 2 for 100
+Mon Nov 12 16:17:48 2012	suspending process 2 for 100
+Mon Nov 12 16:17:48 2012	suspending process 2 for 100
+Mon Nov 12 16:17:48 2012	suspending process 2 for 100
+Mon Nov 12 16:17:48 2012	suspending process 2 for 100
+Mon Nov 12 16:17:48 2012	suspending process 2 for 100
+Mon Nov 12 16:17:49 2012	suspending process 2 for 100
+Mon Nov 12 16:17:49 2012	suspending process 2 for 100
+Mon Nov 12 16:17:49 2012	suspending process 2 for 100
+Mon Nov 12 16:17:49 2012	suspending process 2 for 100
+Mon Nov 12 16:17:49 2012	suspending process 2 for 100
+Mon Nov 12 16:17:49 2012	suspending process 2 for 100
+Mon Nov 12 16:17:49 2012	suspending process 2 for 100
+Mon Nov 12 16:17:49 2012	suspending process 2 for 100
+Mon Nov 12 16:17:49 2012	suspending process 2 for 100
+Mon Nov 12 16:17:49 2012	suspending process 2 for 100
+Mon Nov 12 16:17:50 2012	suspending process 2 for 100
+Mon Nov 12 16:17:50 2012	suspending process 2 for 100
+Mon Nov 12 16:17:50 2012	suspending process 2 for 100
+Mon Nov 12 16:17:50 2012	suspending process 2 for 100
+Mon Nov 12 16:17:50 2012	suspending process 2 for 100
+Mon Nov 12 16:17:50 2012	suspending process 2 for 100
+Mon Nov 12 16:17:50 2012	suspending process 2 for 100
+Mon Nov 12 16:17:50 2012	suspending process 2 for 100
+Mon Nov 12 16:17:50 2012	suspending process 2 for 100
+Mon Nov 12 16:17:51 2012	suspending process 2 for 100
+Mon Nov 12 16:17:51 2012	suspending process 2 for 100
+Mon Nov 12 16:17:51 2012	suspending process 2 for 100
+Mon Nov 12 16:17:51 2012	suspending process 2 for 100
+Mon Nov 12 16:17:51 2012	suspending process 2 for 100
+Mon Nov 12 16:17:51 2012	suspending process 2 for 100
+Mon Nov 12 16:17:51 2012	suspending process 2 for 100
+Mon Nov 12 16:17:51 2012	suspending process 2 for 100
+Mon Nov 12 16:17:51 2012	suspending process 2 for 100
+Mon Nov 12 16:17:52 2012	suspending process 2 for 100
+Mon Nov 12 16:17:52 2012	suspending process 2 for 100
+Mon Nov 12 16:17:52 2012	suspending process 2 for 100
+Mon Nov 12 16:17:52 2012	suspending process 2 for 100
+Mon Nov 12 16:17:52 2012	suspending process 2 for 100
+Mon Nov 12 16:17:52 2012	suspending process 2 for 100
+Mon Nov 12 16:17:52 2012	suspending process 2 for 100
+Mon Nov 12 16:17:52 2012	suspending process 2 for 100
+Mon Nov 12 16:17:52 2012	suspending process 2 for 100
+Mon Nov 12 16:17:53 2012	suspending process 2 for 100
+Mon Nov 12 16:17:53 2012	suspending process 2 for 100
+Mon Nov 12 16:17:53 2012	suspending process 2 for 100
+Mon Nov 12 16:17:53 2012	suspending process 2 for 100
+Mon Nov 12 16:17:53 2012	suspending process 2 for 100
+Mon Nov 12 16:17:53 2012	suspending process 2 for 100
+Mon Nov 12 16:17:53 2012	suspending process 2 for 100
+Mon Nov 12 16:17:53 2012	suspending process 2 for 100
+Mon Nov 12 16:17:53 2012	suspending process 2 for 100
+Mon Nov 12 16:17:53 2012	suspending process 2 for 100
+Mon Nov 12 16:17:54 2012	suspending process 2 for 100
+Mon Nov 12 16:17:54 2012	suspending process 2 for 100
+Mon Nov 12 16:17:54 2012	suspending process 2 for 100
+Mon Nov 12 16:17:54 2012	suspending process 2 for 100
+Mon Nov 12 16:17:54 2012	suspending process 2 for 100
+Mon Nov 12 16:17:54 2012	suspending process 2 for 100
+Mon Nov 12 16:17:54 2012	suspending process 2 for 100
+Mon Nov 12 16:17:54 2012	suspending process 2 for 100
+Mon Nov 12 16:17:54 2012	suspending process 2 for 100
+Mon Nov 12 16:17:55 2012	suspending process 2 for 100
+Mon Nov 12 16:17:55 2012	suspending process 2 for 100
+Mon Nov 12 16:17:55 2012	suspending process 2 for 100
+Mon Nov 12 16:17:55 2012	suspending process 2 for 100
+Mon Nov 12 16:17:55 2012	suspending process 2 for 100
+Mon Nov 12 16:17:55 2012	suspending process 2 for 100
+Mon Nov 12 16:17:55 2012	suspending process 2 for 100
+Mon Nov 12 16:17:55 2012	suspending process 2 for 100
+Mon Nov 12 16:17:55 2012	suspending process 2 for 100
+Mon Nov 12 16:17:56 2012	suspending process 2 for 100
+Mon Nov 12 16:17:56 2012	suspending process 2 for 100
+Mon Nov 12 16:17:56 2012	suspending process 2 for 100
+Mon Nov 12 16:17:56 2012	suspending process 2 for 100
+Mon Nov 12 16:17:56 2012	suspending process 2 for 100
+Mon Nov 12 16:17:56 2012	suspending process 2 for 100
+Mon Nov 12 16:17:56 2012	suspending process 2 for 100
+Mon Nov 12 16:17:56 2012	suspending process 2 for 100
+Mon Nov 12 16:17:56 2012	suspending process 2 for 100
+Mon Nov 12 16:17:57 2012	suspending process 2 for 100
+Mon Nov 12 16:17:57 2012	suspending process 2 for 100
+Mon Nov 12 16:17:57 2012	suspending process 2 for 100
+Mon Nov 12 16:17:57 2012	suspending process 2 for 100
+Mon Nov 12 16:17:57 2012	suspending process 2 for 100
+Mon Nov 12 16:17:57 2012	suspending process 2 for 100
+Mon Nov 12 16:17:57 2012	suspending process 2 for 100
+Mon Nov 12 16:17:57 2012	suspending process 2 for 100
+Mon Nov 12 16:17:57 2012	suspending process 2 for 100
+Mon Nov 12 16:17:58 2012	suspending process 2 for 100
+Mon Nov 12 16:17:58 2012	suspending process 2 for 100
+Mon Nov 12 16:17:58 2012	suspending process 2 for 100
+Mon Nov 12 16:17:58 2012	suspending process 2 for 100
+Mon Nov 12 16:17:58 2012	suspending process 2 for 100
+Mon Nov 12 16:17:58 2012	suspending process 2 for 100
+Mon Nov 12 16:17:58 2012	suspending process 2 for 100
+Mon Nov 12 16:17:58 2012	suspending process 2 for 100
+Mon Nov 12 16:17:58 2012	suspending process 2 for 100
+Mon Nov 12 16:17:59 2012	suspending process 2 for 100
+Mon Nov 12 16:17:59 2012	suspending process 2 for 100
+
+
+------------NEW SESSION------------
+
+Mon Nov 12 16:19:27 2012	process 2 obdrzel praci 
+Mon Nov 12 16:19:27 2012	stack size procesu 2 | 1
+Mon Nov 12 16:19:27 2012	 node  | 0 | 2 | 3 | 1 | 
+Mon Nov 12 16:19:27 2012	level: 2 tlg: 3
+Mon Nov 12 16:19:27 2012	 node  | 0 | 1 | 2 | 3 | 
+Mon Nov 12 16:19:27 2012	level: 2 tlg: 3
+Mon Nov 12 16:19:27 2012	 node  | 0 | 3 | 1 | 2 | 
+Mon Nov 12 16:19:27 2012	level: 2 tlg: 3
+Mon Nov 12 16:19:27 2012	stack size procesu 2 | 3
+Mon Nov 12 16:19:27 2012	 node  | 0 | 3 | 2 | 1 | 
+Mon Nov 12 16:19:27 2012	level: 3 tlg: 3
+Mon Nov 12 16:19:27 2012	stack size procesu 2 | 3
+Mon Nov 12 16:19:27 2012	stack size procesu 2 | 2
+Mon Nov 12 16:19:27 2012	 node  | 0 | 1 | 3 | 2 | 
+Mon Nov 12 16:19:27 2012	level: 3 tlg: 3
+Mon Nov 12 16:19:27 2012	stack size procesu 2 | 2
+Mon Nov 12 16:19:27 2012	stack size procesu 2 | 1
+Mon Nov 12 16:19:27 2012	 node  | 0 | 2 | 1 | 3 | 
+Mon Nov 12 16:19:27 2012	level: 3 tlg: 3
+Mon Nov 12 16:19:27 2012	stack size procesu 2 | 1
+Mon Nov 12 16:19:27 2012	proces 2 nema praci 
+Mon Nov 12 16:19:27 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:19:27 2012	suspending process 2 for 100
+Mon Nov 12 16:19:27 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:19:27 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:19:27 2012	suspending process 2 for 100
+Mon Nov 12 16:19:27 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:19:27 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:19:27 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:19:27 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:19:27 2012	proces 2 nema praci 
+Mon Nov 12 16:19:27 2012	suspending process 2 for 100
+Mon Nov 12 16:19:27 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:19:27 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:19:27 2012	suspending process 2 for 100
+Mon Nov 12 16:19:27 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:19:27 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:19:27 2012	suspending process 2 for 100
+Mon Nov 12 16:19:27 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:19:27 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:19:27 2012	suspending process 2 for 100
+Mon Nov 12 16:19:28 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:19:28 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:19:28 2012	suspending process 2 for 100
+Mon Nov 12 16:19:28 2012	process 2 prijal FINISH
+Mon Nov 12 16:19:28 2012	Nyni ukoncuji vypocetni cyklus.
+Mon Nov 12 16:19:28 2012	process 2 computed 3
+
+
+------------NEW SESSION------------
+
+Mon Nov 12 16:35:13 2012	process 2 obdrzel praci 
+Mon Nov 12 16:35:13 2012	stack size procesu 2 | 1
+Mon Nov 12 16:35:13 2012	 node  | 0 | 2 | 3 | 1 | 
+Mon Nov 12 16:35:13 2012	level: 2 tlg: 3
+Mon Nov 12 16:35:13 2012	 node  | 0 | 1 | 2 | 3 | 
+Mon Nov 12 16:35:13 2012	level: 2 tlg: 3
+Mon Nov 12 16:35:13 2012	 node  | 0 | 3 | 1 | 2 | 
+Mon Nov 12 16:35:13 2012	level: 2 tlg: 3
+Mon Nov 12 16:35:13 2012	stack size procesu 2 | 3
+Mon Nov 12 16:35:13 2012	 node  | 0 | 3 | 2 | 1 | 
+Mon Nov 12 16:35:13 2012	level: 3 tlg: 3
+Mon Nov 12 16:35:13 2012	stack size procesu 2 | 3
+Mon Nov 12 16:35:13 2012	stack size procesu 2 | 2
+Mon Nov 12 16:35:13 2012	 node  | 0 | 1 | 3 | 2 | 
+Mon Nov 12 16:35:13 2012	level: 3 tlg: 3
+Mon Nov 12 16:35:13 2012	stack size procesu 2 | 2
+Mon Nov 12 16:35:13 2012	stack size procesu 2 | 1
+Mon Nov 12 16:35:13 2012	 node  | 0 | 2 | 1 | 3 | 
+Mon Nov 12 16:35:13 2012	level: 3 tlg: 3
+Mon Nov 12 16:35:13 2012	stack size procesu 2 | 1
+Mon Nov 12 16:35:13 2012	proces 2 nema praci 
+Mon Nov 12 16:35:13 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:35:13 2012	suspending process 2 for 100
+Mon Nov 12 16:35:13 2012	suspending process 2 for 100
+Mon Nov 12 16:35:13 2012	process 2 prijal FINISH
+Mon Nov 12 16:35:13 2012	Nyni ukoncuji vypocetni cyklus.
+Mon Nov 12 16:35:13 2012	process 2 computed 3
+
+
+------------NEW SESSION------------
+
+Mon Nov 12 16:38:54 2012	process 2 obdrzel praci 
+Mon Nov 12 16:38:54 2012	stack size procesu 2 | 1
+Mon Nov 12 16:38:54 2012	 node  | 0 | 2 | 3 | 1 | 
+Mon Nov 12 16:38:54 2012	level: 2 tlg: 3
+Mon Nov 12 16:38:54 2012	 node  | 0 | 1 | 2 | 3 | 
+Mon Nov 12 16:38:54 2012	level: 2 tlg: 3
+Mon Nov 12 16:38:54 2012	 node  | 0 | 3 | 1 | 2 | 
+Mon Nov 12 16:38:54 2012	level: 2 tlg: 3
+Mon Nov 12 16:38:54 2012	stack size procesu 2 | 3
+Mon Nov 12 16:38:54 2012	 node  | 0 | 3 | 2 | 1 | 
+Mon Nov 12 16:38:54 2012	level: 3 tlg: 3
+Mon Nov 12 16:38:54 2012	stack size procesu 2 | 3
+Mon Nov 12 16:38:54 2012	stack size procesu 2 | 2
+Mon Nov 12 16:38:54 2012	 node  | 0 | 1 | 3 | 2 | 
+Mon Nov 12 16:38:54 2012	level: 3 tlg: 3
+Mon Nov 12 16:38:54 2012	stack size procesu 2 | 2
+Mon Nov 12 16:38:54 2012	stack size procesu 2 | 1
+Mon Nov 12 16:38:54 2012	 node  | 0 | 2 | 1 | 3 | 
+Mon Nov 12 16:38:54 2012	level: 3 tlg: 3
+Mon Nov 12 16:38:54 2012	stack size procesu 2 | 1
+Mon Nov 12 16:38:54 2012	proces 2 nema praci 
+Mon Nov 12 16:38:54 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:38:54 2012	suspending process 2 for 100
+
+
+------------NEW SESSION------------
+
+Mon Nov 12 16:39:14 2012	process 2 obdrzel praci 
+Mon Nov 12 16:39:14 2012	stack size procesu 2 | 1
+Mon Nov 12 16:39:14 2012	 node  | 0 | 2 | 3 | 1 | 
+Mon Nov 12 16:39:14 2012	level: 2 tlg: 3
+Mon Nov 12 16:39:14 2012	 node  | 0 | 1 | 2 | 3 | 
+Mon Nov 12 16:39:14 2012	level: 2 tlg: 3
+Mon Nov 12 16:39:14 2012	 node  | 0 | 3 | 1 | 2 | 
+Mon Nov 12 16:39:14 2012	level: 2 tlg: 3
+Mon Nov 12 16:39:14 2012	stack size procesu 2 | 3
+Mon Nov 12 16:39:14 2012	 node  | 0 | 3 | 2 | 1 | 
+Mon Nov 12 16:39:14 2012	level: 3 tlg: 3
+Mon Nov 12 16:39:14 2012	stack size procesu 2 | 3
+Mon Nov 12 16:39:14 2012	stack size procesu 2 | 2
+Mon Nov 12 16:39:14 2012	 node  | 0 | 1 | 3 | 2 | 
+Mon Nov 12 16:39:14 2012	level: 3 tlg: 3
+Mon Nov 12 16:39:14 2012	stack size procesu 2 | 2
+Mon Nov 12 16:39:14 2012	stack size procesu 2 | 1
+Mon Nov 12 16:39:14 2012	 node  | 0 | 2 | 1 | 3 | 
+Mon Nov 12 16:39:14 2012	level: 3 tlg: 3
+Mon Nov 12 16:39:14 2012	stack size procesu 2 | 1
+Mon Nov 12 16:39:14 2012	proces 2 nema praci 
+Mon Nov 12 16:39:14 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:39:14 2012	suspending process 2 for 100
+Mon Nov 12 16:39:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:39:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:39:14 2012	suspending process 2 for 100
+Mon Nov 12 16:39:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:39:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:39:14 2012	suspending process 2 for 100
+Mon Nov 12 16:39:14 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:39:14 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:39:14 2012	suspending process 2 for 100
+Mon Nov 12 16:39:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:39:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:39:14 2012	suspending process 2 for 100
+Mon Nov 12 16:39:15 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:39:15 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:39:15 2012	suspending process 2 for 100
+Mon Nov 12 16:39:15 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:39:15 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:39:15 2012	suspending process 2 for 100
+Mon Nov 12 16:39:15 2012	process 2 prijal FINISH
+Mon Nov 12 16:39:15 2012	Nyni ukoncuji vypocetni cyklus.
+Mon Nov 12 16:39:15 2012	process 2 computed 3
+
+
+------------NEW SESSION------------
+
+Mon Nov 12 16:41:14 2012	process 2 obdrzel praci 
+Mon Nov 12 16:41:14 2012	stack size procesu 2 | 1
+Mon Nov 12 16:41:14 2012	 node  | 0 | 2 | 3 | 1 | 
+Mon Nov 12 16:41:14 2012	level: 2 tlg: 3
+Mon Nov 12 16:41:14 2012	 node  | 0 | 1 | 2 | 3 | 
+Mon Nov 12 16:41:14 2012	level: 2 tlg: 3
+Mon Nov 12 16:41:14 2012	 node  | 0 | 3 | 1 | 2 | 
+Mon Nov 12 16:41:14 2012	level: 2 tlg: 3
+Mon Nov 12 16:41:14 2012	stack size procesu 2 | 3
+Mon Nov 12 16:41:14 2012	 node  | 0 | 3 | 2 | 1 | 
+Mon Nov 12 16:41:14 2012	level: 3 tlg: 3
+Mon Nov 12 16:41:14 2012	stack size procesu 2 | 3
+Mon Nov 12 16:41:14 2012	stack size procesu 2 | 2
+Mon Nov 12 16:41:14 2012	 node  | 0 | 1 | 3 | 2 | 
+Mon Nov 12 16:41:14 2012	level: 3 tlg: 3
+Mon Nov 12 16:41:14 2012	stack size procesu 2 | 2
+Mon Nov 12 16:41:14 2012	stack size procesu 2 | 1
+Mon Nov 12 16:41:14 2012	 node  | 0 | 2 | 1 | 3 | 
+Mon Nov 12 16:41:14 2012	level: 3 tlg: 3
+Mon Nov 12 16:41:14 2012	stack size procesu 2 | 1
+Mon Nov 12 16:41:14 2012	proces 2 nema praci 
+Mon Nov 12 16:41:14 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:41:14 2012	suspending process 2 for 100
+Mon Nov 12 16:41:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:41:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:41:14 2012	suspending process 2 for 100
+Mon Nov 12 16:41:14 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:41:14 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:41:14 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:41:14 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:41:14 2012	proces 2 nema praci 
+Mon Nov 12 16:41:14 2012	suspending process 2 for 100
+Mon Nov 12 16:41:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:41:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:41:14 2012	suspending process 2 for 100
+Mon Nov 12 16:41:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:41:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:41:14 2012	suspending process 2 for 100
+Mon Nov 12 16:41:14 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:41:14 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:41:14 2012	suspending process 2 for 100
+Mon Nov 12 16:41:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:41:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:41:14 2012	suspending process 2 for 100
+Mon Nov 12 16:41:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:41:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:41:14 2012	suspending process 2 for 100
+Mon Nov 12 16:41:15 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:41:15 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:41:15 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:41:15 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:41:15 2012	proces 2 nema praci 
+Mon Nov 12 16:41:15 2012	suspending process 2 for 100
+Mon Nov 12 16:41:15 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:41:15 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:41:15 2012	suspending process 2 for 100
+Mon Nov 12 16:41:15 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:41:15 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:41:15 2012	suspending process 2 for 100
+Mon Nov 12 16:41:15 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:41:15 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:41:15 2012	suspending process 2 for 100
+Mon Nov 12 16:41:15 2012	suspending process 2 for 100
+Mon Nov 12 16:41:15 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:41:15 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:41:15 2012	suspending process 2 for 100
+Mon Nov 12 16:41:15 2012	process 2 prijal FINISH
+Mon Nov 12 16:41:15 2012	Nyni ukoncuji vypocetni cyklus.
+Mon Nov 12 16:41:15 2012	process 2 computed 3
+
+
+------------NEW SESSION------------
+
+Mon Nov 12 16:41:55 2012	process 2 obdrzel praci 
+Mon Nov 12 16:41:55 2012	stack size procesu 2 | 1
+Mon Nov 12 16:41:55 2012	 node  | 0 | 2 | 3 | 1 | 
+Mon Nov 12 16:41:55 2012	level: 2 tlg: 3
+Mon Nov 12 16:41:55 2012	 node  | 0 | 1 | 2 | 3 | 
+Mon Nov 12 16:41:55 2012	level: 2 tlg: 3
+Mon Nov 12 16:41:55 2012	 node  | 0 | 3 | 1 | 2 | 
+Mon Nov 12 16:41:55 2012	level: 2 tlg: 3
+Mon Nov 12 16:41:55 2012	stack size procesu 2 | 3
+Mon Nov 12 16:41:55 2012	 node  | 0 | 3 | 2 | 1 | 
+Mon Nov 12 16:41:55 2012	level: 3 tlg: 3
+Mon Nov 12 16:41:55 2012	stack size procesu 2 | 3
+Mon Nov 12 16:41:55 2012	stack size procesu 2 | 2
+Mon Nov 12 16:41:55 2012	 node  | 0 | 1 | 3 | 2 | 
+Mon Nov 12 16:41:55 2012	level: 3 tlg: 3
+Mon Nov 12 16:41:55 2012	stack size procesu 2 | 2
+Mon Nov 12 16:41:55 2012	stack size procesu 2 | 1
+Mon Nov 12 16:41:55 2012	 node  | 0 | 2 | 1 | 3 | 
+Mon Nov 12 16:41:55 2012	level: 3 tlg: 3
+Mon Nov 12 16:41:55 2012	stack size procesu 2 | 1
+Mon Nov 12 16:41:55 2012	proces 2 nema praci 
+Mon Nov 12 16:41:55 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:41:55 2012	suspending process 2 for 100
+Mon Nov 12 16:41:55 2012	suspending process 2 for 100
+Mon Nov 12 16:41:55 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:41:55 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:41:55 2012	suspending process 2 for 100
+Mon Nov 12 16:41:55 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:41:55 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:41:55 2012	suspending process 2 for 100
+Mon Nov 12 16:41:55 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:41:55 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:41:55 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:41:55 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:41:55 2012	proces 2 nema praci 
+Mon Nov 12 16:41:55 2012	suspending process 2 for 100
+Mon Nov 12 16:41:55 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:41:55 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:41:55 2012	suspending process 2 for 100
+Mon Nov 12 16:41:55 2012	suspending process 2 for 100
+Mon Nov 12 16:41:55 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:41:55 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:41:55 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:41:55 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:41:55 2012	proces 2 nema praci 
+Mon Nov 12 16:41:55 2012	suspending process 2 for 100
+Mon Nov 12 16:41:56 2012	suspending process 2 for 100
+Mon Nov 12 16:41:56 2012	suspending process 2 for 100
+Mon Nov 12 16:41:56 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:41:56 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:41:56 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:41:56 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:41:56 2012	proces 2 nema praci 
+Mon Nov 12 16:41:56 2012	suspending process 2 for 100
+Mon Nov 12 16:41:56 2012	suspending process 2 for 100
+Mon Nov 12 16:41:56 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:41:56 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:41:56 2012	suspending process 2 for 100
+Mon Nov 12 16:41:56 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:41:56 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:41:56 2012	suspending process 2 for 100
+Mon Nov 12 16:41:56 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:41:56 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:41:56 2012	suspending process 2 for 100
+Mon Nov 12 16:41:56 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:41:56 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:41:56 2012	suspending process 2 for 100
+Mon Nov 12 16:41:56 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:41:56 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:41:56 2012	suspending process 2 for 100
+Mon Nov 12 16:41:57 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:41:57 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:41:57 2012	suspending process 2 for 100
+Mon Nov 12 16:41:57 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:41:57 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:41:57 2012	suspending process 2 for 100
+Mon Nov 12 16:41:57 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:41:57 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:41:57 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:41:57 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:41:57 2012	proces 2 nema praci 
+Mon Nov 12 16:41:57 2012	suspending process 2 for 100
+Mon Nov 12 16:41:57 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:41:57 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:41:57 2012	suspending process 2 for 100
+Mon Nov 12 16:41:57 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:41:57 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:41:57 2012	suspending process 2 for 100
+Mon Nov 12 16:41:57 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:41:57 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:41:57 2012	suspending process 2 for 100
+Mon Nov 12 16:41:57 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:41:57 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:41:57 2012	suspending process 2 for 100
+Mon Nov 12 16:41:57 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:41:57 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:41:57 2012	suspending process 2 for 100
+Mon Nov 12 16:41:57 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:41:57 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:41:57 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:41:57 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:41:57 2012	proces 2 nema praci 
+Mon Nov 12 16:41:57 2012	suspending process 2 for 100
+Mon Nov 12 16:41:58 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:41:58 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:41:58 2012	suspending process 2 for 100
+Mon Nov 12 16:41:58 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:41:58 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:41:58 2012	suspending process 2 for 100
+Mon Nov 12 16:41:58 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:41:58 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:41:58 2012	suspending process 2 for 100
+Mon Nov 12 16:41:58 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:41:58 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:41:58 2012	suspending process 2 for 100
+Mon Nov 12 16:41:58 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:41:58 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:41:58 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:41:58 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:41:58 2012	proces 2 nema praci 
+Mon Nov 12 16:41:58 2012	suspending process 2 for 100
+Mon Nov 12 16:41:58 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:41:58 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:41:58 2012	suspending process 2 for 100
+Mon Nov 12 16:41:58 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:41:58 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:41:58 2012	suspending process 2 for 100
+Mon Nov 12 16:41:58 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:41:58 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:41:58 2012	suspending process 2 for 100
+Mon Nov 12 16:41:58 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:41:58 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:41:58 2012	suspending process 2 for 100
+Mon Nov 12 16:41:58 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:41:58 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:41:58 2012	suspending process 2 for 100
+Mon Nov 12 16:41:59 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:41:59 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:41:59 2012	suspending process 2 for 100
+Mon Nov 12 16:41:59 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:41:59 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:41:59 2012	suspending process 2 for 100
+Mon Nov 12 16:41:59 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:41:59 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:41:59 2012	suspending process 2 for 100
+Mon Nov 12 16:41:59 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:41:59 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:41:59 2012	suspending process 2 for 100
+Mon Nov 12 16:41:59 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:41:59 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:41:59 2012	suspending process 2 for 100
+Mon Nov 12 16:41:59 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:41:59 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:41:59 2012	suspending process 2 for 100
+Mon Nov 12 16:41:59 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:41:59 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:41:59 2012	suspending process 2 for 100
+Mon Nov 12 16:41:59 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:41:59 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:41:59 2012	suspending process 2 for 100
+Mon Nov 12 16:41:59 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:41:59 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:41:59 2012	suspending process 2 for 100
+Mon Nov 12 16:42:00 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:00 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:00 2012	suspending process 2 for 100
+Mon Nov 12 16:42:00 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:00 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:42:00 2012	suspending process 2 for 100
+Mon Nov 12 16:42:00 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:00 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:00 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:00 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:00 2012	proces 2 nema praci 
+Mon Nov 12 16:42:00 2012	suspending process 2 for 100
+Mon Nov 12 16:42:00 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:00 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:00 2012	suspending process 2 for 100
+Mon Nov 12 16:42:00 2012	suspending process 2 for 100
+Mon Nov 12 16:42:00 2012	suspending process 2 for 100
+Mon Nov 12 16:42:00 2012	suspending process 2 for 100
+Mon Nov 12 16:42:00 2012	suspending process 2 for 100
+Mon Nov 12 16:42:00 2012	suspending process 2 for 100
+Mon Nov 12 16:42:00 2012	suspending process 2 for 100
+Mon Nov 12 16:42:01 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:42:01 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:01 2012	suspending process 2 for 100
+Mon Nov 12 16:42:01 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:01 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:01 2012	suspending process 2 for 100
+Mon Nov 12 16:42:01 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:01 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:01 2012	suspending process 2 for 100
+Mon Nov 12 16:42:01 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:01 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:01 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:01 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:01 2012	proces 2 nema praci 
+Mon Nov 12 16:42:01 2012	suspending process 2 for 100
+Mon Nov 12 16:42:01 2012	suspending process 2 for 100
+Mon Nov 12 16:42:01 2012	suspending process 2 for 100
+Mon Nov 12 16:42:01 2012	suspending process 2 for 100
+Mon Nov 12 16:42:01 2012	suspending process 2 for 100
+Mon Nov 12 16:42:01 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:01 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:01 2012	suspending process 2 for 100
+Mon Nov 12 16:42:02 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:02 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:02 2012	suspending process 2 for 100
+Mon Nov 12 16:42:02 2012	suspending process 2 for 100
+Mon Nov 12 16:42:02 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:02 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:02 2012	suspending process 2 for 100
+Mon Nov 12 16:42:02 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:02 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:02 2012	suspending process 2 for 100
+Mon Nov 12 16:42:02 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:02 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:02 2012	suspending process 2 for 100
+Mon Nov 12 16:42:02 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:02 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:02 2012	suspending process 2 for 100
+Mon Nov 12 16:42:02 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:02 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:02 2012	suspending process 2 for 100
+Mon Nov 12 16:42:02 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:02 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:02 2012	suspending process 2 for 100
+Mon Nov 12 16:42:02 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:02 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:02 2012	suspending process 2 for 100
+Mon Nov 12 16:42:03 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:03 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:03 2012	suspending process 2 for 100
+Mon Nov 12 16:42:03 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:03 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:03 2012	suspending process 2 for 100
+Mon Nov 12 16:42:03 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:03 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:03 2012	suspending process 2 for 100
+Mon Nov 12 16:42:03 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:03 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:03 2012	suspending process 2 for 100
+Mon Nov 12 16:42:03 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:03 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:03 2012	suspending process 2 for 100
+Mon Nov 12 16:42:03 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:03 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:03 2012	suspending process 2 for 100
+Mon Nov 12 16:42:03 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:03 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:03 2012	suspending process 2 for 100
+Mon Nov 12 16:42:03 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:03 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:03 2012	suspending process 2 for 100
+Mon Nov 12 16:42:03 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:03 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:03 2012	suspending process 2 for 100
+Mon Nov 12 16:42:04 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:04 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:04 2012	suspending process 2 for 100
+Mon Nov 12 16:42:04 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:04 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:04 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:04 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:04 2012	proces 2 nema praci 
+Mon Nov 12 16:42:04 2012	suspending process 2 for 100
+Mon Nov 12 16:42:04 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:04 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:04 2012	suspending process 2 for 100
+Mon Nov 12 16:42:04 2012	suspending process 2 for 100
+Mon Nov 12 16:42:04 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:04 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:04 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:04 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:04 2012	proces 2 nema praci 
+Mon Nov 12 16:42:04 2012	suspending process 2 for 100
+Mon Nov 12 16:42:04 2012	suspending process 2 for 100
+Mon Nov 12 16:42:04 2012	suspending process 2 for 100
+Mon Nov 12 16:42:04 2012	suspending process 2 for 100
+Mon Nov 12 16:42:04 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:04 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:04 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:04 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:04 2012	proces 2 nema praci 
+Mon Nov 12 16:42:04 2012	suspending process 2 for 100
+Mon Nov 12 16:42:05 2012	suspending process 2 for 100
+Mon Nov 12 16:42:05 2012	suspending process 2 for 100
+Mon Nov 12 16:42:05 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:05 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:05 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:05 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:05 2012	proces 2 nema praci 
+Mon Nov 12 16:42:05 2012	suspending process 2 for 100
+Mon Nov 12 16:42:05 2012	suspending process 2 for 100
+Mon Nov 12 16:42:05 2012	suspending process 2 for 100
+Mon Nov 12 16:42:05 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:05 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:42:05 2012	suspending process 2 for 100
+Mon Nov 12 16:42:05 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:42:05 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:42:05 2012	suspending process 2 for 100
+Mon Nov 12 16:42:05 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:42:05 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:42:05 2012	suspending process 2 for 100
+Mon Nov 12 16:42:05 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:42:05 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:42:05 2012	suspending process 2 for 100
+Mon Nov 12 16:42:05 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:42:05 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:42:05 2012	suspending process 2 for 100
+Mon Nov 12 16:42:06 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:42:06 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:42:06 2012	suspending process 2 for 100
+Mon Nov 12 16:42:06 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:42:06 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:42:06 2012	suspending process 2 for 100
+Mon Nov 12 16:42:06 2012	suspending process 2 for 100
+Mon Nov 12 16:42:06 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:42:06 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:42:06 2012	suspending process 2 for 100
+Mon Nov 12 16:42:06 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:06 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:06 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:06 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:06 2012	proces 2 nema praci 
+Mon Nov 12 16:42:06 2012	suspending process 2 for 100
+Mon Nov 12 16:42:06 2012	suspending process 2 for 100
+Mon Nov 12 16:42:06 2012	suspending process 2 for 100
+Mon Nov 12 16:42:06 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:06 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:06 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:06 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:06 2012	proces 2 nema praci 
+Mon Nov 12 16:42:06 2012	suspending process 2 for 100
+Mon Nov 12 16:42:06 2012	suspending process 2 for 100
+Mon Nov 12 16:42:07 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:42:07 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:07 2012	suspending process 2 for 100
+Mon Nov 12 16:42:07 2012	suspending process 2 for 100
+Mon Nov 12 16:42:07 2012	suspending process 2 for 100
+Mon Nov 12 16:42:07 2012	suspending process 2 for 100
+Mon Nov 12 16:42:07 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:07 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:07 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:07 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:07 2012	proces 2 nema praci 
+Mon Nov 12 16:42:07 2012	suspending process 2 for 100
+Mon Nov 12 16:42:07 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:07 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:07 2012	suspending process 2 for 100
+Mon Nov 12 16:42:07 2012	suspending process 2 for 100
+Mon Nov 12 16:42:07 2012	suspending process 2 for 100
+Mon Nov 12 16:42:07 2012	suspending process 2 for 100
+Mon Nov 12 16:42:08 2012	suspending process 2 for 100
+Mon Nov 12 16:42:08 2012	suspending process 2 for 100
+Mon Nov 12 16:42:08 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:08 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:08 2012	suspending process 2 for 100
+Mon Nov 12 16:42:08 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:08 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:08 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:08 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:08 2012	proces 2 nema praci 
+Mon Nov 12 16:42:08 2012	suspending process 2 for 100
+Mon Nov 12 16:42:08 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:08 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:08 2012	suspending process 2 for 100
+Mon Nov 12 16:42:08 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:08 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:08 2012	suspending process 2 for 100
+Mon Nov 12 16:42:08 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:08 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:08 2012	suspending process 2 for 100
+Mon Nov 12 16:42:08 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:08 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:08 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:08 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:08 2012	proces 2 nema praci 
+Mon Nov 12 16:42:08 2012	suspending process 2 for 100
+Mon Nov 12 16:42:08 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:08 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:08 2012	suspending process 2 for 100
+Mon Nov 12 16:42:09 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:09 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:09 2012	suspending process 2 for 100
+Mon Nov 12 16:42:09 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:09 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:09 2012	suspending process 2 for 100
+Mon Nov 12 16:42:09 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:09 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:09 2012	suspending process 2 for 100
+Mon Nov 12 16:42:09 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:09 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:09 2012	suspending process 2 for 100
+Mon Nov 12 16:42:09 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:09 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:09 2012	suspending process 2 for 100
+Mon Nov 12 16:42:09 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:09 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:09 2012	suspending process 2 for 100
+Mon Nov 12 16:42:09 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:09 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:09 2012	suspending process 2 for 100
+Mon Nov 12 16:42:09 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:09 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:09 2012	suspending process 2 for 100
+Mon Nov 12 16:42:09 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:09 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:09 2012	suspending process 2 for 100
+Mon Nov 12 16:42:10 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:10 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:10 2012	suspending process 2 for 100
+Mon Nov 12 16:42:10 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:10 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:10 2012	suspending process 2 for 100
+Mon Nov 12 16:42:10 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:10 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:10 2012	suspending process 2 for 100
+Mon Nov 12 16:42:10 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:10 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:10 2012	suspending process 2 for 100
+Mon Nov 12 16:42:10 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:10 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:10 2012	suspending process 2 for 100
+Mon Nov 12 16:42:10 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:10 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:10 2012	suspending process 2 for 100
+Mon Nov 12 16:42:10 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:10 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:10 2012	suspending process 2 for 100
+Mon Nov 12 16:42:10 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:10 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:10 2012	suspending process 2 for 100
+Mon Nov 12 16:42:10 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:10 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:10 2012	suspending process 2 for 100
+Mon Nov 12 16:42:11 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:11 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:11 2012	suspending process 2 for 100
+Mon Nov 12 16:42:11 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:11 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:42:11 2012	suspending process 2 for 100
+Mon Nov 12 16:42:11 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:11 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:11 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:11 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:11 2012	proces 2 nema praci 
+Mon Nov 12 16:42:11 2012	suspending process 2 for 100
+Mon Nov 12 16:42:11 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:11 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:11 2012	suspending process 2 for 100
+Mon Nov 12 16:42:11 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:42:11 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:42:11 2012	suspending process 2 for 100
+Mon Nov 12 16:42:11 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:11 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:11 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:11 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:11 2012	proces 2 nema praci 
+Mon Nov 12 16:42:11 2012	suspending process 2 for 100
+Mon Nov 12 16:42:11 2012	suspending process 2 for 100
+Mon Nov 12 16:42:11 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:11 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:11 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:11 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:11 2012	proces 2 nema praci 
+Mon Nov 12 16:42:11 2012	suspending process 2 for 100
+Mon Nov 12 16:42:11 2012	suspending process 2 for 100
+Mon Nov 12 16:42:12 2012	suspending process 2 for 100
+Mon Nov 12 16:42:12 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:42:12 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:12 2012	suspending process 2 for 100
+Mon Nov 12 16:42:12 2012	suspending process 2 for 100
+Mon Nov 12 16:42:12 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:12 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:12 2012	suspending process 2 for 100
+Mon Nov 12 16:42:12 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:12 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:12 2012	suspending process 2 for 100
+Mon Nov 12 16:42:12 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:12 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:12 2012	suspending process 2 for 100
+Mon Nov 12 16:42:13 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:13 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:13 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:13 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:13 2012	proces 2 nema praci 
+Mon Nov 12 16:42:13 2012	suspending process 2 for 100
+Mon Nov 12 16:42:13 2012	suspending process 2 for 100
+Mon Nov 12 16:42:13 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:13 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:13 2012	suspending process 2 for 100
+Mon Nov 12 16:42:13 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:13 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:13 2012	suspending process 2 for 100
+Mon Nov 12 16:42:13 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:13 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:13 2012	suspending process 2 for 100
+Mon Nov 12 16:42:13 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:13 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:13 2012	suspending process 2 for 100
+Mon Nov 12 16:42:13 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:13 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:13 2012	suspending process 2 for 100
+Mon Nov 12 16:42:13 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:13 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:13 2012	suspending process 2 for 100
+Mon Nov 12 16:42:13 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:13 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:13 2012	suspending process 2 for 100
+Mon Nov 12 16:42:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:14 2012	suspending process 2 for 100
+Mon Nov 12 16:42:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:14 2012	suspending process 2 for 100
+Mon Nov 12 16:42:14 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:14 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:14 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:14 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:14 2012	proces 2 nema praci 
+Mon Nov 12 16:42:14 2012	suspending process 2 for 100
+Mon Nov 12 16:42:14 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:14 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:42:14 2012	suspending process 2 for 100
+Mon Nov 12 16:42:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:14 2012	suspending process 2 for 100
+Mon Nov 12 16:42:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:14 2012	suspending process 2 for 100
+Mon Nov 12 16:42:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:14 2012	suspending process 2 for 100
+Mon Nov 12 16:42:15 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:15 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:15 2012	suspending process 2 for 100
+Mon Nov 12 16:42:15 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:42:15 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:15 2012	suspending process 2 for 100
+Mon Nov 12 16:42:15 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:15 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:15 2012	suspending process 2 for 100
+Mon Nov 12 16:42:15 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:15 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:15 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:15 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:15 2012	proces 2 nema praci 
+Mon Nov 12 16:42:15 2012	suspending process 2 for 100
+Mon Nov 12 16:42:15 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:15 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:15 2012	suspending process 2 for 100
+Mon Nov 12 16:42:15 2012	suspending process 2 for 100
+Mon Nov 12 16:42:15 2012	suspending process 2 for 100
+Mon Nov 12 16:42:15 2012	suspending process 2 for 100
+Mon Nov 12 16:42:15 2012	suspending process 2 for 100
+Mon Nov 12 16:42:15 2012	suspending process 2 for 100
+Mon Nov 12 16:42:16 2012	suspending process 2 for 100
+Mon Nov 12 16:42:16 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:16 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:42:16 2012	suspending process 2 for 100
+Mon Nov 12 16:42:16 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:16 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:16 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:16 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:16 2012	proces 2 nema praci 
+Mon Nov 12 16:42:16 2012	suspending process 2 for 100
+Mon Nov 12 16:42:16 2012	suspending process 2 for 100
+Mon Nov 12 16:42:16 2012	suspending process 2 for 100
+Mon Nov 12 16:42:16 2012	suspending process 2 for 100
+Mon Nov 12 16:42:16 2012	suspending process 2 for 100
+Mon Nov 12 16:42:16 2012	suspending process 2 for 100
+Mon Nov 12 16:42:16 2012	suspending process 2 for 100
+Mon Nov 12 16:42:17 2012	suspending process 2 for 100
+Mon Nov 12 16:42:17 2012	suspending process 2 for 100
+Mon Nov 12 16:42:17 2012	suspending process 2 for 100
+Mon Nov 12 16:42:17 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:42:17 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:17 2012	suspending process 2 for 100
+Mon Nov 12 16:42:17 2012	suspending process 2 for 100
+Mon Nov 12 16:42:17 2012	suspending process 2 for 100
+Mon Nov 12 16:42:17 2012	suspending process 2 for 100
+Mon Nov 12 16:42:17 2012	suspending process 2 for 100
+Mon Nov 12 16:42:17 2012	suspending process 2 for 100
+Mon Nov 12 16:42:18 2012	suspending process 2 for 100
+Mon Nov 12 16:42:18 2012	suspending process 2 for 100
+Mon Nov 12 16:42:18 2012	suspending process 2 for 100
+Mon Nov 12 16:42:18 2012	suspending process 2 for 100
+Mon Nov 12 16:42:18 2012	suspending process 2 for 100
+Mon Nov 12 16:42:18 2012	suspending process 2 for 100
+Mon Nov 12 16:42:18 2012	suspending process 2 for 100
+Mon Nov 12 16:42:18 2012	suspending process 2 for 100
+Mon Nov 12 16:42:18 2012	suspending process 2 for 100
+Mon Nov 12 16:42:19 2012	suspending process 2 for 100
+Mon Nov 12 16:42:19 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:19 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:19 2012	suspending process 2 for 100
+Mon Nov 12 16:42:19 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:19 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:19 2012	suspending process 2 for 100
+Mon Nov 12 16:42:19 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:19 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:19 2012	suspending process 2 for 100
+Mon Nov 12 16:42:19 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:19 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:19 2012	suspending process 2 for 100
+Mon Nov 12 16:42:19 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:19 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:19 2012	suspending process 2 for 100
+Mon Nov 12 16:42:19 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:19 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:19 2012	suspending process 2 for 100
+Mon Nov 12 16:42:19 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:19 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:42:19 2012	suspending process 2 for 100
+Mon Nov 12 16:42:19 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:19 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:19 2012	suspending process 2 for 100
+Mon Nov 12 16:42:20 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:20 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:20 2012	suspending process 2 for 100
+Mon Nov 12 16:42:20 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:20 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:20 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:20 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:20 2012	proces 2 nema praci 
+Mon Nov 12 16:42:20 2012	suspending process 2 for 100
+Mon Nov 12 16:42:20 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:42:20 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:20 2012	suspending process 2 for 100
+Mon Nov 12 16:42:20 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:20 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:20 2012	suspending process 2 for 100
+Mon Nov 12 16:42:20 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:20 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:20 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:20 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:20 2012	proces 2 nema praci 
+Mon Nov 12 16:42:20 2012	suspending process 2 for 100
+Mon Nov 12 16:42:20 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:20 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:20 2012	suspending process 2 for 100
+Mon Nov 12 16:42:20 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:20 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:20 2012	suspending process 2 for 100
+Mon Nov 12 16:42:20 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:20 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:20 2012	suspending process 2 for 100
+Mon Nov 12 16:42:20 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:20 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:20 2012	suspending process 2 for 100
+Mon Nov 12 16:42:21 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:21 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:21 2012	suspending process 2 for 100
+Mon Nov 12 16:42:21 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:21 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:42:21 2012	suspending process 2 for 100
+Mon Nov 12 16:42:21 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:21 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:21 2012	suspending process 2 for 100
+Mon Nov 12 16:42:21 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:21 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:21 2012	suspending process 2 for 100
+Mon Nov 12 16:42:21 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:21 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:21 2012	suspending process 2 for 100
+Mon Nov 12 16:42:21 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:21 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:21 2012	suspending process 2 for 100
+Mon Nov 12 16:42:21 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:21 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:21 2012	suspending process 2 for 100
+Mon Nov 12 16:42:21 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:21 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:21 2012	suspending process 2 for 100
+Mon Nov 12 16:42:21 2012	suspending process 2 for 100
+Mon Nov 12 16:42:22 2012	suspending process 2 for 100
+Mon Nov 12 16:42:22 2012	suspending process 2 for 100
+Mon Nov 12 16:42:22 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:22 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:22 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:22 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:22 2012	proces 2 nema praci 
+Mon Nov 12 16:42:22 2012	suspending process 2 for 100
+Mon Nov 12 16:42:22 2012	suspending process 2 for 100
+Mon Nov 12 16:42:22 2012	suspending process 2 for 100
+
+
+------------NEW SESSION------------
+
+Mon Nov 12 16:42:59 2012	process 2 obdrzel praci 
+Mon Nov 12 16:42:59 2012	stack size procesu 2 | 1
+Mon Nov 12 16:42:59 2012	 node  | 0 | 2 | 3 | 1 | 
+Mon Nov 12 16:42:59 2012	level: 2 tlg: 3
+Mon Nov 12 16:42:59 2012	 node  | 0 | 1 | 2 | 3 | 
+Mon Nov 12 16:42:59 2012	level: 2 tlg: 3
+Mon Nov 12 16:42:59 2012	 node  | 0 | 3 | 1 | 2 | 
+Mon Nov 12 16:42:59 2012	level: 2 tlg: 3
+Mon Nov 12 16:42:59 2012	stack size procesu 2 | 3
+Mon Nov 12 16:42:59 2012	 node  | 0 | 3 | 2 | 1 | 
+Mon Nov 12 16:42:59 2012	level: 3 tlg: 3
+Mon Nov 12 16:42:59 2012	stack size procesu 2 | 3
+Mon Nov 12 16:42:59 2012	stack size procesu 2 | 2
+Mon Nov 12 16:42:59 2012	 node  | 0 | 1 | 3 | 2 | 
+Mon Nov 12 16:42:59 2012	level: 3 tlg: 3
+Mon Nov 12 16:42:59 2012	stack size procesu 2 | 2
+Mon Nov 12 16:42:59 2012	stack size procesu 2 | 1
+Mon Nov 12 16:42:59 2012	 node  | 0 | 2 | 1 | 3 | 
+Mon Nov 12 16:42:59 2012	level: 3 tlg: 3
+Mon Nov 12 16:42:59 2012	stack size procesu 2 | 1
+Mon Nov 12 16:42:59 2012	proces 2 nema praci 
+Mon Nov 12 16:42:59 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:59 2012	suspending process 2 for 100
+Mon Nov 12 16:42:59 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:59 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:59 2012	suspending process 2 for 100
+Mon Nov 12 16:42:59 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:42:59 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:42:59 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:42:59 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:42:59 2012	proces 2 nema praci 
+Mon Nov 12 16:42:59 2012	suspending process 2 for 100
+Mon Nov 12 16:42:59 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:42:59 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:42:59 2012	suspending process 2 for 100
+Mon Nov 12 16:42:59 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:42:59 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:42:59 2012	suspending process 2 for 100
+Mon Nov 12 16:43:00 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:00 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:00 2012	suspending process 2 for 100
+Mon Nov 12 16:43:00 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:00 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:00 2012	suspending process 2 for 100
+Mon Nov 12 16:43:00 2012	suspending process 2 for 100
+Mon Nov 12 16:43:00 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:00 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:00 2012	suspending process 2 for 100
+Mon Nov 12 16:43:00 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:00 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:00 2012	suspending process 2 for 100
+Mon Nov 12 16:43:00 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:00 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:00 2012	suspending process 2 for 100
+Mon Nov 12 16:43:00 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:00 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:00 2012	suspending process 2 for 100
+Mon Nov 12 16:43:00 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:00 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:00 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:00 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:00 2012	proces 2 nema praci 
+Mon Nov 12 16:43:00 2012	suspending process 2 for 100
+Mon Nov 12 16:43:00 2012	suspending process 2 for 100
+Mon Nov 12 16:43:01 2012	suspending process 2 for 100
+Mon Nov 12 16:43:01 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:01 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:01 2012	suspending process 2 for 100
+Mon Nov 12 16:43:01 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:01 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:01 2012	suspending process 2 for 100
+Mon Nov 12 16:43:01 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:01 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:01 2012	suspending process 2 for 100
+Mon Nov 12 16:43:01 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:01 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:01 2012	suspending process 2 for 100
+Mon Nov 12 16:43:01 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:01 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:01 2012	suspending process 2 for 100
+Mon Nov 12 16:43:01 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:01 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:01 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:01 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:01 2012	proces 2 nema praci 
+Mon Nov 12 16:43:01 2012	suspending process 2 for 100
+Mon Nov 12 16:43:01 2012	suspending process 2 for 100
+Mon Nov 12 16:43:01 2012	suspending process 2 for 100
+Mon Nov 12 16:43:02 2012	suspending process 2 for 100
+Mon Nov 12 16:43:02 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:02 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:02 2012	suspending process 2 for 100
+Mon Nov 12 16:43:02 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:02 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:02 2012	suspending process 2 for 100
+Mon Nov 12 16:43:02 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:02 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:02 2012	suspending process 2 for 100
+Mon Nov 12 16:43:02 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:02 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:02 2012	suspending process 2 for 100
+Mon Nov 12 16:43:02 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:02 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:02 2012	suspending process 2 for 100
+Mon Nov 12 16:43:02 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:02 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:02 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:02 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:02 2012	proces 2 nema praci 
+Mon Nov 12 16:43:02 2012	suspending process 2 for 100
+Mon Nov 12 16:43:02 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:02 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:02 2012	suspending process 2 for 100
+Mon Nov 12 16:43:02 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:02 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:02 2012	suspending process 2 for 100
+Mon Nov 12 16:43:02 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:02 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:02 2012	suspending process 2 for 100
+Mon Nov 12 16:43:03 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:03 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:03 2012	suspending process 2 for 100
+Mon Nov 12 16:43:03 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:03 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:03 2012	suspending process 2 for 100
+Mon Nov 12 16:43:03 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:03 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:03 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:03 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:03 2012	proces 2 nema praci 
+Mon Nov 12 16:43:03 2012	suspending process 2 for 100
+Mon Nov 12 16:43:03 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:03 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:03 2012	suspending process 2 for 100
+Mon Nov 12 16:43:03 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:03 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:03 2012	suspending process 2 for 100
+Mon Nov 12 16:43:03 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:03 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:03 2012	suspending process 2 for 100
+Mon Nov 12 16:43:03 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:03 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:03 2012	suspending process 2 for 100
+Mon Nov 12 16:43:03 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:03 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:03 2012	suspending process 2 for 100
+Mon Nov 12 16:43:03 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:03 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:03 2012	suspending process 2 for 100
+Mon Nov 12 16:43:04 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:04 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:04 2012	suspending process 2 for 100
+Mon Nov 12 16:43:04 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:04 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:04 2012	suspending process 2 for 100
+Mon Nov 12 16:43:04 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:04 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:04 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:04 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:04 2012	proces 2 nema praci 
+Mon Nov 12 16:43:04 2012	suspending process 2 for 100
+Mon Nov 12 16:43:04 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:04 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:04 2012	suspending process 2 for 100
+Mon Nov 12 16:43:04 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:04 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:04 2012	suspending process 2 for 100
+Mon Nov 12 16:43:04 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:04 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:04 2012	suspending process 2 for 100
+Mon Nov 12 16:43:04 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:04 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:04 2012	suspending process 2 for 100
+Mon Nov 12 16:43:04 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:04 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:04 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:04 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:04 2012	proces 2 nema praci 
+Mon Nov 12 16:43:04 2012	suspending process 2 for 100
+Mon Nov 12 16:43:04 2012	suspending process 2 for 100
+Mon Nov 12 16:43:05 2012	suspending process 2 for 100
+Mon Nov 12 16:43:05 2012	suspending process 2 for 100
+Mon Nov 12 16:43:05 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:05 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:05 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:05 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:05 2012	proces 2 nema praci 
+Mon Nov 12 16:43:05 2012	suspending process 2 for 100
+Mon Nov 12 16:43:05 2012	suspending process 2 for 100
+Mon Nov 12 16:43:05 2012	suspending process 2 for 100
+Mon Nov 12 16:43:05 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:05 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:05 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:05 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:05 2012	proces 2 nema praci 
+Mon Nov 12 16:43:05 2012	suspending process 2 for 100
+Mon Nov 12 16:43:05 2012	suspending process 2 for 100
+Mon Nov 12 16:43:05 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:05 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:05 2012	suspending process 2 for 100
+Mon Nov 12 16:43:05 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:05 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:05 2012	suspending process 2 for 100
+Mon Nov 12 16:43:06 2012	suspending process 2 for 100
+Mon Nov 12 16:43:06 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:06 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:06 2012	suspending process 2 for 100
+Mon Nov 12 16:43:06 2012	suspending process 2 for 100
+Mon Nov 12 16:43:06 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:06 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:06 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:06 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:06 2012	proces 2 nema praci 
+Mon Nov 12 16:43:06 2012	suspending process 2 for 100
+Mon Nov 12 16:43:06 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:06 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:06 2012	suspending process 2 for 100
+Mon Nov 12 16:43:06 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:06 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:06 2012	suspending process 2 for 100
+Mon Nov 12 16:43:06 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:06 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:06 2012	suspending process 2 for 100
+Mon Nov 12 16:43:06 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:06 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:06 2012	suspending process 2 for 100
+Mon Nov 12 16:43:06 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:06 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:06 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:06 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:06 2012	proces 2 nema praci 
+Mon Nov 12 16:43:06 2012	suspending process 2 for 100
+Mon Nov 12 16:43:07 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:07 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:07 2012	suspending process 2 for 100
+Mon Nov 12 16:43:07 2012	suspending process 2 for 100
+Mon Nov 12 16:43:07 2012	suspending process 2 for 100
+Mon Nov 12 16:43:07 2012	suspending process 2 for 100
+Mon Nov 12 16:43:07 2012	suspending process 2 for 100
+Mon Nov 12 16:43:07 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:07 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:07 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:07 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:07 2012	proces 2 nema praci 
+Mon Nov 12 16:43:07 2012	suspending process 2 for 100
+Mon Nov 12 16:43:07 2012	suspending process 2 for 100
+Mon Nov 12 16:43:07 2012	suspending process 2 for 100
+Mon Nov 12 16:43:07 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:07 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:07 2012	suspending process 2 for 100
+Mon Nov 12 16:43:08 2012	suspending process 2 for 100
+Mon Nov 12 16:43:08 2012	suspending process 2 for 100
+Mon Nov 12 16:43:08 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:08 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:08 2012	suspending process 2 for 100
+Mon Nov 12 16:43:08 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:08 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:08 2012	suspending process 2 for 100
+Mon Nov 12 16:43:08 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:08 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:08 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:08 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:08 2012	proces 2 nema praci 
+Mon Nov 12 16:43:08 2012	suspending process 2 for 100
+Mon Nov 12 16:43:08 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:08 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:08 2012	suspending process 2 for 100
+Mon Nov 12 16:43:08 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:08 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:08 2012	suspending process 2 for 100
+Mon Nov 12 16:43:08 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:08 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:08 2012	suspending process 2 for 100
+Mon Nov 12 16:43:08 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:08 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:08 2012	suspending process 2 for 100
+Mon Nov 12 16:43:09 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:09 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:09 2012	suspending process 2 for 100
+Mon Nov 12 16:43:09 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:09 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:09 2012	suspending process 2 for 100
+Mon Nov 12 16:43:09 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:09 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:09 2012	suspending process 2 for 100
+Mon Nov 12 16:43:09 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:09 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:09 2012	suspending process 2 for 100
+Mon Nov 12 16:43:09 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:09 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:09 2012	suspending process 2 for 100
+Mon Nov 12 16:43:09 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:09 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:09 2012	suspending process 2 for 100
+Mon Nov 12 16:43:09 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:09 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:09 2012	suspending process 2 for 100
+Mon Nov 12 16:43:09 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:09 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:09 2012	suspending process 2 for 100
+Mon Nov 12 16:43:09 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:09 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:09 2012	suspending process 2 for 100
+Mon Nov 12 16:43:10 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:10 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:10 2012	suspending process 2 for 100
+Mon Nov 12 16:43:10 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:10 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:10 2012	suspending process 2 for 100
+Mon Nov 12 16:43:10 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:10 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:10 2012	suspending process 2 for 100
+Mon Nov 12 16:43:10 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:10 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:10 2012	suspending process 2 for 100
+Mon Nov 12 16:43:10 2012	suspending process 2 for 100
+Mon Nov 12 16:43:10 2012	suspending process 2 for 100
+Mon Nov 12 16:43:10 2012	suspending process 2 for 100
+Mon Nov 12 16:43:10 2012	suspending process 2 for 100
+Mon Nov 12 16:43:10 2012	suspending process 2 for 100
+Mon Nov 12 16:43:10 2012	suspending process 2 for 100
+Mon Nov 12 16:43:11 2012	suspending process 2 for 100
+Mon Nov 12 16:43:11 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:11 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:11 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:11 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:11 2012	proces 2 nema praci 
+Mon Nov 12 16:43:11 2012	suspending process 2 for 100
+Mon Nov 12 16:43:11 2012	suspending process 2 for 100
+Mon Nov 12 16:43:11 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:11 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:11 2012	suspending process 2 for 100
+Mon Nov 12 16:43:11 2012	suspending process 2 for 100
+Mon Nov 12 16:43:11 2012	suspending process 2 for 100
+Mon Nov 12 16:43:11 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:11 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:11 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:11 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:11 2012	proces 2 nema praci 
+Mon Nov 12 16:43:11 2012	suspending process 2 for 100
+Mon Nov 12 16:43:11 2012	suspending process 2 for 100
+Mon Nov 12 16:43:11 2012	suspending process 2 for 100
+Mon Nov 12 16:43:12 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:12 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:12 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:12 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:12 2012	proces 2 nema praci 
+Mon Nov 12 16:43:12 2012	suspending process 2 for 100
+Mon Nov 12 16:43:12 2012	suspending process 2 for 100
+Mon Nov 12 16:43:12 2012	suspending process 2 for 100
+Mon Nov 12 16:43:12 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:12 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:12 2012	suspending process 2 for 100
+Mon Nov 12 16:43:12 2012	suspending process 2 for 100
+Mon Nov 12 16:43:12 2012	suspending process 2 for 100
+Mon Nov 12 16:43:12 2012	suspending process 2 for 100
+Mon Nov 12 16:43:12 2012	suspending process 2 for 100
+Mon Nov 12 16:43:12 2012	suspending process 2 for 100
+Mon Nov 12 16:43:13 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:13 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:13 2012	suspending process 2 for 100
+Mon Nov 12 16:43:13 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:13 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:13 2012	suspending process 2 for 100
+Mon Nov 12 16:43:13 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:13 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:13 2012	suspending process 2 for 100
+Mon Nov 12 16:43:13 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:13 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:13 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:13 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:13 2012	proces 2 nema praci 
+Mon Nov 12 16:43:13 2012	suspending process 2 for 100
+Mon Nov 12 16:43:13 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:13 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:13 2012	suspending process 2 for 100
+Mon Nov 12 16:43:13 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:13 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:13 2012	suspending process 2 for 100
+Mon Nov 12 16:43:13 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:13 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:13 2012	suspending process 2 for 100
+Mon Nov 12 16:43:13 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:13 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:13 2012	suspending process 2 for 100
+Mon Nov 12 16:43:13 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:13 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:13 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:13 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:13 2012	proces 2 nema praci 
+Mon Nov 12 16:43:13 2012	suspending process 2 for 100
+Mon Nov 12 16:43:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:14 2012	suspending process 2 for 100
+Mon Nov 12 16:43:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:14 2012	suspending process 2 for 100
+Mon Nov 12 16:43:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:14 2012	suspending process 2 for 100
+Mon Nov 12 16:43:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:14 2012	suspending process 2 for 100
+Mon Nov 12 16:43:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:14 2012	suspending process 2 for 100
+Mon Nov 12 16:43:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:14 2012	suspending process 2 for 100
+Mon Nov 12 16:43:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:14 2012	suspending process 2 for 100
+Mon Nov 12 16:43:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:14 2012	suspending process 2 for 100
+Mon Nov 12 16:43:14 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:14 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:14 2012	suspending process 2 for 100
+Mon Nov 12 16:43:15 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:15 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:15 2012	suspending process 2 for 100
+Mon Nov 12 16:43:15 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:15 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:15 2012	suspending process 2 for 100
+Mon Nov 12 16:43:15 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:15 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:15 2012	suspending process 2 for 100
+Mon Nov 12 16:43:15 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:15 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:15 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:15 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:15 2012	proces 2 nema praci 
+Mon Nov 12 16:43:15 2012	suspending process 2 for 100
+Mon Nov 12 16:43:15 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:15 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:15 2012	suspending process 2 for 100
+Mon Nov 12 16:43:15 2012	suspending process 2 for 100
+Mon Nov 12 16:43:15 2012	suspending process 2 for 100
+Mon Nov 12 16:43:15 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:15 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:15 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:15 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:15 2012	proces 2 nema praci 
+Mon Nov 12 16:43:15 2012	suspending process 2 for 100
+Mon Nov 12 16:43:15 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:15 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:15 2012	suspending process 2 for 100
+Mon Nov 12 16:43:16 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:16 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:16 2012	suspending process 2 for 100
+Mon Nov 12 16:43:16 2012	suspending process 2 for 100
+Mon Nov 12 16:43:16 2012	suspending process 2 for 100
+Mon Nov 12 16:43:16 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:16 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:16 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:16 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:16 2012	proces 2 nema praci 
+Mon Nov 12 16:43:16 2012	suspending process 2 for 100
+Mon Nov 12 16:43:16 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:16 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:16 2012	suspending process 2 for 100
+Mon Nov 12 16:43:16 2012	suspending process 2 for 100
+Mon Nov 12 16:43:16 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:16 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:16 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:16 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:16 2012	proces 2 nema praci 
+Mon Nov 12 16:43:16 2012	suspending process 2 for 100
+Mon Nov 12 16:43:16 2012	suspending process 2 for 100
+Mon Nov 12 16:43:16 2012	suspending process 2 for 100
+Mon Nov 12 16:43:16 2012	suspending process 2 for 100
+Mon Nov 12 16:43:17 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:17 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:17 2012	suspending process 2 for 100
+Mon Nov 12 16:43:17 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:17 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:17 2012	suspending process 2 for 100
+Mon Nov 12 16:43:17 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:17 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:17 2012	suspending process 2 for 100
+Mon Nov 12 16:43:17 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:17 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:17 2012	suspending process 2 for 100
+Mon Nov 12 16:43:17 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:17 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:17 2012	suspending process 2 for 100
+Mon Nov 12 16:43:17 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:17 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:17 2012	suspending process 2 for 100
+Mon Nov 12 16:43:17 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:17 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:17 2012	suspending process 2 for 100
+Mon Nov 12 16:43:17 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:17 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:17 2012	suspending process 2 for 100
+Mon Nov 12 16:43:17 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:17 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:17 2012	suspending process 2 for 100
+Mon Nov 12 16:43:18 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:18 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:18 2012	suspending process 2 for 100
+Mon Nov 12 16:43:18 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:18 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:18 2012	suspending process 2 for 100
+Mon Nov 12 16:43:18 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:18 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:18 2012	suspending process 2 for 100
+Mon Nov 12 16:43:18 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:18 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:18 2012	suspending process 2 for 100
+Mon Nov 12 16:43:18 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:18 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:18 2012	suspending process 2 for 100
+Mon Nov 12 16:43:18 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:18 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:18 2012	suspending process 2 for 100
+Mon Nov 12 16:43:18 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:18 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:18 2012	suspending process 2 for 100
+Mon Nov 12 16:43:18 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:18 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:18 2012	suspending process 2 for 100
+Mon Nov 12 16:43:18 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:18 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:18 2012	suspending process 2 for 100
+Mon Nov 12 16:43:19 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:19 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:19 2012	suspending process 2 for 100
+Mon Nov 12 16:43:19 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:19 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:19 2012	suspending process 2 for 100
+Mon Nov 12 16:43:19 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:19 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:19 2012	suspending process 2 for 100
+Mon Nov 12 16:43:19 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:19 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:19 2012	suspending process 2 for 100
+Mon Nov 12 16:43:19 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:19 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:19 2012	suspending process 2 for 100
+Mon Nov 12 16:43:19 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:19 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:19 2012	suspending process 2 for 100
+Mon Nov 12 16:43:19 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:19 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:19 2012	suspending process 2 for 100
+Mon Nov 12 16:43:19 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:19 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:19 2012	suspending process 2 for 100
+Mon Nov 12 16:43:19 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:19 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:19 2012	suspending process 2 for 100
+Mon Nov 12 16:43:20 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:20 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:20 2012	suspending process 2 for 100
+Mon Nov 12 16:43:20 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:20 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:20 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:20 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:20 2012	proces 2 nema praci 
+Mon Nov 12 16:43:20 2012	suspending process 2 for 100
+Mon Nov 12 16:43:20 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:20 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:20 2012	suspending process 2 for 100
+Mon Nov 12 16:43:20 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:20 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:20 2012	suspending process 2 for 100
+Mon Nov 12 16:43:20 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:20 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:20 2012	suspending process 2 for 100
+Mon Nov 12 16:43:20 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:20 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:20 2012	suspending process 2 for 100
+Mon Nov 12 16:43:20 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:20 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:20 2012	suspending process 2 for 100
+Mon Nov 12 16:43:20 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:20 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:20 2012	suspending process 2 for 100
+Mon Nov 12 16:43:20 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:20 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:20 2012	suspending process 2 for 100
+Mon Nov 12 16:43:21 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:21 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:21 2012	suspending process 2 for 100
+Mon Nov 12 16:43:21 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:21 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:21 2012	suspending process 2 for 100
+Mon Nov 12 16:43:21 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:21 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:21 2012	suspending process 2 for 100
+Mon Nov 12 16:43:21 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:21 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:21 2012	suspending process 2 for 100
+Mon Nov 12 16:43:21 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:21 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:21 2012	suspending process 2 for 100
+Mon Nov 12 16:43:21 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:21 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:21 2012	suspending process 2 for 100
+Mon Nov 12 16:43:21 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:21 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:21 2012	suspending process 2 for 100
+Mon Nov 12 16:43:21 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:21 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:21 2012	suspending process 2 for 100
+Mon Nov 12 16:43:21 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:21 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:21 2012	suspending process 2 for 100
+Mon Nov 12 16:43:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:22 2012	suspending process 2 for 100
+Mon Nov 12 16:43:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:22 2012	suspending process 2 for 100
+Mon Nov 12 16:43:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:22 2012	suspending process 2 for 100
+Mon Nov 12 16:43:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:22 2012	suspending process 2 for 100
+Mon Nov 12 16:43:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:22 2012	suspending process 2 for 100
+Mon Nov 12 16:43:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:22 2012	suspending process 2 for 100
+Mon Nov 12 16:43:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:22 2012	suspending process 2 for 100
+Mon Nov 12 16:43:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:22 2012	suspending process 2 for 100
+Mon Nov 12 16:43:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:22 2012	suspending process 2 for 100
+Mon Nov 12 16:43:22 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:22 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:22 2012	suspending process 2 for 100
+Mon Nov 12 16:43:23 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:23 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:23 2012	suspending process 2 for 100
+Mon Nov 12 16:43:23 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:23 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:23 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:23 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:23 2012	proces 2 nema praci 
+Mon Nov 12 16:43:23 2012	suspending process 2 for 100
+Mon Nov 12 16:43:23 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:23 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:23 2012	suspending process 2 for 100
+Mon Nov 12 16:43:23 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:23 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:23 2012	suspending process 2 for 100
+Mon Nov 12 16:43:23 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:23 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:23 2012	suspending process 2 for 100
+Mon Nov 12 16:43:23 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:23 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:23 2012	suspending process 2 for 100
+Mon Nov 12 16:43:23 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:23 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:23 2012	suspending process 2 for 100
+Mon Nov 12 16:43:23 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:23 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:23 2012	suspending process 2 for 100
+Mon Nov 12 16:43:23 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:23 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:23 2012	suspending process 2 for 100
+Mon Nov 12 16:43:24 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:24 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:24 2012	suspending process 2 for 100
+Mon Nov 12 16:43:24 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:24 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:24 2012	suspending process 2 for 100
+Mon Nov 12 16:43:24 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:24 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:24 2012	suspending process 2 for 100
+Mon Nov 12 16:43:24 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:24 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:24 2012	suspending process 2 for 100
+Mon Nov 12 16:43:24 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:24 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:24 2012	suspending process 2 for 100
+Mon Nov 12 16:43:24 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:24 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:24 2012	suspending process 2 for 100
+Mon Nov 12 16:43:24 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:24 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:24 2012	suspending process 2 for 100
+Mon Nov 12 16:43:24 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:24 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:24 2012	suspending process 2 for 100
+Mon Nov 12 16:43:24 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:24 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:24 2012	suspending process 2 for 100
+Mon Nov 12 16:43:25 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:25 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:25 2012	suspending process 2 for 100
+Mon Nov 12 16:43:25 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:25 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:25 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:25 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:25 2012	proces 2 nema praci 
+Mon Nov 12 16:43:25 2012	suspending process 2 for 100
+Mon Nov 12 16:43:25 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:25 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:25 2012	suspending process 2 for 100
+Mon Nov 12 16:43:25 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:25 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:25 2012	suspending process 2 for 100
+Mon Nov 12 16:43:25 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:25 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:25 2012	suspending process 2 for 100
+Mon Nov 12 16:43:25 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:25 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:25 2012	suspending process 2 for 100
+Mon Nov 12 16:43:25 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:25 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:25 2012	suspending process 2 for 100
+Mon Nov 12 16:43:25 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:25 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:25 2012	suspending process 2 for 100
+Mon Nov 12 16:43:25 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:25 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:25 2012	suspending process 2 for 100
+Mon Nov 12 16:43:26 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:26 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:26 2012	suspending process 2 for 100
+Mon Nov 12 16:43:26 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:26 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 1
+Mon Nov 12 16:43:26 2012	suspending process 2 for 100
+Mon Nov 12 16:43:26 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:26 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:26 2012	suspending process 2 for 100
+Mon Nov 12 16:43:26 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:26 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:26 2012	suspending process 2 for 100
+Mon Nov 12 16:43:26 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:26 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:26 2012	suspending process 2 for 100
+Mon Nov 12 16:43:26 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:26 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:26 2012	suspending process 2 for 100
+Mon Nov 12 16:43:26 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:26 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:26 2012	suspending process 2 for 100
+Mon Nov 12 16:43:26 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:26 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:26 2012	suspending process 2 for 100
+Mon Nov 12 16:43:26 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:26 2012	proces si vyzadal novou praci od 1
+Mon Nov 12 16:43:26 2012	suspending process 2 for 100
+Mon Nov 12 16:43:27 2012	process 2 obdrzel NO_JOB od 1
+Mon Nov 12 16:43:27 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:27 2012	suspending process 2 for 100
+Mon Nov 12 16:43:27 2012	process 2 prijal JOB_REQUEST
+Mon Nov 12 16:43:27 2012	process 2 nema uz zadnou praci a vraci NO_JOB procesu 3
+Mon Nov 12 16:43:27 2012	suspending process 2 for 100
+Mon Nov 12 16:43:27 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:27 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:43:27 2012	suspending process 2 for 100
+Mon Nov 12 16:43:27 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:43:27 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:43:27 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:43:27 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:43:27 2012	proces 2 nema praci 
+Mon Nov 12 16:43:27 2012	suspending process 2 for 100
+Mon Nov 12 16:43:27 2012	suspending process 2 for 100
+Mon Nov 12 16:43:27 2012	suspending process 2 for 100
+Mon Nov 12 16:43:27 2012	suspending process 2 for 100
+Mon Nov 12 16:43:27 2012	suspending process 2 for 100
+Mon Nov 12 16:43:27 2012	suspending process 2 for 100
+Mon Nov 12 16:43:28 2012	suspending process 2 for 100
+Mon Nov 12 16:43:28 2012	suspending process 2 for 100
+Mon Nov 12 16:43:28 2012	process 2 obdrzel NO_JOB od 0
+Mon Nov 12 16:43:28 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:28 2012	suspending process 2 for 100
+Mon Nov 12 16:43:28 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:28 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:28 2012	suspending process 2 for 100
+Mon Nov 12 16:43:28 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:28 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:28 2012	suspending process 2 for 100
+Mon Nov 12 16:43:28 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:28 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:28 2012	suspending process 2 for 100
+Mon Nov 12 16:43:28 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:28 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:28 2012	suspending process 2 for 100
+Mon Nov 12 16:43:28 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:28 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:28 2012	suspending process 2 for 100
+Mon Nov 12 16:43:28 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:28 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:28 2012	suspending process 2 for 100
+Mon Nov 12 16:43:29 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:29 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:29 2012	suspending process 2 for 100
+Mon Nov 12 16:43:29 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:29 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:29 2012	suspending process 2 for 100
+Mon Nov 12 16:43:29 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:43:29 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:43:29 2012	suspending process 2 for 100
+
+
+------------NEW SESSION------------
+
+Mon Nov 12 16:44:10 2012	process 2 obdrzel praci 
+Mon Nov 12 16:44:10 2012	stack size procesu 2 | 1
+Mon Nov 12 16:44:10 2012	 node  | 0 | 2 | 3 | 1 | 
+Mon Nov 12 16:44:10 2012	level: 2 tlg: 3
+Mon Nov 12 16:44:10 2012	 node  | 0 | 1 | 2 | 3 | 
+Mon Nov 12 16:44:10 2012	level: 2 tlg: 3
+Mon Nov 12 16:44:10 2012	 node  | 0 | 3 | 1 | 2 | 
+Mon Nov 12 16:44:10 2012	level: 2 tlg: 3
+Mon Nov 12 16:44:10 2012	stack size procesu 2 | 3
+Mon Nov 12 16:44:10 2012	 node  | 0 | 3 | 2 | 1 | 
+Mon Nov 12 16:44:10 2012	level: 3 tlg: 3
+Mon Nov 12 16:44:10 2012	stack size procesu 2 | 3
+Mon Nov 12 16:44:10 2012	stack size procesu 2 | 2
+Mon Nov 12 16:44:10 2012	 node  | 0 | 1 | 3 | 2 | 
+Mon Nov 12 16:44:10 2012	level: 3 tlg: 3
+Mon Nov 12 16:44:10 2012	stack size procesu 2 | 2
+Mon Nov 12 16:44:10 2012	stack size procesu 2 | 1
+Mon Nov 12 16:44:10 2012	 node  | 0 | 2 | 1 | 3 | 
+Mon Nov 12 16:44:10 2012	level: 3 tlg: 3
+Mon Nov 12 16:44:10 2012	stack size procesu 2 | 1
+Mon Nov 12 16:44:10 2012	proces 2 nema praci 
+Mon Nov 12 16:44:10 2012	proces si vyzadal novou praci od 0
+Mon Nov 12 16:44:10 2012	suspending process 2 for 100
+Mon Nov 12 16:44:10 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:44:10 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:44:10 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:44:10 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:44:10 2012	proces 2 nema praci 
+Mon Nov 12 16:44:10 2012	suspending process 2 for 100
+Mon Nov 12 16:44:11 2012	suspending process 2 for 100
+Mon Nov 12 16:44:11 2012	suspending process 2 for 100
+Mon Nov 12 16:44:11 2012	process 2 prijal FINISH
+Mon Nov 12 16:44:11 2012	Nyni ukoncuji vypocetni cyklus.
+Mon Nov 12 16:44:11 2012	process 2 computed 3
+
+
+------------NEW SESSION------------
+
+Mon Nov 12 16:45:44 2012	process 2 obdrzel praci 
+Mon Nov 12 16:45:44 2012	stack size procesu 2 | 1
+Mon Nov 12 16:45:44 2012	 node  | 0 | 2 | 3 | 1 | 
+Mon Nov 12 16:45:44 2012	level: 2 tlg: 3
+Mon Nov 12 16:45:44 2012	 node  | 0 | 1 | 2 | 3 | 
+Mon Nov 12 16:45:44 2012	level: 2 tlg: 3
+Mon Nov 12 16:45:44 2012	 node  | 0 | 3 | 1 | 2 | 
+Mon Nov 12 16:45:44 2012	level: 2 tlg: 3
+Mon Nov 12 16:45:44 2012	stack size procesu 2 | 3
+Mon Nov 12 16:45:44 2012	 node  | 0 | 3 | 2 | 1 | 
+Mon Nov 12 16:45:44 2012	level: 3 tlg: 3
+Mon Nov 12 16:45:44 2012	stack size procesu 2 | 3
+Mon Nov 12 16:45:44 2012	stack size procesu 2 | 2
+Mon Nov 12 16:45:44 2012	 node  | 0 | 1 | 3 | 2 | 
+Mon Nov 12 16:45:44 2012	level: 3 tlg: 3
+Mon Nov 12 16:45:44 2012	stack size procesu 2 | 2
+Mon Nov 12 16:45:44 2012	stack size procesu 2 | 1
+Mon Nov 12 16:45:44 2012	 node  | 0 | 2 | 1 | 3 | 
+Mon Nov 12 16:45:44 2012	level: 3 tlg: 3
+Mon Nov 12 16:45:44 2012	stack size procesu 2 | 1
+Mon Nov 12 16:45:44 2012	proces 2 nema praci 
+Mon Nov 12 16:45:44 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:45:44 2012	suspending process 2 for 100
+Mon Nov 12 16:45:44 2012	suspending process 2 for 100
+Mon Nov 12 16:45:44 2012	process 2 obdrzel TOKEN
+Mon Nov 12 16:45:44 2012	tento procesor prijal bileho peska
+Mon Nov 12 16:45:44 2012	tento procesor neposilal praci nizsim procesorum, posila bileho peska procesoru 3
+Mon Nov 12 16:45:44 2012	nastavuji peska pro procesor na bilo
+Mon Nov 12 16:45:44 2012	proces 2 nema praci 
+Mon Nov 12 16:45:44 2012	suspending process 2 for 100
+Mon Nov 12 16:45:44 2012	suspending process 2 for 100
+Mon Nov 12 16:45:44 2012	suspending process 2 for 100
+Mon Nov 12 16:45:44 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:45:44 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:45:44 2012	suspending process 2 for 100
+Mon Nov 12 16:45:44 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:45:44 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:45:44 2012	suspending process 2 for 100
+Mon Nov 12 16:45:44 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:45:44 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:45:44 2012	suspending process 2 for 100
+Mon Nov 12 16:45:44 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:45:44 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:45:44 2012	suspending process 2 for 100
+Mon Nov 12 16:45:44 2012	process 2 obdrzel NO_JOB od 3
+Mon Nov 12 16:45:44 2012	proces si vyzadal novou praci od 3
+Mon Nov 12 16:45:44 2012	suspending process 2 for 100
+Mon Nov 12 16:45:45 2012	process 2 prijal FINISH
+Mon Nov 12 16:45:45 2012	Nyni ukoncuji vypocetni cyklus.
+Mon Nov 12 16:45:45 2012	process 2 computed 3
